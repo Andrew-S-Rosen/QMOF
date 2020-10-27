@@ -1,0 +1,8 @@
+#!/bin/bash
+#SBATCH --job-name="opt.py"
+#SBATCH -N 1
+#SBATCH --ntasks-per-node=48
+#SBATCH -t 04:00:00
+
+export VASP_SCRIPT=run_vasp.py
+python opt.py > opt.out

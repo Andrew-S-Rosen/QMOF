@@ -1,0 +1,1 @@
+The folders contain DOS and HSE06-D3(BJ) structures for selected materials highlighted in the QMOF database paper. To recreate the DOS plots, run `dos.py` after using `gunzip` to unzip the `DOSCAR.gz` and `vasprun.xml` files. The DOS plotting scripts rely on [PyChemia](https://github.com/MaterialsDiscovery/PyChemia).
