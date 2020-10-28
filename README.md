@@ -40,6 +40,9 @@ Beyond the data that makes up the QMOF database, we host several supplementary r
 
 5. DFT-optimized charge density files can be found on an external server [here](https://northwestern.box.com/s/q1waxl737nhsbk0lsq7qgkqwrua7i2ay).
 
+## Updates
+Several updates are planned for the QMOF database. Upon their release, the Figshare repository will be updated, and a new version-specific DOI will be created. All changes will be documented in [updates.md].
+
 ## Citing the QMOF Database
 If you use the QMOF database, there are two resources that you should reference:
 
