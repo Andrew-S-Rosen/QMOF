@@ -8,7 +8,7 @@ This GitHub repository is the landing page for the Quantum MOF (QMOF) database â
 ## Purpose of this GitHub Page
 The data underlying the QMOF database is hosted on Figshare and linked in the "Accessing the QMOF Database" subsection below. Nonetheless, this GitHub page serves several purposes:
 
-1. As detailed in the "Scripts and Tools" subsection below, this GitHub page includes supplementary files that can be used to carry out the machine learning analyses in the corresponding QMOF database paper.
+1. As detailed in the "Scripts and Tools" subsection below, this GitHub page includes supplementary files that can be used to carry out the machine learning analyses in the corresponding [QMOF database paper](https://doi.org/10.26434/chemrxiv.13147616).
 
 2. It allows for open, public discussions via the GitHub [Issues](https://github.com/arosen93/QMOF/issues) tab. While any issues can certainly be raised here, I also welcome comments, suggestions, or other forms of open dialogue in the Issues tracker.
 
@@ -30,13 +30,13 @@ The individual files uploaded to Figshare are described in greater detail below.
 ## Additional Scripts and Tools
 Beyond the data that makes up the QMOF database, we host several supplementary resources directly in this GitHub repository that may be of interest:
 
-1. `machine_learning`: This folder contains scripts used to train the machine learning models and carry out the dimensionality reduction tasks in the corresponding QMOF database paper. These codes make use of [DScribe](https://github.com/SINGROUP/dscribe), [matminer](https://github.com/hackingmaterials/matminer), [UMAP](https://github.com/lmcinnes/umap), [ASE](https://gitlab.com/ase/ase), [Pymatgen](https://pymatgen.org/), [scikit-learn](https://github.com/scikit-learn/scikit-learn), and their respective dependencies.
+1. `machine_learning`: This folder contains scripts used to train the machine learning models and carry out the dimensionality reduction tasks in the corresponding [QMOF database paper](https://doi.org/10.26434/chemrxiv.13147616). These codes make use of [DScribe](https://github.com/SINGROUP/dscribe), [matminer](https://github.com/hackingmaterials/matminer), [UMAP](https://github.com/lmcinnes/umap), [ASE](https://gitlab.com/ase/ase), [Pymatgen](https://pymatgen.org/), [scikit-learn](https://github.com/scikit-learn/scikit-learn), and their respective dependencies.
 
 2. `dft_workflow`: This folder contains an example input file to run [PyMOFScreen](https://github.com/arosen93/mof_screen), which was used to orchestrate the high-throughput DFT calculations and construct the QMOF database. A copy of PyMOFScreen is also provided in the folder for convenience.
 
 3. `tools`: This folder contains miscellaneous Python scripts that you may find helpful, such as scripts that can be help make a "DFT-ready" set of MOFs from a folder of CIFs.
 
-4. `example_dos`: HSE06-D3(BJ) density of states (data and plotting scripts) for the selected structures in the QMOF database paper.
+4. `example_dos`: HSE06-D3(BJ) density of states (data and plotting scripts) for the highlighted structures in the [QMOF database paper](https://doi.org/10.26434/chemrxiv.13147616).
 
 5. DFT-optimized charge density files can be found on an external server [here](https://northwestern.box.com/s/q1waxl737nhsbk0lsq7qgkqwrua7i2ay).
 
