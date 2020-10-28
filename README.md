@@ -1,6 +1,6 @@
 # QMOF Database
 
-<img src=logo.jpg width="200">
+<img src=logo.png>
 
 ## Overview
 This GitHub repository is the landing page for the Quantum MOF (QMOF) database – a publicly available dataset of quantum-chemical properties for 14,000+ metal–organic framework structures. The QMOF database is described in detail in DOI: [10.26434/chemrxiv.13147616](https://doi.org/10.26434/chemrxiv.13147616).
@@ -23,11 +23,9 @@ The individual files uploaded to Figshare are described in greater detail below.
 
 1. `qmof_database.zip`: This contains the structures and tabulated properties of all materials in the QMOF database.
 
-2. `qmof_database_vasp_files.zip`: This contains the VASP input and output files used in constructing the QMOF database. Most users do not need this raw data, but it is available if you wish to access it. For the POTCAR selection, see Table S2 of the Supporting Information. If you require data for the intermediate stages of the workflow, please email me directly.
+2. `vasp_files.zip`: This contains the VASP input and output files used in constructing the QMOF database. Most users do not need this raw data, but it is available if you wish to access it. For the POTCAR selection, see Table S2 of the Supporting Information. If you require data for the intermediate stages of the workflow, please email me directly.
 
-3. `chgcars.tar`: This contains the charge densities associated with DFT-optimized structures in the QMOF database. Warning: this file is several hundred GBs in size.
-
-4. `soap_kernels.zip` and `cgcnn_encodings.zip`: These folders contain the SOAP similarity kernels and CGCNN encodings for the QMOF database structures, which can be used with the machine learning scripts described below.
+3. `soap_kernels.zip` and `cgcnn_encodings.zip`: These folders contain the SOAP similarity kernels and CGCNN encodings for the QMOF database structures, which can be used with the machine learning scripts described below.
 
 ## Additional Scripts and Tools
 Beyond the data that makes up the QMOF database, we host several supplementary resources directly in this GitHub repository that may be of interest:
@@ -39,6 +37,8 @@ Beyond the data that makes up the QMOF database, we host several supplementary r
 3. `tools`: This folder contains miscellaneous Python scripts that you may find helpful, such as scripts that can be help make a "DFT-ready" set of MOFs from a folder of CIFs.
 
 4. `example_dos`: HSE06-D3(BJ) density of states (data and plotting scripts) for the selected structures in Figure 6 of the QMOF database paper.
+
+5. DFT-optimized charge density files can be found on an external server [here](https://northwestern.box.com/s/q1waxl737nhsbk0lsq7qgkqwrua7i2ay).
 
 ## Citing the QMOF Database
 If you use the QMOF database, there are two resources that you should reference:
