@@ -36,7 +36,7 @@ Beyond the data that makes up the QMOF database, we host several supplementary r
 
 3. `tools`: This folder contains miscellaneous Python scripts that you may find helpful, such as scripts that can be help make a "DFT-ready" set of MOFs from a folder of CIFs.
 
-4. `example_dos`: HSE06-D3(BJ) density of states (data and plotting scripts) for the selected structures in Figure 6 of the QMOF database paper.
+4. `example_dos`: HSE06-D3(BJ) density of states (data and plotting scripts) for the selected structures in the QMOF database paper.
 
 5. DFT-optimized charge density files can be found on an external server [here](https://northwestern.box.com/s/q1waxl737nhsbk0lsq7qgkqwrua7i2ay).
 
