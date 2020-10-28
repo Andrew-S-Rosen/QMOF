@@ -9,3 +9,5 @@ These tools can be used to clean up a set of CIFs obtained from the [MOF subset 
 `lone_atom_check.py`: This script will check for lone atoms in the framework, as determined using Pymatgen's `CrystalNN` tool.
 
 `deduplicate.py`: This script will de-duplicate a list of CIFs by using Pymatgen's `StructureMatcher` utility. 
+
+`cifs_to_xyz.py`: This script converts a folder of CIFs to an ASE-formatted appended XYZ file.
