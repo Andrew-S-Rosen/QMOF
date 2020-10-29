@@ -38,7 +38,7 @@ Beyond the data that makes up the QMOF database, we host several supplementary r
 
 4. `example_dos`: HSE06-D3(BJ) density of states (data and plotting scripts) for the highlighted structures in the [QMOF database paper](https://doi.org/10.26434/chemrxiv.13147616).
 
-5. DFT-optimized charge density files can be found on an external server [here](https://northwestern.box.com/s/q1waxl737nhsbk0lsq7qgkqwrua7i2ay).
+5. DFT-optimized charge density files can be found on an external server [here](https://northwestern.box.com/s/f3s930zx33di4y73gvosz9d0h5obtuoj).
 
 ## Updates
 Several updates are planned for the QMOF database. Upon their release, the Figshare repository will be updated, and a new version-specific DOI will be created. All changes will be documented in [updates.md](updates.md).
