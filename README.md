@@ -1,6 +1,6 @@
 # QMOF Database
 
-<img src=logo-purple.svg>
+<img src=logo.png>
 
 ## Overview
 This GitHub repository is the landing page for the Quantum MOF (QMOF) database – a publicly available dataset of quantum-chemical properties for 14,000+ metal–organic framework structures. The QMOF database is described in detail in DOI: [10.26434/chemrxiv.13147616](https://doi.org/10.26434/chemrxiv.13147616).
