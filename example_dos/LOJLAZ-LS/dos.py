@@ -2,18 +2,19 @@ from ase.io import read
 from pychemia.code.vasp import VaspXML
 import matplotlib.pyplot as plt
 from matplotlib import rc
-from pymatgen.io.vasp.outputs import Eigenval
+
 plt.rcParams['xtick.labelsize']=14
 plt.rcParams['ytick.labelsize']=14
-eig = Eigenval('EIGENVAL')
-print(eig.eigenvalue_band_properties[0])
 rc('text', usetex=True)
+
 mof = read('CONTCAR')
 Fe = [atom.index for atom in mof if atom.symbol == 'Fe']
 Au = [atom.index for atom in mof if atom.symbol == 'Au']
 C = [atom.index for atom in mof if atom.symbol == 'C']
 N = [atom.index for atom in mof if atom.symbol == 'N']
 H = [atom.index for atom in mof if atom.symbol == 'H']
+VaspXML = VaspXML('vasprun.xml')
+
 colors = {'total':"#4d3c40",
 'M':"#7248b7",
 'C':'#9c9ec4',
@@ -26,7 +27,6 @@ s = [0]
 p = [1, 2, 3]
 d = [4, 5, 6, 7, 8]
 elim = [-5, 5]
-VaspXML = VaspXML('vasprun.xml')
 fig, ax = plt.subplots(3, figsize=(5, 6))
 
 dos = VaspXML.dos_total
@@ -85,6 +85,6 @@ ax[2].yaxis.get_ticklocs(minor=True)
 ax[2].minorticks_on()
 
 ax[2].set_xlabel(r'$E-E_{\mathrm{f}}$ (eV)')
-#ax[1].set_ylabel(r'Density of states (states/eV)')
+ax[1].set_ylabel(r'Density of states (states/eV)')
 plt.tight_layout()
 plt.savefig('dos.png',dpi=500)
