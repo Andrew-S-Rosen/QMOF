@@ -56,3 +56,9 @@ If you use [PyMOFScreen](https://github.com/arosen93/mof_screen) in your own wor
 
 ## Contact
 If you have any questions, feel free to send me an email at rosen@u.northwestern.edu.
+
+
+## Acknowledgments
+This work was supported by a fellowship award through the National Defense Science and Engineering Graduate (NDSEG) Fellowship Program, sponsored by the Air Force Research Laboratory (AFRL), the Office of Naval Research (ONR) and the Army Research Office (ARO). Additional supported was provided by the U.S. Department of Energy, Office of Basic Energy Sciences, Division of Chemical Sciences, Geosciences and Biosciences through the Nanoporous Materials Genome Center under Award Number DE-FG02-17ER16362. 
+
+![NMGC logo](nmgc.png)
