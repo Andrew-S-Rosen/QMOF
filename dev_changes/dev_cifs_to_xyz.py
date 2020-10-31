@@ -21,6 +21,8 @@ for cif in cifs:
 new_name = 'CSD-clean-opt'
 xyz_path = os.path.join(basepath, new_name+'.xyz')
 refcodes_name = os.path.join(basepath, new_name+'-refcodes.csv')
+if os.path.exists(xyz_path):
+    os.remove(xyz_path)
 write(xyz_path, mofs)
 with open(refcodes_name, 'w') as w:
     for i, ref in enumerate(refcodes):
