@@ -7,11 +7,11 @@ As noted in the [QMOF database paper](https://doi.org/10.26434/chemrxiv.13147616
 ### CSD-opt
 This folder contains the current version of DFT-optimized CIFs and their refcodes.
 
-`cifs/clean`: This folder contains the list of CIFs currently recognized as "clean".
+- `cifs/clean`: This folder contains the list of CIFs currently recognized as "clean".
+- `cifs/issues`: This folder contains the list of CIFs currently recognized as "issues".
+- The `CSD-clean-opt.xyz.gz` file is a gzip'd `.xyz` of the CIFs in `cifs/clean`.
+- The `CSD-clean-opt-refcodes.csv` file is a list of refcodes associated with the `CSD-clean-opt.xyz.gz` file. You can also check this file to see which ones are marked as "clean" instead of unpacking the entire `cifs.tar.gz` file.
 
-`cifs/issues`: This folder contains the list of CIFs currently recognized as "issues".
-
-The `.xyz.gz` file is a gzip'd `.xyz` of the CIFs in `cifs/clean` with refcodes listed in the corresponding `.csv`.
 
 ## Structural Fidelity Updates
 If you spot a structure with an error related to its crystal structure and would like to contribute, please carry out the following steps.
