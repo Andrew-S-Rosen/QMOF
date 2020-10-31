@@ -29,4 +29,4 @@ If it's in the DFT-optimized structure list:
 Since the QMOF database pulls structures directly from the Cambridge Structural Database (CSD) and is not meant to serve as a structure repository, we are not in a position to manually or automatically update CIFs to correct for any potential upstream structural errors. For now, we will typically just flag entries accordingly for ease-of-reference.
 
 ## Computed Properties
-We encourage you to supplement the QMOF database with your own however you see fit. However, we currently do not have an infrastructure set up to systematically accept user contributions for additional VASP-computed properties. Please contact the authors if you wish to discuss options further.
+We encourage you to independently supplement the QMOF database with your own data however you see fit. However, we currently do not have an infrastructure set up to systematically accept user contributions for additional VASP-computed properties. Please contact the authors if you wish to discuss options further.
