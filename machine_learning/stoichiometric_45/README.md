@@ -5,6 +5,6 @@
 `he_learning_curves.py`: Same as `he_krr.py` but loops over increasing training set sizes.
 
 Pre-computed results in the `CSD-13058` folder:
-`he_fingerprints_13058.csv`: Stoichiometric-45 encodings for the CSD-13058-SP dataset.
-`train_results_13058.csv`: Training set statistics for predicting DFT-optimized band gaps from CSD-13058-SP.
-`test_results_13058.csv`: Testing set statistics for predicting DFT-optimized band gaps from CSD-13058-SP.
+- `he_fingerprints_13058.csv`: Stoichiometric-45 encodings for the CSD-13058-SP dataset.
+- `train_results_13058.csv`: Training set statistics for predicting DFT-optimized band gaps from CSD-13058-SP.
+- `test_results_13058.csv`: Testing set statistics for predicting DFT-optimized band gaps from CSD-13058-SP.
