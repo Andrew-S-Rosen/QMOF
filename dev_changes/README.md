@@ -10,18 +10,18 @@ This folder contains the current version of DFT-optimized CIFs and their refcode
 - `cifs/clean`: This folder contains the list of CIFs currently recognized as "clean".
 - `cifs/issues`: This folder contains the list of CIFs currently recognized as "issues".
 - The `CSD-clean-opt.xyz.gz` file is a gzip'd `.xyz` of the CIFs in `cifs/clean`.
-- The `CSD-clean-opt-refcodes.csv` file is a list of refcodes associated with the `CSD-clean-opt.xyz.gz` file. You can also check this file to see which ones are marked as "clean" instead of unpacking the entire `cifs.tar.gz` file.
+- The `CSD-clean-opt-refcodes.csv` file is a list of refcodes associated with the `CSD-clean-opt.xyz.gz` file. You can also check this file to see which ones are currently recognized as "clean" instead of unpacking the entire `cifs.tar.gz` file.
 
 
 ## Structural Fidelity Updates
-If you spot a structure with an error related to its crystal structure and would like to contribute, please carry out the following steps.
+If you spot a material with an error related to its crystal structure and would like to contribute, please carry out the following steps.
 
 If it's in the DFT-optimized structure list:
 1. [Fork the repository](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo).
 2. Go to `dev_tools/CSD-opt`. Unpack the `cifs.tar.gz` folder (i.e. `tar -xf cifs.tar.gz`) and then move the potentially problematic CIFs from `cifs/clean` to `cifs/issues`.
-3. Delete the existing `.xyz.gz` file in `dev_tools/CSD-opt`.
-4. Run `dev_cifs_to_xyz.py`. This will create a new (gzip'd) `.xyz` and a new refcodes `.csv` in `CSD-opt`.
-5. Re-compress the `CSD-opt` folder (i.e. `tar -czvf cifs.tar.gz cifs`). This is important so that users don't unpack thousands of individual files anytime they clone the GitHub repo.
+3. Delete the existing `CSD-clean-opt.xyz.gz` file in `dev_tools/CSD-opt`.
+4. Run `dev_cifs_to_xyz.py`. This will create a new g'zip XYZ file (`CSD-clean-opt.xyz.gz`) and a new refcodes `.csv` (`CSD-clean-opt-refcodes.csv`) in `CSD-opt`.
+5. Re-compress the `CSD-opt/cifs` folder (i.e. `tar -czvf cifs.tar.gz cifs`). This is important so that users don't unpack thousands of individual files anytime they clone the GitHub repo.
 6. [Push the change](https://docs.github.com/en/free-pro-team@latest/desktop/contributing-and-collaborating-using-github-desktop/pushing-changes-to-github).
 7. [Create a pull request](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
