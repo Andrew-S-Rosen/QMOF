@@ -12,6 +12,7 @@ defaults['algo'] = 'Fast'
 
 # Get CIF files
 cif_files = os.listdir(mofpath)
+cif_files.sort()
 s = screener(basepath, mofpath, submit_script=submit_script, kppas=[100, 1000])
 
 # Run DFT calculations

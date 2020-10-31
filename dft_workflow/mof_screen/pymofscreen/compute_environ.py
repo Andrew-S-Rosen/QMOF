@@ -30,7 +30,7 @@ def get_nprocs(submit_script):
 				ppn = int(line.split('=')[1])
 	nprocs = nodes*ppn
 
-	#Setup for MOAB at Thunder/Mustang
+	#Setup for MOAB at Thunder
 	# with open(submit_script,'r') as rf:
 	# 	for line in rf:
 	# 		if 'select' in line:
@@ -77,11 +77,11 @@ def choose_vasp_version(gpt_version,nprocs):
 	vasp_ex = [vasp_path+'vasp_std_vtst',vasp_path+'vasp_gam_vtst']
 	module_cmd = 'module purge all && module load intel/18.0.2 && module load impi/18.0.2 && module load vasp/5.4.4'
 
-	#Setup for Thunder/Mustang
+	#Setup for Mustang
 	# parallel_cmd = 'export VASP_NPROCS='+str(nprocs)+' && '
 	# vasp_path = ''
 	# vasp_ex = [vasp_path+'vasp-vtst_3.2',vasp_path+'vasp_real-vtst_3.2']
-	# module_cmd = 'module load VASP/5.4.1'
+	# module_cmd = 'module load VASP/5.4.4'
 
 	#Setting up run_vasp.py
 	vasp_cmd = parallel_cmd+vasp_ex[0]
