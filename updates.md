@@ -1,4 +1,4 @@
-This file will document all updates to the QMOF database.
+This file will document all updates to the QMOF database on Figshare.
 
 # Current version
 v1.0 - initial release (10/28/20)
