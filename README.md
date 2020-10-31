@@ -27,6 +27,8 @@ The individual files uploaded to Figshare are described in greater detail below.
 
 3. `soap_kernels.zip` and `cgcnn_encodings.zip`: These folders contain the SOAP similarity kernels and CGCNN encodings for the QMOF database structures, which can be used with the machine learning scripts described below.
 
+4. Charge densities associated with DFT-optimized structures can be found on an external Box server [here](https://northwestern.box.com/s/f3s930zx33di4y73gvosz9d0h5obtuoj).
+
 ## Additional Scripts and Tools
 Beyond the data that makes up the QMOF database, we host several supplementary resources directly in this GitHub repository that may be of interest:
 
@@ -39,8 +41,6 @@ Beyond the data that makes up the QMOF database, we host several supplementary r
 4. `example_dos`: This folder contains HSE06-D3(BJ) density of states (data and plotting scripts) for the highlighted structures in the [QMOF database paper](https://doi.org/10.26434/chemrxiv.13147616).
 
 5. `dev_changes`: This folder marks any structural issues not captured via the automated filtering scripts. Please read [this document](dev_changes/README.md) for details and how to contribute.
-
-6. Charge densities associated with DFT-optimized structures can be found on an external server [here](https://northwestern.box.com/s/f3s930zx33di4y73gvosz9d0h5obtuoj).
 
 ## Updates
 Several updates are planned for the QMOF database. Upon their release, the Figshare repository will be updated, and a new version-specific DOI will be created. All changes will be documented in [updates.md](updates.md).
