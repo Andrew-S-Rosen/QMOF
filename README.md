@@ -34,7 +34,7 @@ Beyond the data that makes up the QMOF database, we host several supplementary r
 
 2. `dft_workflow`: This folder contains an example input file to run [PyMOFScreen](https://github.com/arosen93/mof_screen), which was used to orchestrate the high-throughput DFT calculations and construct the QMOF database. A copy of PyMOFScreen is also provided in the folder for convenience.
 
-3. `tools`: This folder contains miscellaneous Python scripts that you may find helpful, such as scripts that can be help make a "DFT-ready" set of MOFs from a folder of CIFs.
+3. `tools`: This folder contains miscellaneous Python scripts that you may find helpful, such as scripts that can help make a "DFT-ready" set of MOFs from a folder of CIFs.
 
 4. `example_dos`: This folder contains HSE06-D3(BJ) density of states (data and plotting scripts) for the highlighted structures in the [QMOF database paper](https://doi.org/10.26434/chemrxiv.13147616).
 
