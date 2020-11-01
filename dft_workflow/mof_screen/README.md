@@ -5,8 +5,6 @@ A.S. Rosen, J.M. Notestein, R.Q. Snurr. "Identifying Promising Metal-Organic Fra
 
 [![DOI](https://zenodo.org/badge/113722940.svg)](https://zenodo.org/badge/latestdoi/113722940)
 
-![TOC](toc.png)
-
 ## What is PyMOFScreen?
 
 High-throughput DFT involving MOFs is a tricky business. Their large unit cells, diverse structures, and widely varying compositions make it challenging to achieve both a robust and high-performing workflow with little human interactions. PyMOFScreen solves this problem through multi-stage structural optimizations, a robust selection of optimization algorithms that are chosen on-the-fly, automatic error-handling, and much more. In the Snurr group, we have used PyMOFScreen to screen hundreds of MOFs using periodic DFT in a fully automated fashion. To automate the adsorbate construction process, refer to our [MOF-Adsorbate-Initializer](https://github.com/arosen93/mof-adsorbate-initializer) code.
