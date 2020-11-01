@@ -10,7 +10,7 @@ from pymofscreen.cif_handler import cif_to_mof
 from pymofscreen.magmom_handler import set_initial_magmoms, continue_magmoms
 from pymofscreen.error_handler import get_warning_msgs
 from pymofscreen.vtst_handler import nebmake, neb2dim, nebef
-from shutil import copy
+
 class workflows():
 	"""
 	This class constructs a workflow for a given calculation stage
@@ -99,7 +99,7 @@ class workflows():
 		cif_file = self.cif_file
 		mofpath = self.mofpath
 		spin1_final_mof_path = self.spin1_final_mof_path
-		kpts_lo = self.kpts_dict['kpts_lo']
+		kpts_hi = self.kpts_dict['kpts_hi']
 		acc_level = self.acc_levels[self.run_i]
 		niggli = self.niggli
 		calcs = self.calcs
@@ -117,14 +117,13 @@ class workflows():
 				self.calc_swaps.append('nelm=5')
 				self.calc_swaps.append('lwave=False')
 			pprint('Running '+spin_label+', '+acc_level)
-			mof, self.calc_swaps = mof_run(self,mof,calcs('scf_test'),kpts_lo)
+			mof, self.calc_swaps = mof_run(self,mof,calcs('scf_test'),kpts_hi)
 			if quick_test:
 				self.calc_swaps.remove('nelm=5')
 				self.calc_swaps.remove('lwave=False')
-			if mof is not None:
+			if mof is not None and mof.calc.scf_converged:
 				write_success(self)
 			else:
-				pprint('^ VASP crashed')
 				write_errors(self,mof)
 		elif os.path.isfile(outcar_paths[self.run_i]):
 			pprint('COMPLETED: '+spin_label+', '+acc_level)
@@ -153,6 +152,7 @@ class workflows():
 		prior_spin = self.prior_spin
 		spin1_final_mof_path = self.spin1_final_mof_path
 		kpts_lo = self.kpts_dict['kpts_lo']
+		kpts_hi = self.kpts_dict['kpts_hi']
 		acc_level = acc_levels[self.run_i]
 		niggli = self.niggli
 		calcs = self.calcs
@@ -162,7 +162,10 @@ class workflows():
 				mof = cif_to_mof(os.path.join(mofpath,cif_file),niggli)
 			else:
 				mof = read(spin1_final_mof_path)
-			manage_restart_files(prior_results_path)
+			if sum(kpts_lo) == 3 and sum(kpts_hi) > 3:
+				clean_files(['CHGCAR','WAVECAR'])
+			else:
+				manage_restart_files(prior_results_path)
 			mof = set_initial_magmoms(mof,spin_level)
 			fmax = 5.0
 			pprint('Running '+spin_label+', '+acc_level)
@@ -292,23 +295,11 @@ class workflows():
 		acc_level = acc_levels[self.run_i]
 		calcs = self.calcs
 		prior_results_path = os.path.join(self.results_partial_paths[self.run_i-1],spin_label)
-		# basepath = self.basepath
-		# refcode = self.refcode
-		# scratchpath = '/scratch/05372/asrosen/'
 		if os.path.isfile(outcar_paths[self.run_i-1]) and not os.path.isfile(outcar_paths[self.run_i]) and not os.path.isfile(error_outcar_paths[self.run_i]):
 			mof = prep_new_run(self)
 			converged = False
 			loop_i = 0
 			n_runs = 15
-			# if os.path.exists(os.path.join(scratchpath,refcode+'_WAVECAR.gz')):
-			# 	copy(os.path.join(scratchpath,refcode+'_WAVECAR.gz'),'WAVECAR.gz')
-			# 	os.system('gunzip WAVECAR.gz')
-			# elif os.path.exists(os.path.join(scratchpath,'batch1',refcode+'_WAVECAR.gz')):
-			# 	copy(os.path.join(scratchpath,'batch1',refcode+'_WAVECAR.gz'),'WAVECAR.gz')
-			# 	os.system('gunzip WAVECAR.gz')
-			# elif os.path.exists(os.path.join(basepath,'results',refcode,'scf_test','spin1','WAVECAR.gz')):
-			# 	copy(os.path.join(basepath,'results',refcode,'scf_test','spin1','WAVECAR.gz'),'WAVECAR.gz')
-			# 	os.system('gunzip WAVECAR.gz')	
 			manage_restart_files(prior_results_path)
 			while not converged and loop_i < n_runs:
 				if loop_i == 10 and 'fire' not in self.calc_swaps and 'zbrent' not in self.calc_swaps:
