@@ -48,7 +48,7 @@ Several updates are planned for the QMOF database. Upon their release, the Figsh
 ## Citing the QMOF Database
 If you use or wish to reference the QMOF database, please cite the following paper:
 
-- [A.S. Rosen, S.M. Iyer, D. Ray, Z. Yao, A. Aspuru-Guzik, L. Gagliardi, J.M. Notestein, R.Q. Snurr. "Machine Learning the Quantum-Chemical Properties of Metal–Organic Frameworks for Accelerated Materials Discovery with a New Electronic Structure Database", *ChemRxiv* (2020)](https://doi.org/10.26434/chemrxiv.13147616).
+- [A.S. Rosen, S.M. Iyer, D. Ray, Z. Yao, A. Aspuru-Guzik, L. Gagliardi, J.M. Notestein, R.Q. Snurr. "Machine Learning the Quantum-Chemical Properties of Metal–Organic Frameworks for Accelerated Materials Discovery with a New Electronic Structure Database", *ChemRxiv* (2020). DOI: 10.26434/chemrxiv.13147616](https://doi.org/10.26434/chemrxiv.13147616).
 
 It is also best practice to specify the version of the QMOF database you used in your work to ensure that your results can be accurately reproduced. This can be done by specifying the corresponding version number on the Figshare repository (currently, it is just v1).
 
