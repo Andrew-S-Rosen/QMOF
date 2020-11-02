@@ -40,7 +40,7 @@ Beyond the data that makes up the QMOF database, we host several supplementary r
 
 4. `example_dos`: This folder contains HSE06-D3(BJ) density of states (data and plotting scripts) for the highlighted structures in the [QMOF database paper](https://doi.org/10.26434/chemrxiv.13147616).
 
-5. `dev_changes`: This folder marks any structural issues not captured via the automated filtering scripts. Please read [this document](dev_changes/README.md) for details and how to contribute.
+5. `dev_changes`: This folder is primarily as a way to contribute changes to the QMOF database, such as flagging any structural fidelity issues not captured via the automated filtering scripts. Please read [this document](dev_changes/README.md) for details and how to contribute.
 
 ## Updates
 Several updates are planned for the QMOF database. Upon their release, the Figshare repository will be updated, and a new version-specific DOI will be created. All changes will be documented in [updates.md](updates.md).
