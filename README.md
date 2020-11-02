@@ -21,7 +21,7 @@ The most up-to-date version of the QMOF database can be accessed on Figshare: [*
 
 The individual files uploaded to Figshare are described in greater detail below.
 
-1. `qmof_database.zip`: This contains the structures and tabulated properties of all materials in the QMOF database.
+1. `qmof_database.zip`: This contains the structures and tabulated properties of all materials in the QMOF database. This is likely the file you're looking for, and you'll probably be most interested in the CSD-14204-opt directory inside the `.zip` file.
 
 2. `vasp_files.zip`: This contains the VASP input and output files used in constructing the QMOF database. Most users do not need this raw data, but it is available if you wish to access it. For the POTCAR selection, see Table S2 of the Supporting Information. If you require data for the intermediate stages of the workflow, please email me directly.
 
