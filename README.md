@@ -46,15 +46,15 @@ Beyond the data that makes up the QMOF database, we host several supplementary r
 Several updates are planned for the QMOF database. Upon their release, the Figshare repository will be updated, and a new version-specific DOI will be created. All changes will be documented in [updates.md](updates.md).
 
 ## Citing the QMOF Database
-If you use the QMOF database, there are two resources that you should reference:
+If you use or wish to reference the QMOF database, please cite the following paper:
 
-1. [A.S. Rosen, S.M. Iyer, D. Ray, Z. Yao, A. Aspuru-Guzik, L. Gagliardi, J.M. Notestein, R.Q. Snurr. "Machine Learning the Quantum-Chemical Properties of Metal–Organic Frameworks for Accelerated Materials Discovery with a New Electronic Structure Database", *ChemRxiv* (2020)](https://doi.org/10.26434/chemrxiv.13147616).
+- [A.S. Rosen, S.M. Iyer, D. Ray, Z. Yao, A. Aspuru-Guzik, L. Gagliardi, J.M. Notestein, R.Q. Snurr. "Machine Learning the Quantum-Chemical Properties of Metal–Organic Frameworks for Accelerated Materials Discovery with a New Electronic Structure Database", *ChemRxiv* (2020)](https://doi.org/10.26434/chemrxiv.13147616).
 
-2. The version-specific dataset DOI on the Figshare page where you downloaded the QMOF database. This is required to ensure that your findings can be fully reproduced.
+It is also best practice to specify the version of the QMOF database you used in your work to ensure that your results can be accurately reproduced. This can be done by specifying the corresponding version number on the Figshare repository (currently, it is just v1).
 
 If you use [PyMOFScreen](https://github.com/arosen93/mof_screen) in your own work, please cite the following reference:
 
-3. [A.S. Rosen, J.M. Notestein, R.Q. Snurr. "Identifying Promising Metal–Organic Frameworks for Heterogeneous Catalysis via High‐Throughput Periodic Density Functional Theory", *J. Comput. Chem.*, **40**, *12*, 1305–1318 (2019)](https://onlinelibrary.wiley.com/doi/abs/10.1002/jcc.25787).
+- [A.S. Rosen, J.M. Notestein, R.Q. Snurr. "Identifying Promising Metal–Organic Frameworks for Heterogeneous Catalysis via High‐Throughput Periodic Density Functional Theory", *J. Comput. Chem.*, **40**, *12*, 1305–1318 (2019)](https://onlinelibrary.wiley.com/doi/abs/10.1002/jcc.25787).
 
 ## Contact
 If you have any questions, feel free to send me an email at rosen@u.northwestern.edu.
