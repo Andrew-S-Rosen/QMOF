@@ -19,7 +19,7 @@ If you spot a material with an error related to its crystal structure and would 
 If it's in the DFT-optimized structure list:
 1. [Fork the repository](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo).
 2. Go to `dev_tools/CSD-opt`. Unpack the `cifs.tar.gz` folder (i.e. `tar -xf cifs.tar.gz`) and then move the potentially problematic CIFs from `cifs/clean` to `cifs/issues`.
-3. Run `dev_cifs_to_xyz.py`. This will create a new g'zip XYZ file (`CSD-clean-opt.xyz.gz`) and a new refcodes `.csv` (`CSD-clean-opt-refcodes.csv`) in `CSD-opt`.
+3. Run `dev_cifs_to_xyz.py`. This will create a new gzip'd XYZ file (`CSD-clean-opt.xyz.gz`) and a new refcodes `.csv` (`CSD-clean-opt-refcodes.csv`) in `CSD-opt`.
 4. Re-compress the `CSD-opt/cifs` folder (i.e. `tar -czvf cifs.tar.gz cifs`). This is important so that users don't unpack thousands of individual files anytime they clone the GitHub repo.
 5. [Push the change](https://docs.github.com/en/free-pro-team@latest/desktop/contributing-and-collaborating-using-github-desktop/pushing-changes-to-github).
 6. [Create a pull request](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
