@@ -68,7 +68,7 @@ def write_errors(workflow,mof,neb=False):
 	if acc_level != 'scf_test' and 'neb' not in acc_level:
 		if mof is None:
 			pprint('^ VASP crashed')
-		elif not mof.calc.converged:
+		else:
 			pprint('Calculation not converged')
 	refcode = workflow.refcode
 	basepath = workflow.basepath
