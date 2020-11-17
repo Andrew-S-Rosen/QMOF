@@ -32,13 +32,13 @@ The individual files uploaded to Figshare are described in greater detail below.
 ## Additional Scripts and Tools
 Beyond the data that makes up the QMOF database, we host several supplementary resources directly in this GitHub repository that may be of interest:
 
-1. `machine_learning`: This folder contains scripts used to train the machine learning models and carry out the dimensionality reduction tasks in the corresponding [QMOF database paper](https://doi.org/10.26434/chemrxiv.13147616). These codes make use of [DScribe](https://github.com/SINGROUP/dscribe), [matminer](https://github.com/hackingmaterials/matminer), [UMAP](https://github.com/lmcinnes/umap), [ASE](https://gitlab.com/ase/ase), [Pymatgen](https://pymatgen.org/), [scikit-learn](https://github.com/scikit-learn/scikit-learn), and their respective dependencies.
+1. `machine_learning`: This folder contains scripts used to train the machine learning models and carry out the dimensionality reduction tasks in the corresponding [QMOF database paper](https://doi.org/10.26434/chemrxiv.13147616).
 
 2. `dft_workflow`: This folder contains an example input file to run [PyMOFScreen](https://github.com/arosen93/mof_screen), which was used to orchestrate the high-throughput DFT calculations and construct the QMOF database. A copy of PyMOFScreen is also provided in the folder for convenience.
 
 3. `tools`: This folder contains miscellaneous Python scripts that you may find helpful, such as scripts that can help make a "DFT-ready" set of MOFs from a folder of CIFs.
 
-4. `example_dos`: This folder contains HSE06-D3(BJ) density of states (data and plotting scripts) for the highlighted structures in the [QMOF database paper](https://doi.org/10.26434/chemrxiv.13147616). These scripts make use of [PyChemia](https://github.com/MaterialsDiscovery/PyChemia).
+4. `example_dos`: This folder contains HSE06-D3(BJ) density of states (data and plotting scripts) for the highlighted structures in the [QMOF database paper](https://doi.org/10.26434/chemrxiv.13147616).
 
 5. `fidelity_tracker`: This folder is primarily as a way to contribute changes to the QMOF database, such as flagging any structural fidelity issues not captured via the automated filtering scripts. Please read [this document](fidelity_tracker/README.md) for details and how to contribute.
 
