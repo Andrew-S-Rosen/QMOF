@@ -12,7 +12,7 @@ The data underlying the QMOF database is hosted on Figshare and linked in the "A
 
 2. It allows for open, public discussions via the GitHub [Issues](https://github.com/arosen93/QMOF/issues) tab. While any issues can certainly be raised here, I also welcome comments, suggestions, or other forms of open dialogue in the Issues tracker.
 
-3. Occasionally, I will use the [Projects](https://github.com/arosen93/QMOF/projects) tab to share any planned updates to the database, once they are in a state to be publicly announced. Currently planned updates include 1000+ new porous structures, high-quality DOS, additional levels of theory, and more to be disclosed in the future!
+3. I will use the [Projects](https://github.com/arosen93/QMOF/projects) tab to share any planned updates to the database, once they are in a state to be publicly announced. Currently planned updates include 1000+ new porous structures, high-quality DOS, additional levels of theory, and more to be shared in the future!
 
 4. If you have developed direct extensions, modifications, or subsets related to the QMOF database, I am more than happy to include a link to your work on this GitHub page so that all QMOF database resources can be linked to one another in a single place.
 
@@ -38,9 +38,9 @@ Beyond the data that makes up the QMOF database, we host several supplementary r
 
 3. `tools`: This folder contains miscellaneous Python scripts that you may find helpful, such as scripts that can help make a "DFT-ready" set of MOFs from a folder of CIFs.
 
-4. `example_dos`: This folder contains HSE06-D3(BJ) density of states (data and plotting scripts) for the highlighted structures in the [QMOF database paper](https://doi.org/10.26434/chemrxiv.13147616).
+4. `example_dos`: This folder contains HSE06-D3(BJ) density of states (data and plotting scripts) for the highlighted structures in the [QMOF database paper](https://doi.org/10.26434/chemrxiv.13147616). These scripts make use of [PyChemia](https://github.com/MaterialsDiscovery/PyChemia).
 
-5. `dev_changes`: This folder is primarily as a way to contribute changes to the QMOF database, such as flagging any structural fidelity issues not captured via the automated filtering scripts. Please read [this document](dev_changes/README.md) for details and how to contribute.
+5. `fidelity_tracker`: This folder is primarily as a way to contribute changes to the QMOF database, such as flagging any structural fidelity issues not captured via the automated filtering scripts. Please read [this document](fidelity_tracker/README.md) for details and how to contribute.
 
 ## Updates
 Several updates are planned for the QMOF database. Upon their release, the Figshare repository will be updated, and a new version-specific DOI will be created. All changes will be documented in [updates.md](updates.md).
