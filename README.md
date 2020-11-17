@@ -12,7 +12,7 @@ The data underlying the QMOF database is hosted on Figshare and linked in the "A
 
 2. It allows for open, public discussions via the GitHub [Issues](https://github.com/arosen93/QMOF/issues) tab. While any issues can certainly be raised here, I also welcome comments, suggestions, or other forms of open dialogue in the Issues tracker.
 
-3. Occasionally, I will use the [Projects](https://github.com/arosen93/QMOF/projects) tab to share any planned updates to the database, once they are in a state to be publicly announced. Currently planned updates include 1000+ new porous structures, high-quality DOS, and more to be disclosed in the future!
+3. Occasionally, I will use the [Projects](https://github.com/arosen93/QMOF/projects) tab to share any planned updates to the database, once they are in a state to be publicly announced. Currently planned updates include 1000+ new porous structures, high-quality DOS, additional levels of theory, and more to be disclosed in the future!
 
 4. If you have developed direct extensions, modifications, or subsets related to the QMOF database, I am more than happy to include a link to your work on this GitHub page so that all QMOF database resources can be linked to one another in a single place.
 
