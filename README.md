@@ -21,11 +21,11 @@ The most up-to-date version of the QMOF database can be accessed on Figshare: [*
 
 The individual files uploaded to Figshare are described in greater detail below.
 
-1. `qmof_database.zip`: This contains the structures and tabulated properties of all structurally relaxed materials in the QMOF database. This is likely the data that you're looking for. You'll probably be most interested in the `optimized_structures` directory inside the `.zip` file, as this contains tabulated properties for 15,750 DFT-optimized structures.
+1. `qmof_database.zip`: This contains the structures and tabulated properties of all structurally relaxed materials in the QMOF database. This is likely the data that you're looking for.
 
-2. `vasp_files.zip`: This contains the raw VASP input and output files for the structurally relaxed MOFs in the QMOF database. It contains additional properties that may be of interest to some users, such as density of states (DOS), detailed population analyses, and other typical outputs.
+2. `vasp_files.zip`: This contains the raw VASP input and output files for the structurally relaxed MOFs in the QMOF database. It contains additional properties that may be of interest to some users (e.g. total/projected density of states, detailed population analyses, other typical outputs).
 
-3. `soap_kernels.zip` and `cgcnn_encodings.zip`: These folders contain the SOAP similarity kernels and CGCNN encodings for the QMOF database structures, which can be used with the machine learning scripts described below.
+3. `soap_kernels.zip` and `cgcnn_encodings.zip`: These folders contain the SOAP similarity kernels and CGCNN encodings for the (unrelaxed) QMOF database structures, which can be used with the machine learning scripts described below.
 
 4. Charge densities associated with DFT-optimized structures can be found on an external Box server [here](https://northwestern.box.com/s/f3s930zx33di4y73gvosz9d0h5obtuoj).
 
@@ -40,21 +40,24 @@ Beyond the data that makes up the QMOF database, we host several supplementary r
 
 4. `example_dos`: This folder contains HSE06-D3(BJ) density of states (data and plotting scripts) for the highlighted structures in the [QMOF database paper](https://doi.org/10.26434/chemrxiv.13147616).
 
-5. `fidelity_tracker`: This folder tracks any additional structure fidelity issues not captured via the automated filtering scripts (user contributions are welcome). Please read [this document](fidelity_tracker/README.md) for details on how to contribute.
+5. `fidelity_tracker`: This folder tracks any additional structural fidelity issues not captured via the automated filtering scripts (user contributions are welcome). Please read [this document](fidelity_tracker/README.md) for details on how to contribute.
 
 ## Updates
-Updates to the QMOF database will be reflected on the corresponding [Figshare repository](https://doi.org/10.6084/m9.figshare.13147324), and a new version-specific DOI will be created. A description of all changes will be documented in [updates.md](updates.md).
+All updates to the QMOF database are made on the corresponding [Figshare repository](https://doi.org/10.6084/m9.figshare.13147324) with new version-specific DOIs. A description of all changes are documented in [updates.md](updates.md).
 
 ## Citing the QMOF Database
 If you use or wish to reference the QMOF database, please cite the following pre-print until the peer-reviewed publication is released:
 
 - [A.S. Rosen, S.M. Iyer, D. Ray, Z. Yao, A. Aspuru-Guzik, L. Gagliardi, J.M. Notestein, R.Q. Snurr. "Machine Learning the Quantum-Chemical Properties of Metal–Organic Frameworks for Accelerated Materials Discovery with a New Electronic Structure Database", *ChemRxiv* (2020). DOI: 10.26434/chemrxiv.13147616](https://doi.org/10.26434/chemrxiv.13147616).
 
-It is also best-practice to specify the version of the QMOF database you used in your work to ensure that your results can be accurately reproduced. This can be done by specifying the corresponding version number on the Figshare repository.
+It is also best-practice to specify the version of the QMOF database you used in your work to ensure that your results can be accurately reproduced. This can be done by specifying the corresponding version number on the Figshare repository and/or referencing the version-specific DOI of the Figshare repository that you use.
 
 If you use [PyMOFScreen](https://github.com/arosen93/mof_screen) in your own work, please cite the following reference:
 
 - [A.S. Rosen, J.M. Notestein, R.Q. Snurr. "Identifying Promising Metal–Organic Frameworks for Heterogeneous Catalysis via High‐Throughput Periodic Density Functional Theory", *J. Comput. Chem.*, **40**, *12*, 1305–1318 (2019)](https://onlinelibrary.wiley.com/doi/abs/10.1002/jcc.25787).
+
+## Licensing
+The QMOF database on Figshare is available under a [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/)/. This means you can copy it, share it, adapt it, and do whatever you like with it *provided* you give [appropriate credit](https://wiki.creativecommons.org/wiki/License_Versions#Detailed_attribution_comparison_chart) and [indicate any changes](https://wiki.creativecommons.org/wiki/License_Versions#Modifications_and_adaptations_must_be_marked_as_such).
 
 ## Contact
 If you have any questions, feel free to send me an email at rosen@u.northwestern.edu.
