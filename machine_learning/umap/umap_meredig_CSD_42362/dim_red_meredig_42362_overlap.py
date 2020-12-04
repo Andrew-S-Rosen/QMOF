@@ -9,7 +9,7 @@ from matplotlib.patches import Patch
 seed = 42  # random seed
 x = 'meredig_fingerprints_42362.csv' # X encodings of CSD-42362
 csd_13058 = os.path.join(
-    '..', 'CSD-13058-opt-bandgaps.csv') # .csv of CSD-13058 data
+	'..', 'CSD-13058-opt-bandgaps.csv') # .csv of CSD-13058 data
 
 #---------------------------------------
 # Encoding
@@ -20,7 +20,7 @@ df_csd_13058 = pd.read_csv(csd_13058, delimiter=',')
 csd_13058_refs = df_csd_13058['refcode'].values
 csd_13058_refs = [i.split('_')[0] for i in refcodes]
 csd_13058_class = [i for i, ref in enumerate(
-    refcodes) if ref in csd_13058_refs]
+	refcodes) if ref in csd_13058_refs]
 classifier = np.array(['CSD-42362']*len(refcodes))
 classifier[csd_13058_class] = 'CSD-13058'
 mask = np.zeros(len(refcodes),dtype=bool)
@@ -45,9 +45,9 @@ color_key = plt.get_cmap(color_key_cmap)(np.linspace(0, 1, np.unique(labels).sha
 unique_labels = np.unique(labels)
 num_labels = unique_labels.shape[0]
 legend_elements = [
-                Patch(facecolor=color_key[i], label=unique_labels[i])
-                for i, k in enumerate(unique_labels)
-            ]
+				Patch(facecolor=color_key[i], label=unique_labels[i])
+				for i, k in enumerate(unique_labels)
+			]
 new_color_key = {k: color_key[i] for i, k in enumerate(unique_labels)}
 colors = pd.Series(labels).map(new_color_key)
 ax.scatter(points[:, 0][~mask], points[:, 1][~mask], s=point_size, c=colors[~mask],alpha=0.5)

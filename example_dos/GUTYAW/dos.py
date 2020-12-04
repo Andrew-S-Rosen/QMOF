@@ -33,12 +33,12 @@ x = dos.energies
 spins = [1]
 spinlabels = [r'$\uparrow$', r'$\downarrow$']
 for i, spin in enumerate(spins):
-    y = dos.dos[:, i+1]*spin
-    if i == 0:
-    	label = 'Total'
-    else:
-    	label = None
-    ax[0].plot(x, y, '-', alpha=0.8, label=label, color=colors['total'])
+	y = dos.dos[:, i+1]*spin
+	if i == 0:
+		label = 'Total'
+	else:
+		label = None
+	ax[0].plot(x, y, '-', alpha=0.8, label=label, color=colors['total'])
 ax[0].axvline(x=0, color='k', linestyle='--', alpha=0.5)
 ax[0].axhline(y=0, color='k', linestyle='-')
 ax[0].legend(loc='upper left')
@@ -49,12 +49,12 @@ ax[0].yaxis.get_ticklocs(minor=True)
 ax[0].minorticks_on()
 pdos = VaspXML.dos_parametric(atoms=Sr, spin=[0])
 for i, spin in enumerate(spins):
-    y = pdos.dos[:, i+1]*spin
-    if i == 0:
-    	label = 'Sr'
-    else:
-    	label = None
-    ax[1].plot(x, y, '-', alpha=0.8, label=label, color=colors['M'])
+	y = pdos.dos[:, i+1]*spin
+	if i == 0:
+		label = 'Sr'
+	else:
+		label = None
+	ax[1].plot(x, y, '-', alpha=0.8, label=label, color=colors['M'])
 ax[1].axvline(x=0, color='k', linestyle='--', alpha=0.5)
 ax[1].axhline(y=0, color='k', linestyle='-')
 ax[1].legend(loc='upper left')
@@ -68,12 +68,12 @@ atom_names = ['C','H','O','S']
 for j, atom in enumerate(atoms):
 	pdos = VaspXML.dos_parametric(atoms=atom, spin=[0])
 	for i, spin in enumerate(spins):
-	    y = pdos.dos[:, i+1]*spin
-	    if i == 0:
-	    	label=atom_names[j]
-	    else:
-	    	label = None
-	    ax[2].plot(x, y, '-', alpha=0.8, label=label, color=colors[atom_names[j]])
+		y = pdos.dos[:, i+1]*spin
+		if i == 0:
+			label=atom_names[j]
+		else:
+			label = None
+		ax[2].plot(x, y, '-', alpha=0.8, label=label, color=colors[atom_names[j]])
 ax[2].axvline(x=0, color='k', linestyle='--', alpha=0.5)
 ax[2].axhline(y=0, color='k', linestyle='-')
 ax[2].legend(loc='upper left',ncol=2,columnspacing=1)

@@ -40,12 +40,12 @@ y_test_pred = krr.predict(K_test)
 
 # Save results
 df_train = pd.DataFrame(np.vstack((y_train,y_train_pred)).T, columns=[
-                        'DFT', 'ML'], index=refcodes_train)
+						'DFT', 'ML'], index=refcodes_train)
 df_train.index.name = 'MOF'
 df_train.to_csv('train_results.csv', header=True, index=True)
 
 df_test = pd.DataFrame(np.vstack((y_test,y_test_pred)).T, columns=[
-                       'DFT', 'ML'], index=refcodes_test)
+					   'DFT', 'ML'], index=refcodes_test)
 df_test.index.name = 'MOF'
 df_test.to_csv('test_results.csv', header=True, index=True)
 

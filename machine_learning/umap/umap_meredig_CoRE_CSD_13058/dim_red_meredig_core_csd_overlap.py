@@ -8,7 +8,7 @@ from matplotlib.patches import Patch
 
 seed = 42  # random seed
 x1 = os.path.join(
-    '..', '..', 'stoichiometric_120', 'CSD-13058', 'meredig_fingerprints_13058.csv') # path to X of dataset 1
+	'..', '..', 'stoichiometric_120', 'CSD-13058', 'meredig_fingerprints_13058.csv') # path to X of dataset 1
 x2 = 'meredig_fingerprints_core_fsr.csv' # path to X of dataset 2
 
 #---------------------------------------
@@ -48,9 +48,9 @@ color_key = plt.get_cmap(color_key_cmap)(np.linspace(0, 1, np.unique(labels).sha
 unique_labels = np.unique(labels)
 num_labels = unique_labels.shape[0]
 legend_elements = [
-                Patch(facecolor=color_key[i], label=unique_labels[i])
-                for i, k in enumerate(unique_labels)
-            ]
+				Patch(facecolor=color_key[i], label=unique_labels[i])
+				for i, k in enumerate(unique_labels)
+			]
 new_color_key = {k: color_key[i] for i, k in enumerate(unique_labels)}
 colors = pd.Series(labels).map(new_color_key)
 ax.scatter(points[:, 0][~mask], points[:, 1][~mask], s=point_size, c=colors[~mask],alpha=0.5)

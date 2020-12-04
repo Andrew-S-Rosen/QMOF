@@ -27,11 +27,11 @@ refcodes = df.index
 scaler = MinMaxScaler()
 scaler.fit(df.loc[:, (df.columns != 'BG_PBE')])
 df.loc[:, (df.columns != 'BG_PBE')] = scaler.transform(
-    df.loc[:, (df.columns != 'BG_PBE')])
+	df.loc[:, (df.columns != 'BG_PBE')])
 
 # Make a training and testing set
 train_set, test_set = train_test_split(
-    df, test_size=test_size, shuffle=True, random_state=seed)
+	df, test_size=test_size, shuffle=True, random_state=seed)
 X_train = train_set.loc[:, (df.columns != 'BG_PBE')]
 refcodes_train = X_train.index
 X_train = X_train.to_numpy()
@@ -50,18 +50,18 @@ y_test_pred = krr.predict(X_test)
 
 # Save results
 df_train = pd.DataFrame(np.concatenate((y_train, y_train_pred), axis=1), columns=[
-                        'DFT', 'ML'], index=refcodes_train)
+						'DFT', 'ML'], index=refcodes_train)
 df_train.to_csv('train_results.csv', header=True, index=True)
 
 df_test = pd.DataFrame(np.concatenate((y_test, y_test_pred), axis=1), columns=[
-                       'DFT', 'ML'], index=refcodes_test)
+					   'DFT', 'ML'], index=refcodes_test)
 df_test.to_csv('test_results.csv', header=True, index=True)
 
 print('Train size: ', len(y_train))
 print('Test size: ', len(y_test))
 print('Train/test MAE: ', mean_absolute_error(y_train, y_train_pred),
-      mean_absolute_error(y_test, y_test_pred))
+	  mean_absolute_error(y_test, y_test_pred))
 print('Train/test r^2: ', r2_score(y_train, y_train_pred),
-      r2_score(y_test, y_test_pred))
+	  r2_score(y_test, y_test_pred))
 print('Train/test rho: ', spearmanr(y_train, y_train_pred)
-      [0], spearmanr(y_test, y_test_pred)[0])
+	  [0], spearmanr(y_test, y_test_pred)[0])

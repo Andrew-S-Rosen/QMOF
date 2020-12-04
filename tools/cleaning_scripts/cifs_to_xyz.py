@@ -7,5 +7,5 @@ cifs.sort()
 
 mofs = []
 for cif in cifs:
-    mofs.append(read(os.path.join(cif_path, cif)))
+	mofs.append(read(os.path.join(cif_path, cif)))
 write('mofs.xyz', mofs)

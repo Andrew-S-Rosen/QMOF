@@ -9,7 +9,7 @@ seed = 42  # random seed
 xi = 2  # from SOAP hyperparameter optimization
 kernel_path = 'SP-avg_kernel_13058_13058.csv' # SOAP similarity kernel
 bandgaps_path = os.path.join(
-    '..', 'CSD-13058-opt-bandgaps.csv') # .csv of y properties
+	'..', 'CSD-13058-opt-bandgaps.csv') # .csv of y properties
 
 #---------------------------------------
 # Band gaps and refcodes
@@ -25,18 +25,18 @@ K[K>1] = 1.0 #avoid floating point issues
 # Discretize band gaps for colorbar
 bg_class = np.empty(len(bg), dtype=object)
 for i, b in enumerate(bg):
-    if b < 0.5:
-        bg_class[i] = '[0 eV, 0.5 eV)'
-    elif b < 1:
-        bg_class[i] = '[0.5 eV, 1 eV)'
-    elif b < 2:
-        bg_class[i] = '[1 eV, 2 eV)'
-    elif b < 3:
-        bg_class[i] = '[2 eV, 3 eV)'
-    elif b < 4:
-        bg_class[i] = '[3 eV, 4 eV)'
-    else:
-        bg_class[i] = '[4 eV, 6.5 eV)'
+	if b < 0.5:
+		bg_class[i] = '[0 eV, 0.5 eV)'
+	elif b < 1:
+		bg_class[i] = '[0.5 eV, 1 eV)'
+	elif b < 2:
+		bg_class[i] = '[1 eV, 2 eV)'
+	elif b < 3:
+		bg_class[i] = '[2 eV, 3 eV)'
+	elif b < 4:
+		bg_class[i] = '[3 eV, 4 eV)'
+	else:
+		bg_class[i] = '[4 eV, 6.5 eV)'
 bg_class = np.array(bg_class)
 
 # Generate distance matrix

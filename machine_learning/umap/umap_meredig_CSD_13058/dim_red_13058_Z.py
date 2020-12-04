@@ -8,7 +8,7 @@ import os
 
 seed = 42  # random seed
 x = os.path.join(
-    '..', '..', 'stoichiometric_120', 'CSD-13058', 'meredig_fingerprints.csv') # .csv of X encodings
+	'..', '..', 'stoichiometric_120', 'CSD-13058', 'meredig_fingerprints.csv') # .csv of X encodings
 
 # ---------------------------------------
 # Encoding
@@ -41,6 +41,6 @@ plt.savefig('umap_13058_Z.png', transparent=False)
 # Make interactive plot
 hover_data = pd.DataFrame({'Refcode': refcodes, 'maxZ': maxZ})
 p_int = umap.plot.interactive(
-    u, labels=maxZ, color_key_cmap='turbo', hover_data=hover_data, point_size=2)
+	u, labels=maxZ, color_key_cmap='turbo', hover_data=hover_data, point_size=2)
 output_file('umap_13058_Z.html')
 save(p_int)

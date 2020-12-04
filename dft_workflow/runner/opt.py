@@ -17,5 +17,5 @@ s = screener(basepath, mofpath, submit_script=submit_script, kppas=[100, 1000])
 
 # Run DFT calculations
 for cif_file in cif_files:
-    mof = s.run_screen(cif_file, 'volume', spin_levels=['high'], acc_levels=[
-                       'scf_test', 'isif2_lowacc', 'isif3_lowacc', 'isif3_highacc', 'final_spe'])
+	mof = s.run_screen(cif_file, 'volume', spin_levels=['high'], acc_levels=[
+					   'scf_test', 'isif2_lowacc', 'isif3_lowacc', 'isif3_highacc', 'final_spe'])
