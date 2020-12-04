@@ -3,7 +3,7 @@
 <img src=logo.png>
 
 ## Overview
-This GitHub repository is the landing page for the Quantum MOF (QMOF) database – a publicly available dataset of quantum-chemical properties derived from high-throughput periodic density functional theory calculations for 15,000+ metal–organic framework structures. The QMOF database is described in detail in DOI: [10.26434/chemrxiv.13147616](https://doi.org/10.26434/chemrxiv.13147616). All initial structures (with free solvent removed) were obtained from the [Cambridge Structural Database](https://www.ccdc.cam.ac.uk/solutions/csd-core/components/csd/) based on the list of materials identified as MOFs in the [CSD MOF subset](https://sites.google.com/view/csdmofsubset/home) and [CoRE MOF database](https://zenodo.org/record/3677685).
+This GitHub repository is the landing page for the Quantum MOF (QMOF) database – a publicly available dataset of quantum-chemical properties derived from high-throughput periodic density functional theory calculations for 14,000+ metal–organic frameworks. The QMOF database is described in detail in DOI: [10.26434/chemrxiv.13147616](https://doi.org/10.26434/chemrxiv.13147616). All initial structures (with free solvent removed) were obtained from the [Cambridge Structural Database](https://www.ccdc.cam.ac.uk/solutions/csd-core/components/csd/) based on the list of materials identified as MOFs in the [CSD MOF subset](https://sites.google.com/view/csdmofsubset/home) and [CoRE MOF database](https://zenodo.org/record/3677685).
 
 ## Purpose of this GitHub Page
 The data underlying the QMOF database is hosted on Figshare and linked in the "Accessing the QMOF Database" subsection below. Nonetheless, this GitHub page serves several purposes:
@@ -21,7 +21,7 @@ The most up-to-date version of the QMOF database can be accessed on Figshare: [*
 
 The individual files uploaded to Figshare are described in greater detail below.
 
-1. `qmof_database.zip`: This contains the structures and tabulated properties of all structurally relaxed materials in the QMOF database. This is likely the data that you're looking for. You'll probably be most interested in the CSD-15750-opt directory inside the `.zip` file, as this contains tabulated properties for 15,750 DFT-optimized structures.
+1. `qmof_database.zip`: This contains the structures and tabulated properties of all structurally relaxed materials in the QMOF database. This is likely the data that you're looking for. You'll probably be most interested in the `optimized_structures` directory inside the `.zip` file, as this contains tabulated properties for 15,750 DFT-optimized structures.
 
 2. `vasp_files.zip`: This contains the raw VASP input and output files for the structurally relaxed MOFs in the QMOF database. It contains additional properties that may be of interest to some users, such as density of states (DOS), detailed population analyses, and other typical outputs.
 
