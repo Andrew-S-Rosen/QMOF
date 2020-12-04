@@ -1,7 +1,6 @@
 from ase.io import read, write
 import os
 import subprocess
-from shutil import rmtree
 
 basepath = 'CSD-opt'
 cif_basepath = os.path.join(basepath, 'cifs')
