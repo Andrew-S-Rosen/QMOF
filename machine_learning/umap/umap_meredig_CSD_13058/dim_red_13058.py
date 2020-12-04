@@ -15,7 +15,7 @@ bandgaps_path = os.path.join(
 # ---------------------------------------
 # Band gaps and refcodes
 df = pd.read_csv(bandgaps_path, delimiter=',', header=0, index_col=0)
-bg = df['BG'].values
+bg = df['BG_PBE'].values
 
 # Encoding
 X = pd.read_csv(x, delimiter=',', header=0, index_col=0).dropna()
@@ -25,7 +25,7 @@ refcodes = X.index.values
 bg_class = np.empty(len(refcodes), dtype=object)
 bg = np.empty(len(refcodes))
 for i, ref in enumerate(refcodes):
-    b = df.loc[ref]['BG']
+    b = df.loc[ref]['BG_PBE']
     bg[i] = b
     if b < 0.5:
         bg_class[i] = '[0 eV, 0.5 eV)'

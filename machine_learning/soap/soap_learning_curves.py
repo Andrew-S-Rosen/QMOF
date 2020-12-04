@@ -20,7 +20,7 @@ refcodes_path = 'refcodes.csv' # path to refcoeds (length N)
 # Read in data
 K = pd.read_csv(kernel_path, header=None, delimiter=',').to_numpy()
 K = K**xi
-y = pd.read_csv(y_path, index_col=0)['BG'].values
+y = pd.read_csv(y_path, index_col=0)['BG_PBE'].values
 refcodes = np.genfromtxt(refcodes_path, delimiter=',', dtype=str)
 
 # Make a training and testing set

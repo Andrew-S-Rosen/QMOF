@@ -15,7 +15,7 @@ bandgaps_path = os.path.join(
 #---------------------------------------
 # Band gaps and refcodes
 df = pd.read_csv(bandgaps_path, delimiter=',')
-bg = df['BG'].values
+bg = df['BG_PBE'].values
 refcodes = df['refcode'].values
 refcodes = [i.split('_')[0] for i in refcodes]
 
