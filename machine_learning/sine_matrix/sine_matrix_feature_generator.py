@@ -7,13 +7,14 @@ import pandas as pd
 # Settings
 xyz_path = 'structures.xyz' # appended list of XYZs (length N)
 refcodes_path = 'refcodes.csv' # refcode for each structure (length N)
+max_atoms = np.inf # specify if you want an upper max on the # of atoms to consider
 
 #---------------------------------------
 # Read in structures
 ase_mofs = read(xyz_path, index=':')
 refcodes = np.genfromtxt(refcodes_path, delimiter=',', dtype=str)
 adaptor = pm_ase.AseAtomsAdaptor()
-pm_mofs = [adaptor.get_structure(ase_mof) for ase_mof in ase_mofs]
+pm_mofs = [adaptor.get_structure(ase_mof) for ase_mof in ase_mofs if len(ase_mof) <= max_atoms]
 
 # Initialize feature object
 featurizer = SineCoulombMatrix()
