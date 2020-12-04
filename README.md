@@ -12,7 +12,7 @@ The data underlying the QMOF database is hosted on Figshare and linked in the "A
 
 2. It allows for open, public discussions via the GitHub [Issues](https://github.com/arosen93/QMOF/issues) tab. While any issues can certainly be raised here, I also welcome comments, suggestions, or other forms of open dialogue in the Issues tracker.
 
-3. I will use the [Projects](https://github.com/arosen93/QMOF/projects) tab to share any planned updates to the database, once they are in a state to be publicly announced. Currently planned updates include 1000+ new porous structures, high-quality DOS, additional levels of theory, and more to be shared in the future!
+3. I will use the [Projects](https://github.com/arosen93/QMOF/projects) tab to share any planned updates to the database.
 
 4. If you have developed direct extensions, modifications, or subsets related to the QMOF database, I am more than happy to include a link to your work on this GitHub page so that all QMOF database resources can be linked to one another in a single place.
 
@@ -23,7 +23,7 @@ The individual files uploaded to Figshare are described in greater detail below.
 
 1. `qmof_database.zip`: This contains the structures and tabulated properties of all structurally relaxed materials in the QMOF database. This is likely the data that you're looking for. You'll probably be most interested in the CSD-15750-opt directory inside the `.zip` file, as this contains tabulated properties for 15,750 DFT-optimized structures.
 
-2. `vasp_files.zip`: This contains the VASP input and output files for the structurally relaxed MOFs in the QMOF database. Most users do not need this raw data, but it contains additional properties that may be of interest to some users, such as density of states (DOS), detailed population analyses, and other typical outputs. For the POTCAR selection, see Table S2 of the Supporting Information. If you require data for the intermediate stages of the workflow, please contact me directly.
+2. `vasp_files.zip`: This contains the raw VASP input and output files for the structurally relaxed MOFs in the QMOF database. It contains additional properties that may be of interest to some users, such as density of states (DOS), detailed population analyses, and other typical outputs.
 
 3. `soap_kernels.zip` and `cgcnn_encodings.zip`: These folders contain the SOAP similarity kernels and CGCNN encodings for the QMOF database structures, which can be used with the machine learning scripts described below.
 
