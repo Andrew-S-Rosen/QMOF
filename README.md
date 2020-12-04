@@ -3,7 +3,7 @@
 <img src=logo.png>
 
 ## Overview
-This GitHub repository is the landing page for the Quantum MOF (QMOF) database – a publicly available dataset of quantum-chemical properties for 14,000+ metal–organic framework structures. The QMOF database is described in detail in DOI: [10.26434/chemrxiv.13147616](https://doi.org/10.26434/chemrxiv.13147616).
+This GitHub repository is the landing page for the Quantum MOF (QMOF) database – a publicly available dataset of quantum-chemical properties derived from high-throughput periodic density functional theory calculations for 15,000+ metal–organic framework structures. The QMOF database is described in detail in DOI: [10.26434/chemrxiv.13147616](https://doi.org/10.26434/chemrxiv.13147616). All initial structures (with free solvent removed) were obtained from the [Cambridge Structural Database](https://www.ccdc.cam.ac.uk/solutions/csd-core/components/csd/) based on the list of materials identified as MOFs in the [CSD MOF subset](https://sites.google.com/view/csdmofsubset/home) and [CoRE MOF database](https://zenodo.org/record/3677685).
 
 ## Purpose of this GitHub Page
 The data underlying the QMOF database is hosted on Figshare and linked in the "Accessing the QMOF Database" subsection below. Nonetheless, this GitHub page serves several purposes:
@@ -21,9 +21,9 @@ The most up-to-date version of the QMOF database can be accessed on Figshare: [*
 
 The individual files uploaded to Figshare are described in greater detail below.
 
-1. `qmof_database.zip`: This contains the structures and tabulated properties of all materials in the QMOF database. This is likely the file you're looking for, and you'll probably be most interested in the CSD-14204-opt directory inside the `.zip` file.
+1. `qmof_database.zip`: This contains the structures and tabulated properties of all structurally relaxed materials in the QMOF database. This is likely the data that you're looking for. You'll probably be most interested in the CSD-15750-opt directory inside the `.zip` file, as this contains tabulated properties for 15,750 DFT-optimized structures.
 
-2. `vasp_files.zip`: This contains the VASP input and output files used in constructing the QMOF database. Most users do not need this raw data, but it is available if you wish to access it. For the POTCAR selection, see Table S2 of the Supporting Information. If you require data for the intermediate stages of the workflow, please email me directly.
+2. `vasp_files.zip`: This contains the VASP input and output files for the structurally relaxed MOFs in the QMOF database. Most users do not need this raw data, but it contains additional properties that may be of interest to some users, such as density of states (DOS), detailed population analyses, and other typical outputs. For the POTCAR selection, see Table S2 of the Supporting Information. If you require data for the intermediate stages of the workflow, please contact me directly.
 
 3. `soap_kernels.zip` and `cgcnn_encodings.zip`: These folders contain the SOAP similarity kernels and CGCNN encodings for the QMOF database structures, which can be used with the machine learning scripts described below.
 
@@ -36,21 +36,21 @@ Beyond the data that makes up the QMOF database, we host several supplementary r
 
 2. `dft_workflow`: This folder contains an example input file to run [PyMOFScreen](https://github.com/arosen93/mof_screen), which was used to orchestrate the high-throughput DFT calculations and construct the QMOF database. A copy of PyMOFScreen is also provided in the folder for convenience.
 
-3. `tools`: This folder contains miscellaneous Python scripts that you may find helpful, such as scripts that can help make a "DFT-ready" set of MOFs from a folder of CIFs.
+3. `tools`: This folder contains miscellaneous Python scripts that you may find helpful, such as scripts to filter out clearly erroneous MOF structures.
 
 4. `example_dos`: This folder contains HSE06-D3(BJ) density of states (data and plotting scripts) for the highlighted structures in the [QMOF database paper](https://doi.org/10.26434/chemrxiv.13147616).
 
-5. `fidelity_tracker`: This folder is primarily as a way to contribute changes to the QMOF database, such as flagging any structural fidelity issues not captured via the automated filtering scripts. Please read [this document](fidelity_tracker/README.md) for details and how to contribute.
+5. `fidelity_tracker`: This folder primarily serves as a way to contribute changes to the QMOF database, such as flagging any structural fidelity issues not captured via the automated filtering scripts. Please read [this document](fidelity_tracker/README.md) for details on how to contribute.
 
 ## Updates
-Several updates are planned for the QMOF database. Upon their release, the Figshare repository will be updated, and a new version-specific DOI will be created. All changes will be documented in [updates.md](updates.md).
+Updates to the QMOF database will be reflected on the corresponding [Figshare repository](https://doi.org/10.6084/m9.figshare.13147324), and a new version-specific DOI will be created. A description of all changes will be documented in [updates.md](updates.md).
 
 ## Citing the QMOF Database
-If you use or wish to reference the QMOF database, please cite the following paper:
+If you use or wish to reference the QMOF database, please cite the following pre-print until the peer-reviewed publication is released:
 
 - [A.S. Rosen, S.M. Iyer, D. Ray, Z. Yao, A. Aspuru-Guzik, L. Gagliardi, J.M. Notestein, R.Q. Snurr. "Machine Learning the Quantum-Chemical Properties of Metal–Organic Frameworks for Accelerated Materials Discovery with a New Electronic Structure Database", *ChemRxiv* (2020). DOI: 10.26434/chemrxiv.13147616](https://doi.org/10.26434/chemrxiv.13147616).
 
-It is also best practice to specify the version of the QMOF database you used in your work to ensure that your results can be accurately reproduced. This can be done by specifying the corresponding version number on the Figshare repository (currently, it is just v1).
+It is also best-practice to specify the version of the QMOF database you used in your work to ensure that your results can be accurately reproduced. This can be done by specifying the corresponding version number on the Figshare repository.
 
 If you use [PyMOFScreen](https://github.com/arosen93/mof_screen) in your own work, please cite the following reference:
 
@@ -58,7 +58,6 @@ If you use [PyMOFScreen](https://github.com/arosen93/mof_screen) in your own wor
 
 ## Contact
 If you have any questions, feel free to send me an email at rosen@u.northwestern.edu.
-
 
 ## Acknowledgments
 This work was supported by a fellowship award through the National Defense Science and Engineering Graduate (NDSEG) Fellowship Program, sponsored by the Air Force Research Laboratory (AFRL), the Office of Naval Research (ONR) and the Army Research Office (ARO).

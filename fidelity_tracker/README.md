@@ -1,5 +1,3 @@
-NOTE: This is a work in progress.
-
 # Overview
 As noted in the [QMOF database paper](https://doi.org/10.26434/chemrxiv.13147616), several automated filtering steps were carried out to remove clearly problematic stuctures before carrying out the DFT calculations. However, it is impractical to automatically detect all issues, especially those pertaining to limitations from the X-ray diffraction and crystal refinment process itself. This section of the GitHub repository attempts to address this, at least in part.
 
