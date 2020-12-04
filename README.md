@@ -40,7 +40,7 @@ Beyond the data that makes up the QMOF database, we host several supplementary r
 
 4. `example_dos`: This folder contains HSE06-D3(BJ) density of states (data and plotting scripts) for the highlighted structures in the [QMOF database paper](https://doi.org/10.26434/chemrxiv.13147616).
 
-5. `fidelity_tracker`: This folder primarily serves as a way to contribute changes to the QMOF database, such as flagging any structural fidelity issues not captured via the automated filtering scripts. Please read [this document](fidelity_tracker/README.md) for details on how to contribute.
+5. `fidelity_tracker`: This folder tracks any additional structure fidelity issues not captured via the automated filtering scripts (user contributions are welcome). Please read [this document](fidelity_tracker/README.md) for details on how to contribute.
 
 ## Updates
 Updates to the QMOF database will be reflected on the corresponding [Figshare repository](https://doi.org/10.6084/m9.figshare.13147324), and a new version-specific DOI will be created. A description of all changes will be documented in [updates.md](updates.md).
