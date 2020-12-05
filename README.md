@@ -17,10 +17,9 @@ The data underlying the QMOF database is hosted on Figshare and linked in the "A
 4. If you have developed direct extensions, modifications, or subsets related to the QMOF database, I am more than happy to include a link to your work on this GitHub page so that all QMOF database resources can be linked to one another in a single place.
 
 ## Accessing the QMOF Database
-All versions of the QMOF database can be accessed on Figshare:
-
+All versions of the QMOF database can be accessed on Figshare at the link below:
 <p align="center">
-  <a href="https://doi.org/10.6084/m9.figshare.13147324"><b>QMOF Database Download</b></a>
+  <a href="https://doi.org/10.6084/m9.figshare.13147324"><b>Access the QMOF Database</b></a>
 </p>
 
 The individual files uploaded to Figshare are described in greater detail below.
