@@ -22,7 +22,7 @@ All versions of the QMOF database can be accessed on Figshare at the link below:
   <a href="https://doi.org/10.6084/m9.figshare.13147324"><b>Access the QMOF Database</b></a>
 </p>
 
-The individual files uploaded to Figshare are described in greater detail below.
+The individual files uploaded to Figshare are as follows:
 
 1. `qmof_database.zip`: This contains the structures and tabulated properties of all structurally relaxed materials in the QMOF database. This is likely the data that you're looking for.
 
