@@ -28,22 +28,22 @@ The individual files uploaded to Figshare are as follows:
 
 2. `vasp_files.zip`: This contains the raw VASP input and output files for the structurally relaxed MOFs in the QMOF database. It contains additional properties that may be of interest to some users (e.g. total/projected density of states, detailed population analyses, other typical outputs).
 
-3. `soap_kernels.zip` and `cgcnn_encodings.zip`: These folders contain the SOAP similarity kernels and CGCNN encodings for the (unrelaxed) QMOF database structures, which can be used with the machine learning scripts described below.
+3. `soap_kernels.zip` and `cgcnn_encodings.zip`: These folders contain the SOAP similarity kernels and CGCNN encodings for the (unrelaxed) QMOF database structures, which can be used with the machine learning scripts described below. These are included solely for reproducibility purposes. You can independently generate your own SOAP kernels or CGCNN encodings using the scripts in the [`machine_learning`](machine_learning) folder.
 
 4. Charge densities associated with DFT-optimized structures can be found on an external Box server [here](https://northwestern.box.com/s/f3s930zx33di4y73gvosz9d0h5obtuoj).
 
 ## Additional Scripts and Tools
 Beyond the data that makes up the QMOF database, we host several supplementary resources directly in this GitHub repository that may be of interest:
 
-1. `machine_learning`: This folder contains scripts used to train the machine learning models and carry out the dimensionality reduction tasks in the corresponding [QMOF database paper](https://doi.org/10.26434/chemrxiv.13147616).
+1. [`machine_learning`](machine_learning): This folder contains scripts used to train the machine learning models and carry out the dimensionality reduction tasks in the corresponding [QMOF database paper](https://doi.org/10.26434/chemrxiv.13147616).
 
-2. `dft_workflow`: This folder contains an example input file to run [PyMOFScreen](https://github.com/arosen93/mof_screen), which was used to orchestrate the high-throughput DFT calculations and construct the QMOF database. A copy of PyMOFScreen is also provided in the folder for convenience.
+2. [`dft_workflow`](dft_workflow): This folder contains an example input file to run [PyMOFScreen](https://github.com/arosen93/mof_screen), which was used to orchestrate the high-throughput DFT calculations and construct the QMOF database. A copy of PyMOFScreen is also provided in the folder for convenience.
 
-3. `tools`: This folder contains miscellaneous Python scripts that you may find helpful, such as scripts to filter out clearly erroneous MOF structures.
+3. [`tools`](tools): This folder contains miscellaneous Python scripts that you may find helpful, such as scripts to filter out clearly erroneous MOF structures.
 
-4. `example_dos`: This folder contains HSE06-D3(BJ) density of states (data and plotting scripts) for the highlighted structures in the [QMOF database paper](https://doi.org/10.26434/chemrxiv.13147616).
+4. [`example_dos`](example_dos): This folder contains HSE06-D3(BJ) density of states (data and plotting scripts) for the highlighted structures in the [QMOF database paper](https://doi.org/10.26434/chemrxiv.13147616).
 
-5. `fidelity_tracker`: This folder tracks any additional structural fidelity issues not captured via the automated filtering scripts (user contributions are welcome). See [here](https://github.com/arosen93/QMOF/tree/main/fidelity_tracker/opt-cifs) for an up-to-date list of any refcodes with flagged structural errors. Please read [this document](fidelity_tracker/README.md) for details on how to contribute to the fidelity tracker.
+5. [`fidelity_tracker`](fidelity_tracker): This folder tracks any additional structural fidelity issues not captured via the automated filtering scripts (user contributions are welcome). See [here](https://github.com/arosen93/QMOF/blob/main/fidelity_tracker/issue_tracker.txt) for an up-to-date list of any refcodes with flagged structural errors. Please read [this document](fidelity_tracker/README.md) for details on how to contribute to the fidelity tracker.
 
 ## Updates
 All updates to the QMOF database are made on the corresponding [Figshare repository](https://doi.org/10.6084/m9.figshare.13147324) with new version-specific DOIs. All changes are documented in [updates.md](updates.md).
