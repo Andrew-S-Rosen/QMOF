@@ -17,7 +17,7 @@ The data underlying the QMOF database is hosted on Figshare and linked in the "A
 4. If you have developed direct extensions, modifications, or subsets related to the QMOF database, I am more than happy to include a link to your work on this GitHub page so that all QMOF database resources can be linked to one another in a single place.
 
 ## Accessing the QMOF Database
-The most up-to-date version of the QMOF database can be accessed on Figshare: [**QMOF Database Download**](https://doi.org/10.6084/m9.figshare.13147324).
+All versions of the QMOF database can be accessed on Figshare: [**QMOF Database Download**](https://doi.org/10.6084/m9.figshare.13147324).
 
 The individual files uploaded to Figshare are described in greater detail below.
 
@@ -57,7 +57,7 @@ If you use [PyMOFScreen](https://github.com/arosen93/mof_screen) in your own wor
 - [A.S. Rosen, J.M. Notestein, R.Q. Snurr. "Identifying Promising Metal–Organic Frameworks for Heterogeneous Catalysis via High‐Throughput Periodic Density Functional Theory", *J. Comput. Chem.*, **40**, *12*, 1305–1318 (2019)](https://onlinelibrary.wiley.com/doi/abs/10.1002/jcc.25787).
 
 ## Licensing
-The QMOF database on Figshare is available under a [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/)/. This means you can copy it, share it, adapt it, and do whatever you like with it *provided* you give [appropriate credit](https://wiki.creativecommons.org/wiki/License_Versions#Detailed_attribution_comparison_chart) and [indicate any changes](https://wiki.creativecommons.org/wiki/License_Versions#Modifications_and_adaptations_must_be_marked_as_such).
+The data underlying the QMOF database is made publicly available under a [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/)/. This means you can copy it, share it, adapt it, and do whatever you like with it provided that you give [appropriate credit](https://wiki.creativecommons.org/wiki/License_Versions#Detailed_attribution_comparison_chart) and [indicate any changes](https://wiki.creativecommons.org/wiki/License_Versions#Modifications_and_adaptations_must_be_marked_as_such).
 
 ## Contact
 If you have any questions, feel free to send me an email at rosen@u.northwestern.edu.
