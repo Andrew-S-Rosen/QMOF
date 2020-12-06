@@ -12,7 +12,7 @@ elif os.path.exists('opt-cifs.zip'):
 			refcode = os.path.basename(zipped_file)
 			issues.append(refcode)
 
-with open('issue_tracker.txt','a') as a:
+with open('issue_tracker.txt','w') as a:
 	for issue in issues:
 		if issue == issues[-1]:
 			a.write(issue.split('.cif')[0])
