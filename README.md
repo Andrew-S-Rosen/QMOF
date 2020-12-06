@@ -30,7 +30,7 @@ The individual files uploaded to Figshare are as follows:
 
 3. `soap_kernels.zip` and `cgcnn_encodings.zip`: These folders contain the SOAP similarity kernels and CGCNN encodings for the (unrelaxed) QMOF database structures, which can be used with the machine learning scripts described below. These are included solely for reproducibility purposes. You can independently generate your own SOAP kernels or CGCNN encodings using the scripts in the [`machine_learning`](machine_learning) folder.
 
-4. Charge densities associated with DFT-optimized structures can be found on an external Box server [here](https://northwestern.box.com/s/f3s930zx33di4y73gvosz9d0h5obtuoj).
+4. Charge densities associated with DFT-optimized structures can be found on an external Box server [here](https://northwestern.box.com/s/iv9ryoz8v8i2cgya8lyhw3tl7t0jbipy).
 
 ## Additional Scripts and Tools
 Beyond the data that makes up the QMOF database, we host several supplementary resources directly in this GitHub repository that may be of interest:
