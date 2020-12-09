@@ -10,7 +10,7 @@ The data underlying the QMOF database is hosted on Figshare and linked in the "A
 
 1. As detailed in the "Scripts and Tools" subsection below, this GitHub page includes supplementary files that can be used to carry out the machine learning analyses in the corresponding [QMOF database paper](https://doi.org/10.26434/chemrxiv.13147616).
 
-2. It allows for open, public discussions via the GitHub [Issues](https://github.com/arosen93/QMOF/issues) tab. While any issues can certainly be raised here, I also welcome comments, suggestions, or other forms of open dialogue in the Issues tracker.
+2. It allows for open, public discussions via the GitHub [Discussions](https://github.com/arosen93/QMOF/discussions) tab, where I welcome comments, suggestions, or other forms of open dialogue. Any issues can also be raised in the GitHub [Issues](https://github.com/arosen93/QMOF/issues) tracker.
 
 3. I will use the [Projects](https://github.com/arosen93/QMOF/projects) tab to share any planned updates to the database.
 
