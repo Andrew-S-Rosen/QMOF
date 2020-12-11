@@ -21,6 +21,3 @@ If you spot a material with an error related to its crystal structure and would 
 
 ## Modifying Structures
 Since the QMOF database pulls structures directly from the Cambridge Structural Database (CSD) and is not meant to serve as a structure repository, we are not in a position to manually or automatically update CIFs to correct for any potential upstream structural errors. For now, we will just flag any problematic entries for ease-of-reference.
-
-## Computed Properties
-We encourage you to independently supplement the QMOF database with your own data however you see fit. However, we currently do not have an infrastructure set up to systematically accept user contributions for additional VASP-computed properties. Please contact the authors if you wish to discuss options further.
