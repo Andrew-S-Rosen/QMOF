@@ -3,7 +3,9 @@
 <img src=logo.png>
 
 ## Overview
-This GitHub repository is the landing page for the Quantum MOF (QMOF) database – a publicly available dataset of quantum-chemical properties derived from high-throughput periodic density functional theory calculations for 14,000+ metal–organic frameworks. The QMOF database is described in detail in DOI: [10.26434/chemrxiv.13147616](https://doi.org/10.26434/chemrxiv.13147616). All initial structures (with free solvent removed) were obtained from the [Cambridge Structural Database](https://www.ccdc.cam.ac.uk/solutions/csd-core/components/csd/) based on the list of materials identified as MOFs in the [CSD MOF subset](https://sites.google.com/view/csdmofsubset/home) and [CoRE MOF database](https://zenodo.org/record/3677685). The actual data underlying the QMOF database is hoted on Figshare at DOI: [10.6084/m9.figshare.13147324](https://doi.org/10.6084/m9.figshare.13147324).
+This GitHub repository is the landing page for the Quantum MOF (QMOF) database – a publicly available dataset of quantum-chemical properties derived from high-throughput periodic density functional theory calculations carried out on metal–organic frameworks (MOFs). Currently, the QMOF database contains computed properties for 15,713 structures!
+
+The QMOF database is described in detail in DOI: [10.26434/chemrxiv.13147616](https://doi.org/10.26434/chemrxiv.13147616). All initial structures (with free solvent removed) were obtained from the [Cambridge Structural Database](https://www.ccdc.cam.ac.uk/solutions/csd-core/components/csd/) based on the list of materials identified as MOFs in the [CSD MOF subset](https://sites.google.com/view/csdmofsubset/home) and [CoRE MOF database](https://zenodo.org/record/3677685). The actual data underlying the QMOF database is hoted on Figshare at DOI: [10.6084/m9.figshare.13147324](https://doi.org/10.6084/m9.figshare.13147324).
 
 **Disclaimer**: Until the paper is officially published, please consider this database to be a work in progress. Minor changes should be expected.
 
