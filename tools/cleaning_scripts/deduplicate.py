@@ -22,7 +22,7 @@ for entry in entries:
 	mofs.append(mof_temp)
 
 #Initialize StructureMatcher
-sm = pm.analysis.structure_matcher.StructureMatcher(primitive_cell=False)
+sm = pm.analysis.structure_matcher.StructureMatcher(primitive_cell=True)
 
 #Group structures
 groups = sm.group_structures(mofs)

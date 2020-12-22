@@ -24,15 +24,15 @@ All versions of the QMOF database can be accessed on Figshare at the link below:
   <a href="https://doi.org/10.6084/m9.figshare.13147324"><b><i>Access the QMOF Database</i></b></a>
 </p>
 
-The individual files uploaded to Figshare are as follows:
+The files made publicly available with the QMOF database are described below:
 
-1. `qmof_database.zip`: This contains the structures and tabulated properties of all structurally relaxed materials in the QMOF database. This is likely the data that you're looking for.
+1. `qmof_database.zip`: This contains the structures and tabulated properties of all materials in the QMOF database. This is likely the data that you're looking for.
 
-2. `vasp_files.zip`: This contains the raw VASP input and output files for the structurally relaxed MOFs in the QMOF database. It contains additional properties that may be of interest to some users (e.g. total/projected density of states, detailed population analyses, other typical outputs).
+2. `vasp_files_A.zip`: This contains the raw VASP input and output files at the PBE-D3(BJ) level of theory for the structurally relaxed MOFs in the QMOF database. It contains additional properties that may be of interest to some users.
 
-3. `soap_kernels.zip` and `cgcnn_encodings.zip`: These folders contain the SOAP similarity kernels and CGCNN encodings for the (unrelaxed) QMOF database structures, which can be used with the machine learning scripts described below. These are included solely for reproducibility purposes. You can independently generate your own SOAP kernels or CGCNN encodings using the scripts in the [`machine_learning`](machine_learning) folder.
+3. `ml_reproducibility`: This contain the SOAP similarity kernels and CGCNN encodings for the (unrelaxed) QMOF database structures, which can be used with the machine learning scripts described below. This is included solely for reproducibility purposes.
 
-4. Charge densities associated with DFT-optimized structures can be found on an external Box server [here](https://northwestern.box.com/s/iv9ryoz8v8i2cgya8lyhw3tl7t0jbipy).
+4. Charge densities can be found on an external Box server [here](https://northwestern.box.com/s/f3s930zx33di4y73gvosz9d0h5obtuoj). If you wish to download them in bulk, please [contact me](mailto:rosen@u.northwestern.edu).
 
 ## Additional Scripts and Tools
 Beyond the data that makes up the QMOF database, we host several supplementary resources directly in this GitHub repository that may be of interest:
