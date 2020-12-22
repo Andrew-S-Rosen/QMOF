@@ -1,9 +1,7 @@
 This file documents all updates to the QMOF database on Figshare.
 
 # Current version
-[v3](https://figshare.com/articles/dataset/QMOF_Database/13147324)
-
-Total size: 15,713 structures (14,482 de-duplicated).
+[v3](https://figshare.com/articles/dataset/QMOF_Database/13147324). Total size: 15,713 structures (14,482 de-duplicated).
 
 # Changelog
 - [v3](https://figshare.com/articles/dataset/QMOF_Database/13147324/3): Added CM5 partial charges for every structure and 3000+ Bader charges (and spin densities). Patched some minor bugfixes with raw log files. Continued restructuring of main QMOF database for increased useability. 12/22/20.
