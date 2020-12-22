@@ -10,6 +10,6 @@ These tools can be used to clean up a set of CIFs obtained from the [MOF subset 
 
 `deduplicate.py`: This script will de-duplicate a list of CIFs by using Pymatgen's `StructureMatcher` utility. 
 
-`cifs_to_xyz.py`: This script converts a folder of CIFs to an ASE-formatted appended XYZ file.
+`cifs_to_xyz.py`: This script converts a folder of CIFs to an ASE-formatted appended XYZ file and refcodes `.csv` file.
 
 `xyz_to_cifs.py`: This script converts an ASE-formatted appended XYZ file to a folder of CIFs.
