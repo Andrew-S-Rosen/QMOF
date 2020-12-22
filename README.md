@@ -32,7 +32,7 @@ The files made publicly available with the QMOF database are described below:
 
 2. `vasp_files_A.zip`: This contains the raw VASP input and output files at the PBE-D3(BJ) level of theory for the structurally relaxed MOFs in the QMOF database. It contains additional properties that may be of interest to some users.
 
-3. `ml_reproducibility`: This contain the SOAP similarity kernels and CGCNN encodings for the (unrelaxed) QMOF database structures, which can be used with the machine learning scripts described below. This is included solely for reproducibility purposes.
+3. `ml_reproducibility.zip`: This contain the SOAP similarity kernels and CGCNN encodings for the (unrelaxed) QMOF database structures, which can be used with the machine learning scripts described below. This is included solely for reproducibility purposes.
 
 4. Charge densities can be found on an external Box server [here](https://northwestern.box.com/s/f3s930zx33di4y73gvosz9d0h5obtuoj). If you wish to download them in bulk, please [contact me](mailto:rosen@u.northwestern.edu).
 
