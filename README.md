@@ -9,17 +9,6 @@ The QMOF database is described in detail in DOI: [10.26434/chemrxiv.13147616](ht
 
 **Disclaimer**: Until the paper is officially published, please consider this database to be a work in progress. Minor changes should be expected.
 
-## Purpose of this GitHub Page
-The data underlying the QMOF database is hosted on Figshare and linked in the "Accessing the QMOF Database" subsection below. Nonetheless, this GitHub page serves several purposes:
-
-1. As detailed in the "Scripts and Tools" subsection below, this GitHub page includes supplementary files that can be used to carry out the machine learning analyses in the corresponding [QMOF database paper](https://doi.org/10.26434/chemrxiv.13147616).
-
-2. It allows for open, public discussions via the GitHub [Discussions](https://github.com/arosen93/QMOF/discussions) tab, where I welcome comments, suggestions, or other forms of open dialogue. Any issues can also be raised in the GitHub [Issues](https://github.com/arosen93/QMOF/issues) tracker.
-
-3. I will use the [Projects](https://github.com/arosen93/QMOF/projects) tab to share any planned updates to the database.
-
-4. If you have developed direct extensions, modifications, or subsets related to the QMOF database, I am more than happy to include a link to your work on this GitHub page so that all QMOF database resources can be linked to one another in a single place.
-
 ## Accessing the QMOF Database
 All versions of the QMOF database can be accessed on Figshare at the link below:
 <p align="center">
@@ -35,6 +24,17 @@ The files made publicly available with the QMOF database are described below:
 3. `chgcars_A.tar`: Charge densities at the PBE-D3(BJ) level of theory for the structurally relaxed MOFs in the QMOF database (to be uploaded shortly). Please contact me if it is not yet available but you would like this data.
 
 4. `ml_reproducibility.zip`: This contain the SOAP similarity kernels and CGCNN encodings for the (unrelaxed) QMOF database structures, which can be used with the machine learning scripts described below. This is included solely for reproducibility purposes.
+
+## Purpose of this GitHub Page
+The data underlying the QMOF database is hosted on Figshare and linked in the "Accessing the QMOF Database" subsection above. Nonetheless, this GitHub page serves several purposes:
+
+1. As detailed in the "Scripts and Tools" subsection below, this GitHub page includes supplementary files that can be used to carry out the machine learning analyses in the corresponding [QMOF database paper](https://doi.org/10.26434/chemrxiv.13147616).
+
+2. It allows for open, public discussions via the GitHub [Discussions](https://github.com/arosen93/QMOF/discussions) tab, where I welcome comments, suggestions, or other forms of open dialogue. Any issues can also be raised in the GitHub [Issues](https://github.com/arosen93/QMOF/issues) tracker.
+
+3. I will use the [Projects](https://github.com/arosen93/QMOF/projects) tab to share any planned updates to the database.
+
+4. If you have developed direct extensions, modifications, or subsets related to the QMOF database, I am more than happy to include a link to your work on this GitHub page so that all QMOF database resources can be linked to one another in a single place.
 
 ## Additional Scripts and Tools
 Beyond the data that makes up the QMOF database, we host several supplementary resources directly in this GitHub repository that may be of interest:
