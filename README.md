@@ -26,7 +26,7 @@ The files made publicly available with the QMOF database are described below:
 4. `ml_reproducibility.zip`: This contain the SOAP similarity kernels and CGCNN encodings for the (unrelaxed) QMOF database structures, which can be used with the machine learning scripts described below. This is included solely for reproducibility purposes.
 
 ## Purpose of this GitHub Page
-The data underlying the QMOF database is hosted on Figshare and linked in the "Accessing the QMOF Database" subsection above. Nonetheless, this GitHub page serves several purposes:
+The data underlying the QMOF database is hosted on Figshare and linked in the "Accessing the QMOF Database" subsection above. Nonetheless, this GitHub page serves several additional purposes:
 
 1. As detailed in the "Scripts and Tools" subsection below, this GitHub page includes supplementary files that can be used to carry out the machine learning analyses in the corresponding [QMOF database paper](https://doi.org/10.26434/chemrxiv.13147616).
 
