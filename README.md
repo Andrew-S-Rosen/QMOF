@@ -5,12 +5,12 @@
 ## Overview
 This GitHub repository is the landing page for the Quantum MOF (QMOF) database – a publicly available dataset of quantum-chemical properties for metal–organic frameworks (MOFs) derived from high-throughput periodic density functional theory calculations. Currently, the QMOF database contains computed properties for 15,713 structures!
 
-The QMOF database is described in detail in DOI: [10.26434/chemrxiv.13147616](https://doi.org/10.26434/chemrxiv.13147616). All initial structures (with free solvent removed) were obtained from the [Cambridge Structural Database](https://www.ccdc.cam.ac.uk/solutions/csd-core/components/csd/) based on the list of materials identified as MOFs in the [CSD MOF subset](https://sites.google.com/view/csdmofsubset/home) and [CoRE MOF database](https://zenodo.org/record/3677685). The actual data underlying the QMOF database is hoted on Figshare at DOI: [10.6084/m9.figshare.13147324](https://doi.org/10.6084/m9.figshare.13147324).
+The QMOF database is described in detail in DOI: [10.26434/chemrxiv.13147616](https://doi.org/10.26434/chemrxiv.13147616). All initial structures (with free solvent removed) were obtained from the [Cambridge Structural Database](https://www.ccdc.cam.ac.uk/solutions/csd-core/components/csd/) based on the list of materials identified as MOFs in the [CSD MOF subset](https://sites.google.com/view/csdmofsubset/home) and [CoRE MOF database](https://zenodo.org/record/3677685).
 
 **Disclaimer**: Until the paper is officially published, please consider this database to be a work in progress. Minor changes should be expected.
 
 ## Accessing the QMOF Database
-All versions of the QMOF database can be accessed on Figshare at the link below:
+All versions of the QMOF database can be accessed on Figshare at the following link:
 <p align="center">
   <a href="https://doi.org/10.6084/m9.figshare.13147324"><b><i>Access the QMOF Database</i></b></a>
 </p>
@@ -41,15 +41,15 @@ The data underlying the QMOF database is hosted on Figshare and linked in the "A
 ## Additional Scripts and Tools
 Beyond the data that makes up the QMOF database, we host several supplementary resources directly in this GitHub repository that may be of interest:
 
-1. [`machine_learning`](machine_learning): This folder contains scripts used to train the machine learning models and carry out the dimensionality reduction tasks in the corresponding [QMOF database paper](https://doi.org/10.26434/chemrxiv.13147616).
+1. [`machine_learning`](machine_learning): Scripts used to train the machine learning models and carry out the dimensionality reduction tasks in the corresponding [QMOF database paper](https://doi.org/10.26434/chemrxiv.13147616).
 
-2. [`dft_workflow`](dft_workflow): This folder contains an example input file to run [PyMOFScreen](https://github.com/arosen93/mof_screen), which was used to orchestrate the high-throughput DFT calculations and construct the QMOF database. A copy of PyMOFScreen is also provided in the folder for convenience.
+2. [`dft_workflow`](dft_workflow): An example input file to run [PyMOFScreen](https://github.com/arosen93/mof_screen), which was used to orchestrate the high-throughput DFT calculations and construct the QMOF database. A copy of PyMOFScreen is also provided in the folder for convenience.
 
-3. [`tools`](tools): This folder contains miscellaneous Python scripts that you may find helpful, such as scripts to filter out clearly erroneous MOF structures.
+3. [`tools`](tools): Miscellaneous Python scripts that you may find helpful, such as scripts to filter out clearly erroneous MOF structures.
 
-4. [`example_dos`](example_dos): This folder contains HSE06-D3(BJ) density of states (data and plotting scripts) for the highlighted structures in the [QMOF database paper](https://doi.org/10.26434/chemrxiv.13147616).
+4. [`example_dos`](example_dos): HSE06-D3(BJ) density of states (data and plotting scripts) for the highlighted structures in the [QMOF database paper](https://doi.org/10.26434/chemrxiv.13147616).
 
-5. [`fidelity_tracker`](fidelity_tracker): This folder tracks any additional structural fidelity issues not captured via the automated filtering scripts (user contributions are welcome). See [here](https://github.com/arosen93/QMOF/blob/main/fidelity_tracker/issue_tracker.txt) for an up-to-date list of any refcodes with flagged structural errors. Please read [this document](fidelity_tracker/README.md) for details on how to contribute to the fidelity tracker.
+5. [`fidelity_tracker`](fidelity_tracker): This folder is used to track any additional structural fidelity issues not captured via the automated filtering scripts (user contributions are welcome). See [here](https://github.com/arosen93/QMOF/blob/main/fidelity_tracker/issue_tracker.txt) for an up-to-date list of any refcodes with flagged structural errors. Please read [this document](fidelity_tracker/README.md) for details on how to contribute to the fidelity tracker.
 
 ## Updates
 All updates to the QMOF database are made on the corresponding [Figshare repository](https://doi.org/10.6084/m9.figshare.13147324) with new version-specific DOIs. All changes are documented in [updates.md](updates.md).
