@@ -17,15 +17,15 @@ All versions of the QMOF database can be accessed on Figshare at the link below:
 
 The files made publicly available with the QMOF database are described below:
 
-1. `qmof_database.zip`: This contains the structures and tabulated properties of all materials in the QMOF database. This is likely the data that you're looking for.
+1. `qmof_database.zip`: Structures and tabulated properties of all materials in the QMOF database. This is likely the data that you're looking for.
 
-2. `vasp_files_A.zip`: This contains the raw VASP input and output files at the PBE-D3(BJ) level of theory for the structurally relaxed MOFs in the QMOF database. It contains additional properties that may be of interest to some users.
+2. `vasp_files_A.zip`: Raw VASP input and output files at the PBE-D3(BJ) level of theory for the structurally relaxed MOFs in the QMOF database. It contains additional properties that may be of interest to some users.
 
 Additional files are made available on a [Box server](https://northwestern.box.com/s/uasi8jpov51icueu3s3wvcftkgjcwil7), as described below:
 
 3. `charge_densities`: Charge densities for the MOFs in the QMOF database. If you'd like to download all the charge densities, please contact me directly since Box currently has a 15 GB limit on downloads.
 
-4. `ml_reproducibility`: This contain the SOAP similarity kernels and CGCNN encodings for the (unrelaxed) QMOF database structures, which can be used with the machine learning scripts described below. This is included solely for reproducibility purposes.
+4. `ml_reproducibility`: SOAP similarity kernels and CGCNN encodings for the (unrelaxed) QMOF database structures, which can be used with the machine learning scripts described below. This is included solely for reproducibility purposes.
 
 ## Purpose of this GitHub Page
 The data underlying the QMOF database is hosted on Figshare and linked in the "Accessing the QMOF Database" subsection above. Nonetheless, this GitHub page serves several additional purposes:
