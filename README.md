@@ -7,8 +7,6 @@ This GitHub repository is the landing page for the Quantum MOF (QMOF) database â
 
 The QMOF database is described in detail in DOI: [10.26434/chemrxiv.13147616](https://doi.org/10.26434/chemrxiv.13147616). All initial structures (with free solvent removed) were obtained from the [Cambridge Structural Database](https://www.ccdc.cam.ac.uk/solutions/csd-core/components/csd/) based on the list of materials identified as MOFs in the [CSD MOF subset](https://sites.google.com/view/csdmofsubset/home) and [CoRE MOF database](https://zenodo.org/record/3677685).
 
-**Disclaimer**: Until the paper is officially published, please consider this database to be a work in progress. Minor changes should be expected.
-
 ## Accessing the QMOF Database
 All versions of the QMOF database can be accessed on Figshare at the following link:
 <p align="center">
