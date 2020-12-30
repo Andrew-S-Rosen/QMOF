@@ -5,8 +5,7 @@ import os
 from scipy.stats.mstats import gmean
 
 tabulated_data_path = 'tabulated_data'
-xyz_path = os.path.join(
-	'..', '..', 'structures_and_band_gaps', 'CSD-13058-SP.xyz')
+xyz_path = 'geometries.xyz'
 refcodes_path = 'refcodes.csv'
 
 def get_stats(atomic_nums, tabulated_data):

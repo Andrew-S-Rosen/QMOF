@@ -12,9 +12,9 @@ gamma = 0.1
 kernel = 'laplacian'  # kernel function
 test_size = 0.2  # fraction held-out for testing
 seeds = [42, 125, 267, 541, 582]  # random seeds
-data_sizes = [2**10, 2**11, 2**12, 2**13, 13065]  # data sizes
+data_sizes = [2**10, 2**11, 2**12, 2**13, 14482]  # data sizes
 fingerprint_path = 'meredig_fingerprints.csv' # fingerprints (length N)
-y_path = 'bandgaps.csv' # band gaps (length N)
+y_path = 'opt-bandgaps.csv' # band gaps (length N)
 
 #---------------------------------------
 #Read in data

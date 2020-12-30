@@ -4,7 +4,7 @@
 
 `sine_matrix_learning_curves.py`: Same as `sine_matrix_krr.py` but loops over increasing training set sizes.
 
-Pre-computed results in the `CSD-13058` folder:
-- `sine_matrix_fingerprints_13058.csv`: sine Coulomb matrix eigenspectrum for the CSD-13058-SP dataset.
-- `train_results_13058.csv`: Training set statistics for predicting DFT-optimized band gaps from CSD-13058-SP.
-- `test_results_13058.csv`: Testing set statistics for predicting DFT-optimized band gaps from CSD-13058-SP.
+Pre-computed results in the `QMOF-14482` folder:
+- `sine_matrix_fingerprints.csv.gz`: sine Coulomb matrix eigenspectrum for the QMOF-14482-SP dataset. Unpack with `gunzip`.
+- `train_results.csv`: Training set statistics for predicting DFT-optimized band gaps from QMOF-14482-SP.
+- `test_results.csv`: Testing set statistics for predicting DFT-optimized band gaps from QMOF-14482-SP.

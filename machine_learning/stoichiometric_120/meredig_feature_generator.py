@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 
 # Settings
-xyz_path = 'structures.xyz' # list of appended XYZs (length N)
+xyz_path = 'geometries.xyz' # list of appended XYZs (length N)
 refcodes_path = 'refcodes.csv' # list of refcodes (length N)
 
 #---------------------------------------

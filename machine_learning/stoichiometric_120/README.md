@@ -4,7 +4,7 @@
 
 `meredig_learning_curves.py`: Same as `meredig_krr.py` but loops over increasing training set sizes.
 
-Pre-computed results in the `CSD-13058` folder:
-- `meredig_fingerprints_13058.csv`: Stoichiometric-120 encodings for the CSD-13058-SP dataset.
-- `train_results_13058.csv`: Training set statistics for predicting DFT-optimized band gaps from CSD-13058-SP.
-- `test_results_13058.csv`: Testing set statistics for predicting DFT-optimized band gaps from CSD-13058-SP.
+Pre-computed results in the `QMOF-14482` folder:
+- `meredig_fingerprints_14482.csv`: Stoichiometric-120 encodings for the QMOF-14482-SP dataset.
+- `train_results_14482.csv`: Training set statistics for predicting DFT-optimized band gaps from QMOF-14482-SP.
+- `test_results_14482.csv`: Testing set statistics for predicting DFT-optimized band gaps from QMOF-14482-SP.

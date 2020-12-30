@@ -8,7 +8,7 @@ import os
 basepath = os.getcwd()  # base path where avg SOAP matrices will be stored
 soap_params = {'rcut': 4.0, 'sigma': 0.1, 'nmax': 9, 'lmax': 9,
 			   'rbf': 'gto', 'average': 'off', 'crossover': True}
-xyz_path = 'structures.xyz' # appended XYZ of structures (length N)
+xyz_path = 'geometries.xyz' # appended XYZ of structures (length N)
 refcodes_path = 'refcodes.csv' # refcode for each structure (length N)
 
 #---------------------------------------

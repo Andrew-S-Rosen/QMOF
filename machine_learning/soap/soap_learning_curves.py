@@ -11,9 +11,9 @@ alpha = 1E-3
 gamma = 0.1
 test_size = 0.2  # fraction held-out for testing
 seeds = [42, 125, 267, 541, 582]  # random seeds
-data_sizes = [2**10, 2**11, 2**12, 2**13, 13065]  # data sizes
+data_sizes = [2**10, 2**11, 2**12, 2**13, 14482]  # data sizes
 kernel_path = 'kernel.csv' # path to NxN kernel
-y_path = 'bandgaps.csv'  # path to band gaps (length N)
+y_path = 'opt-bandgaps.csv'  # path to band gaps (length N)
 refcodes_path = 'refcodes.csv' # path to refcoeds (length N)
 
 #---------------------------------------
