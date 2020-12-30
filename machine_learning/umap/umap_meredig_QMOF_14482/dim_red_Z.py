@@ -8,7 +8,7 @@ import os
 
 seed = 42  # random seed
 x = os.path.join(
-	'..', '..', 'stoichiometric_120', 'CSD-14482', 'meredig_fingerprints.csv') # .csv of X encodings
+	'..', '..', 'stoichiometric_120', 'QMOF-14482', 'meredig_fingerprints.csv') # .csv of X encodings
 
 # ---------------------------------------
 # Encoding
@@ -36,7 +36,7 @@ cb = plt.colorbar(sc, aspect=25)
 cb.ax.minorticks_on()
 cb.set_ticks([0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100])
 cb.ax.tick_params(labelsize=14)
-plt.savefig('umap_13058_Z.png', transparent=False)
+plt.savefig('umap_Z.png', transparent=False)
 
 # Make interactive plot
 hover_data = pd.DataFrame({'Refcode': refcodes, 'maxZ': maxZ})

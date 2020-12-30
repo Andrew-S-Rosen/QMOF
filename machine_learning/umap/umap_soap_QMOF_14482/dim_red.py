@@ -52,7 +52,7 @@ plt.rcParams["figure.dpi"] = 1000
 p = umap.plot.points(u, labels=bg_class, color_key_cmap='Spectral',
 					 width=8500, height=8500)
 p.texts[0].set_visible(False)
-plt.savefig('umap_14482.png',transparent=False)
+plt.savefig('umap.png',transparent=False)
 
 # Make interactive plot
 hover_data = pd.DataFrame({'Refcode': refcodes, 'E_g': bg})

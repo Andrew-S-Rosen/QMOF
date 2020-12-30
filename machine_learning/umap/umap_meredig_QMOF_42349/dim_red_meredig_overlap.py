@@ -54,4 +54,4 @@ ax.scatter(points[:, 0][mask], points[:, 1][mask], s=point_size, c=colors[mask],
 ax.legend(handles=legend_elements)
 ax.axes.xaxis.set_visible(False)
 ax.axes.yaxis.set_visible(False)
-plt.savefig('umap_meredig.png', transparent=False)
+plt.savefig('umap.png', transparent=False)
