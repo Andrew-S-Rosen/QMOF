@@ -14,7 +14,7 @@ x = os.path.join(
 # Encoding
 X = pd.read_csv(x, delimiter=',', header=0, index_col=0).dropna()
 refcodes = X.index.values
-maxZ = X['range Number']+1
+maxZ = X['range Number'].values+1
 
 # Perform dimensionality reduction
 fit = umap.UMAP(n_neighbors=50, min_dist=0.4, random_state=seed)
