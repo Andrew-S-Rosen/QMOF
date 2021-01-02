@@ -7,4 +7,4 @@ Pre-requisite installation instructions: `pip install umap` and `pip install uma
 - `umap_meredig_QMOF_42349`: UMAP (w/ Stoichiometric-120 encodings) of QMOF-42362 with QMOF-14482-SP overlaid
 - `umap_meredig_CoRE_QMOF_14482`: UMAP (w/ stoichiometric-120 encodings) of CoRE 2019 overlaid on the QMOF-14482-SP dataset 
 
-To view the interactive HTML files, simply download the file to your computer and open it in a web browesr of your choice. Alternatively, you can paste the URL to the HTML file in a service like [raw.githack.com](https://raw.githack.com/).
+To view the interactive HTML files, simply download the file to your computer and open it in a web browser of your choice.
