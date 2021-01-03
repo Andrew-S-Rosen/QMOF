@@ -1,1 +1,0 @@
-If you don't wish to download the interactive HTML file to your computer, you can view it here: [umap.html](https://rawcdn.githack.com/arosen93/QMOF/e456dc1a9cd49e447ec66feab91a80c350a3c21f/machine_learning/umap/umap_soap_QMOF_14482/umap.html).
