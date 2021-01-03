@@ -11,7 +11,7 @@ alpha = 1E-3
 gamma = 0.1
 test_size = 0.2  # fraction held-out for testing
 seeds = [42, 125, 267, 541, 582]  # random seeds
-data_sizes = [2**10, 2**11, 2**12, 2**13, 14482]  # data sizes
+train_sizes = [2**7, 2**8, 2**9, 2**10, 2**11, 2**12, 2**13, -1]  # train sizes
 kernel_path = 'kernel.csv' # path to NxN kernel
 y_path = 'opt-bandgaps.csv'  # path to band gaps (length N)
 refcodes_path = 'refcodes.csv' # path to refcoeds (length N)
@@ -23,22 +23,23 @@ K = K**xi
 y = pd.read_csv(y_path, index_col=0)['BG_PBE'].values
 refcodes = np.genfromtxt(refcodes_path, delimiter=',', dtype=str)
 
-# Make a training and testing set
 mae = []
 r2 = []
 rho = []
 mae_std = []
 r2_std = []
 rho_std = []
-for data_size in data_sizes:
+for train_size in train_sizes:
 	mae_test_seeds = []
 	r2_test_seeds = []
 	rho_test_seeds = []
 	for seed in seeds:
+
+		# Make a training and testing set
 		splitter = ShuffleSplit(n_splits=1, test_size=test_size, random_state=seed)
 		train_indices, test_indices = next(splitter.split(y))
-		train_indices = train_indices[0:int(round(data_size*0.8))]
-		test_indices = test_indices[0:data_size-int(round(data_size*0.8))]
+		if train_size != -1:
+			train_indices = train_indices[0:train_size]
 		y_train = y[train_indices]
 		y_test = y[test_indices]
 		K_train = K[train_indices, :][:, train_indices]
@@ -63,7 +64,7 @@ for data_size in data_sizes:
 	r2_std.append(np.std(r2_test_seeds))
 	rho_std.append(np.std(rho_test_seeds))
 
-	print('Data size: ', data_size)
+	print('Training size: ', train_size)
 	print('Avg. testing MAE: ', np.round(np.average(mae_test_seeds), 3))
 	print('Avg. testing r^2: ', np.round(np.average(r2_test_seeds), 3))
 	print('Avg. testing rho: ', np.round(np.average(rho_test_seeds), 3))
