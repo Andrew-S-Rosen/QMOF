@@ -7,7 +7,7 @@ from scipy.stats import spearmanr
 import numpy as np
 
 # Settings
-alpha = 0.1
+alpha = 0.01
 gamma = 0.1
 kernel = 'laplacian'  # kernel function
 test_size = 0.2  # fraction held-out for testing
