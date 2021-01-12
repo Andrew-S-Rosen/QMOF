@@ -1,7 +1,7 @@
 This file documents all updates to the QMOF database on Figshare.
 
 # Current version
-[v4](https://figshare.com/articles/dataset/QMOF_Database/13147324). Total size: 15,713 structures (14,482 de-duplicated).
+[v4](https://dx.doi.org/10.6084/m9.figshare.13147324). Total size: 15,713 structures (14,482 de-duplicated).
 
 # Changelog
 - [v4](https://figshare.com/articles/dataset/QMOF_Database/13147324/4): Release corresponding to the published paper. No changes to the database itself compared to v3. Includes a few minor typo fixes and better .xlsx reader.
