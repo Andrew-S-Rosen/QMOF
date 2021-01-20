@@ -28,7 +28,7 @@ Additional files are made available on a [Box server](https://northwestern.box.c
 ## Purpose of this GitHub Page
 The data underlying the QMOF database is hosted on Figshare and linked in the "Accessing the QMOF Database" subsection above. Nonetheless, this GitHub page serves several additional purposes:
 
-1. As detailed in the "Scripts and Tools" subsection below, this GitHub page includes supplementary files that can be used to carry out the machine learning analyses in the corresponding [QMOF database paper](https://doi.org/10.26434/chemrxiv.13147616).
+1. As detailed in the "Additional Scripts and Tools" subsection below, this GitHub page includes supplementary files that can be used to carry out the machine learning analyses in the corresponding [QMOF database paper](https://doi.org/10.26434/chemrxiv.13147616).
 
 2. It allows for open, public discussions via the GitHub [Discussions](https://github.com/arosen93/QMOF/discussions) tab, where I welcome comments, suggestions, or other forms of open dialogue. Any issues can also be raised in the GitHub [Issues](https://github.com/arosen93/QMOF/issues) tracker.
 
