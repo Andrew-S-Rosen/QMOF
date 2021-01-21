@@ -57,7 +57,7 @@ If you use or wish to reference the QMOF database, please cite the following pre
 
 - [A.S. Rosen, S.M. Iyer, D. Ray, Z. Yao, A. Aspuru-Guzik, L. Gagliardi, J.M. Notestein, R.Q. Snurr. "Machine Learning the Quantum-Chemical Properties of Metal–Organic Frameworks for Accelerated Materials Discovery with a New Electronic Structure Database", *ChemRxiv* (2020). DOI: 10.26434/chemrxiv.13147616](https://doi.org/10.26434/chemrxiv.13147616).
 
-It is also best-practice to specify the version of the QMOF database you used in your work to ensure that your results can be accurately reproduced. This can be done by specifying the corresponding version number on the Figshare repository and/or referencing the version-specific DOI of the Figshare repository that you use.
+It is also best-practice to *specify the version of the QMOF database* you used in your work to ensure that your results can be accurately reproduced. This can be done by specifying the corresponding version number on the Figshare repository and/or referencing the version-specific DOI of the Figshare repository that you use.
 
 ## Licensing
 The data underlying the QMOF database is made publicly available under a [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/). This means you can copy it, share it, adapt it, and do whatever you like with it provided that you give [appropriate credit](https://wiki.creativecommons.org/wiki/License_Versions#Detailed_attribution_comparison_chart) and [indicate any changes](https://wiki.creativecommons.org/wiki/License_Versions#Modifications_and_adaptations_must_be_marked_as_such).
