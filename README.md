@@ -9,7 +9,7 @@ If you use or wish to cite the QMOF database, please refer to the following publ
 
 - A.S. Rosen, S.M. Iyer, D. Ray, Z. Yao, A. Aspuru-Guzik, L. Gagliardi, J.M. Notestein, R.Q. Snurr. "Machine Learning the Quantum-Chemical Properties of Metal–Organic Frameworks for Accelerated Materials Discovery", *Matter* (in press). Pre-print available at [DOI: 10.26434/chemrxiv.13147616](https://doi.org/10.26434/chemrxiv.13147616).
 
-It is also best-practice to specify the version of the QMOF database you used in your work to ensure that your results can be accurately reproduced.
+If you are having trouble accessing the publication, you can obtain a copy from my personal website [here](https://asrosen.com/paper-access-form/).
 
 ## Accessing the QMOF Database
 All versions of the QMOF database can be accessed on Figshare at the following link:
@@ -55,7 +55,7 @@ Beyond the data that makes up the QMOF database, we host several supplementary r
 See [here](https://github.com/arosen93/QMOF/blob/main/fidelity_tracker) for an up-to-date list of any refcodes with flagged structural fidelity issues not captured via the automated filtering steps. User contributions are highly encouraged!
 
 ## Updates
-All updates to the QMOF database are made on the corresponding [Figshare repository](https://doi.org/10.6084/m9.figshare.13147324) with new version-specific DOIs. All changes are documented in [updates.md](updates.md).
+All updates to the QMOF database are made on the corresponding [Figshare repository](https://doi.org/10.6084/m9.figshare.13147324) with new version-specific DOIs. All changes are documented in [updates.md](updates.md). It is always best-practice to specify the version of the QMOF database you used in your work to ensure that your results can be accurately reproduced.
 
 ## Licensing
 The data underlying the QMOF database is made publicly available under a [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/). This means you can copy it, share it, adapt it, and do whatever you like with it provided that you give [appropriate credit](https://wiki.creativecommons.org/wiki/License_Versions#Detailed_attribution_comparison_chart) and [indicate any changes](https://wiki.creativecommons.org/wiki/License_Versions#Modifications_and_adaptations_must_be_marked_as_such).
