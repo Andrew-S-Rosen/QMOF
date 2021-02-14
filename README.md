@@ -5,7 +5,11 @@
 ## Overview
 This GitHub repository is the landing page for the Quantum MOF (QMOF) database – a publicly available dataset of quantum-chemical properties for metal–organic frameworks (MOFs) derived from high-throughput periodic density functional theory calculations. Currently, the QMOF database contains computed properties for 15,713 structures!
 
-The QMOF database is described in detail in DOI: [10.26434/chemrxiv.13147616](https://doi.org/10.26434/chemrxiv.13147616). All initial structures (with free solvent removed) were obtained from the [Cambridge Structural Database](https://www.ccdc.cam.ac.uk/solutions/csd-core/components/csd/) based on the list of materials identified as MOFs in the [CSD MOF subset](https://sites.google.com/view/csdmofsubset/home) and [CoRE MOF database](https://zenodo.org/record/3677685).
+If you use or wish to cite the QMOF database, please refer the following pre-print until the peer-reviewed publication is released:
+
+- [A.S. Rosen, S.M. Iyer, D. Ray, Z. Yao, A. Aspuru-Guzik, L. Gagliardi, J.M. Notestein, R.Q. Snurr. "Machine Learning the Quantum-Chemical Properties of Metal–Organic Frameworks for Accelerated Materials Discovery with a New Electronic Structure Database", *ChemRxiv* (2020). DOI: 10.26434/chemrxiv.13147616](https://doi.org/10.26434/chemrxiv.13147616).
+
+It is also best-practice to specify the version of the QMOF database you used in your work to ensure that your results can be accurately reproduced.
 
 ## Accessing the QMOF Database
 All versions of the QMOF database can be accessed on Figshare at the following link:
@@ -52,13 +56,6 @@ See [here](https://github.com/arosen93/QMOF/blob/main/fidelity_tracker) for an u
 
 ## Updates
 All updates to the QMOF database are made on the corresponding [Figshare repository](https://doi.org/10.6084/m9.figshare.13147324) with new version-specific DOIs. All changes are documented in [updates.md](updates.md).
-
-## Citing the QMOF Database
-If you use or wish to reference the QMOF database, please cite the following pre-print until the peer-reviewed publication is released:
-
-- [A.S. Rosen, S.M. Iyer, D. Ray, Z. Yao, A. Aspuru-Guzik, L. Gagliardi, J.M. Notestein, R.Q. Snurr. "Machine Learning the Quantum-Chemical Properties of Metal–Organic Frameworks for Accelerated Materials Discovery with a New Electronic Structure Database", *ChemRxiv* (2020). DOI: 10.26434/chemrxiv.13147616](https://doi.org/10.26434/chemrxiv.13147616).
-
-It is also best-practice to *specify the version of the QMOF database* you used in your work to ensure that your results can be accurately reproduced. This can be done by specifying the corresponding version number on the Figshare repository and/or referencing the version-specific DOI of the Figshare repository that you use.
 
 ## Licensing
 The data underlying the QMOF database is made publicly available under a [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/). This means you can copy it, share it, adapt it, and do whatever you like with it provided that you give [appropriate credit](https://wiki.creativecommons.org/wiki/License_Versions#Detailed_attribution_comparison_chart) and [indicate any changes](https://wiki.creativecommons.org/wiki/License_Versions#Modifications_and_adaptations_must_be_marked_as_such).
