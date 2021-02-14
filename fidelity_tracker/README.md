@@ -7,7 +7,7 @@ Please refer to the [`issue_tracker.txt`](https://github.com/arosen93/QMOF/blob/
 If you spot a material with an error related to its crystal structure and would like to contribute, please do the following:
 
 1. [Fork the repository](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo).
-2. Update the [`issue_tracker.txt`](https://github.com/arosen93/QMOF/blob/main/fidelity_tracker/issue_tracker.txt), listing the ID of the structure (including `_FSR`) and the reason for removal.
+2. Update the [`issue_tracker.txt`](https://github.com/arosen93/QMOF/blob/main/fidelity_tracker/issue_tracker.txt), listing the CSD Refcode of the structure and the reason for removal.
 3. [Commit the change](https://docs.github.com/en/free-pro-team@latest/desktop/contributing-and-collaborating-using-github-desktop/committing-and-reviewing-changes-to-your-project).
 4. [Push the change](https://docs.github.com/en/free-pro-team@latest/desktop/contributing-and-collaborating-using-github-desktop/pushing-changes-to-github).
 5. [Create a pull request](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) describing your changes.
