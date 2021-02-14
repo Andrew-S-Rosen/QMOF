@@ -14,7 +14,7 @@ for entry in entries:
 	if '.cif' not in entry:
 		continue
 	
-	#read CIF (assumes that they have already been Niggli-reduced)
+	#read CIF
 	mof_temp = pm.Structure.from_file(os.path.join(folder,entry),primitive=False)
 
 	#tag Pymatgen structure with its name
