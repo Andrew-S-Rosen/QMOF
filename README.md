@@ -7,7 +7,7 @@ This GitHub repository is the landing page for the Quantum MOF (QMOF) database �
 
 If you use or wish to cite the QMOF database, please refer the following pre-print until the peer-reviewed publication is released:
 
-- [A.S. Rosen, S.M. Iyer, D. Ray, Z. Yao, A. Aspuru-Guzik, L. Gagliardi, J.M. Notestein, R.Q. Snurr. "Machine Learning the Quantum-Chemical Properties of Metal–Organic Frameworks for Accelerated Materials Discovery with a New Electronic Structure Database", *ChemRxiv* (2020). DOI: 10.26434/chemrxiv.13147616](https://doi.org/10.26434/chemrxiv.13147616).
+- A.S. Rosen, S.M. Iyer, D. Ray, Z. Yao, A. Aspuru-Guzik, L. Gagliardi, J.M. Notestein, R.Q. Snurr. "Machine Learning the Quantum-Chemical Properties of Metal–Organic Frameworks for Accelerated Materials Discovery", *Matter* (in press). Pre-print available at [DOI: 10.26434/chemrxiv.13147616](https://doi.org/10.26434/chemrxiv.13147616).
 
 It is also best-practice to specify the version of the QMOF database you used in your work to ensure that your results can be accurately reproduced.
 
