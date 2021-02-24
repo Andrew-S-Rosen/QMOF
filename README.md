@@ -9,8 +9,6 @@ If you use or wish to cite the QMOF database, please refer to the following publ
 
 - A.S. Rosen, S.M. Iyer, D. Ray, Z. Yao, A. Aspuru-Guzik, L. Gagliardi, J.M. Notestein, R.Q. Snurr. "Machine Learning the Quantum-Chemical Properties of Metal–Organic Frameworks for Accelerated Materials Discovery", *Matter* (in press). Pre-print available at [DOI: 10.26434/chemrxiv.13147616](https://doi.org/10.26434/chemrxiv.13147616).
 
-If you are having trouble accessing the publication, you can obtain a copy from my personal website [here](https://asrosen.com/paper-access-form/).
-
 ## Accessing the QMOF Database
 All versions of the QMOF database can be accessed on Figshare at the following link:
 <p align="center">
