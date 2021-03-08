@@ -21,12 +21,6 @@ The files made publicly available with the QMOF database are described below:
 
 2. `vasp_files_A.zip`: Raw VASP input and output files at the PBE-D3(BJ) level of theory for the structurally relaxed MOFs in the QMOF database. It contains additional properties that may be of interest to some users.
 
-Additional files are made available on a [Box server](https://northwestern.box.com/s/uasi8jpov51icueu3s3wvcftkgjcwil7), as described below:
-
-3. `charge_densities`: Charge densities for the MOFs in the QMOF database. If you'd like to download all the charge densities, please contact me directly since Box currently has a 15 GB limit on downloads.
-
-4. `ml_reproducibility`: SOAP similarity kernels and CGCNN encodings for the (unrelaxed) QMOF database structures, which can be used with the machine learning scripts described below. This is included solely for reproducibility purposes.
-
 ## Purpose of this GitHub Page
 The data underlying the QMOF database is hosted on Figshare and linked in the "Accessing the QMOF Database" subsection above. Nonetheless, this GitHub page serves several additional purposes:
 
@@ -38,7 +32,7 @@ The data underlying the QMOF database is hosted on Figshare and linked in the "A
 
 4. If you have developed direct extensions, modifications, or subsets related to the QMOF database, I am more than happy to include a link to your work on this GitHub page so that all QMOF database resources can be linked to one another in a single place.
 
-## Additional Scripts and Tools
+## Additional Scripts, Tools, and Data
 Beyond the data that makes up the QMOF database, we host several supplementary resources directly in this GitHub repository that may be of interest:
 
 1. [`machine_learning`](machine_learning): Scripts used to train the machine learning models and carry out the dimensionality reduction tasks in the corresponding [QMOF database paper](https://doi.org/10.26434/chemrxiv.13147616).
@@ -49,6 +43,12 @@ Beyond the data that makes up the QMOF database, we host several supplementary r
 
 4. [`example_dos`](example_dos): HSE06-D3(BJ) density of states (data and plotting scripts) for the highlighted structures in the [QMOF database paper](https://doi.org/10.26434/chemrxiv.13147616).
 
+Supplementary QMOF database files are made available on a [Box server](https://northwestern.box.com/s/uasi8jpov51icueu3s3wvcftkgjcwil7), as described below:
+
+1. `charge_densities`: Charge densities for the MOFs in the QMOF database. If you'd like to download all the charge densities, please contact me directly since Box currently has a 15 GB limit on downloads.
+
+2. `ml_reproducibility`: SOAP similarity kernels and CGCNN encodings for the (unrelaxed) QMOF database structures, which can be used with the machine learning scripts described below. This is included solely for reproducibility purposes.
+
 ## Fidelity Tracker
 See [here](https://github.com/arosen93/QMOF/blob/main/fidelity_tracker) for an up-to-date list of any refcodes with flagged structural fidelity issues not captured via the automated filtering steps. User contributions are highly encouraged!
 
@@ -57,6 +57,12 @@ All updates to the QMOF database are made on the corresponding [Figshare reposit
 
 ## Licensing
 The data underlying the QMOF database is made publicly available under a [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/). This means you can copy it, share it, adapt it, and do whatever you like with it provided that you give [appropriate credit](https://wiki.creativecommons.org/wiki/License_Versions#Detailed_attribution_comparison_chart) and [indicate any changes](https://wiki.creativecommons.org/wiki/License_Versions#Modifications_and_adaptations_must_be_marked_as_such).
+
+## QMOF Database in the Wild
+Below is a list of papers that have directly used the QMOF database:
+
+- V. Fung, J. Zhang, E. Juarez, B. Sumpter, "Benchmarking Graph Neural Networks for Materials Chemistry", *ChemRxiv* (2021). [DOI: 10.26434/chemrxiv.13615421.v2](https://doi.org/10.26434/chemrxiv.13615421.v2
+)
 
 ## Contact
 If you have any questions, feel free to send me an email at rosen@u.northwestern.edu.
