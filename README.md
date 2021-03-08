@@ -58,14 +58,14 @@ All updates to the QMOF database are made on the corresponding [Figshare reposit
 ## Licensing
 The data underlying the QMOF database is made publicly available under a [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/). This means you can copy it, share it, adapt it, and do whatever you like with it provided that you give [appropriate credit](https://wiki.creativecommons.org/wiki/License_Versions#Detailed_attribution_comparison_chart) and [indicate any changes](https://wiki.creativecommons.org/wiki/License_Versions#Modifications_and_adaptations_must_be_marked_as_such).
 
+## Contact
+If you have any questions, feel free to send me an email at rosen@u.northwestern.edu.
+
 ## QMOF Database in the Wild
 Below is a list of papers that have directly used the QMOF database:
 
 - V. Fung, J. Zhang, E. Juarez, B. Sumpter, "Benchmarking Graph Neural Networks for Materials Chemistry", *ChemRxiv* (2021). DOI: [10.26434/chemrxiv.13615421](https://doi.org/10.26434/chemrxiv.13615421
 ).
-
-## Contact
-If you have any questions, feel free to send me an email at rosen@u.northwestern.edu.
 
 ## Acknowledgments
 This work was supported by a fellowship award through the National Defense Science and Engineering Graduate (NDSEG) Fellowship Program, sponsored by the Air Force Research Laboratory (AFRL), the Office of Naval Research (ONR) and the Army Research Office (ARO).
