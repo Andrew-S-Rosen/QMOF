@@ -61,7 +61,7 @@ The data underlying the QMOF database is made publicly available under a [CC BY 
 ## QMOF Database in the Wild
 Below is a list of papers that have directly used the QMOF database:
 
-- V. Fung, J. Zhang, E. Juarez, B. Sumpter, "Benchmarking Graph Neural Networks for Materials Chemistry", *ChemRxiv* (2021). DOI: [10.26434/chemrxiv.13615421.v2](https://doi.org/10.26434/chemrxiv.13615421.v2
+- V. Fung, J. Zhang, E. Juarez, B. Sumpter, "Benchmarking Graph Neural Networks for Materials Chemistry", *ChemRxiv* (2021). DOI: [10.26434/chemrxiv.13615421](https://doi.org/10.26434/chemrxiv.13615421
 ).
 
 ## Contact
