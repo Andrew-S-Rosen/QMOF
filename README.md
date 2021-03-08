@@ -7,7 +7,7 @@ This GitHub repository is the landing page for the Quantum MOF (QMOF) database �
 
 If you use or wish to cite the QMOF database, please refer to the following publication:
 
-- A.S. Rosen, S.M. Iyer, D. Ray, Z. Yao, A. Aspuru-Guzik, L. Gagliardi, J.M. Notestein, R.Q. Snurr. "Machine Learning the Quantum-Chemical Properties of Metal–Organic Frameworks for Accelerated Materials Discovery", *Matter* (in press). DOI: [10.1016/j.matt.2021.02.015](https://doi.org/10.1016/j.matt.2021.02.015)
+- A.S. Rosen, S.M. Iyer, D. Ray, Z. Yao, A. Aspuru-Guzik, L. Gagliardi, J.M. Notestein, R.Q. Snurr. "Machine Learning the Quantum-Chemical Properties of Metal–Organic Frameworks for Accelerated Materials Discovery", *Matter* (in press). DOI: [10.1016/j.matt.2021.02.015](https://doi.org/10.1016/j.matt.2021.02.015).
 
 ## Accessing the QMOF Database
 All versions of the QMOF database can be accessed on Figshare at the following link:
@@ -61,8 +61,8 @@ The data underlying the QMOF database is made publicly available under a [CC BY 
 ## QMOF Database in the Wild
 Below is a list of papers that have directly used the QMOF database:
 
-- V. Fung, J. Zhang, E. Juarez, B. Sumpter, "Benchmarking Graph Neural Networks for Materials Chemistry", *ChemRxiv* (2021). [DOI: 10.26434/chemrxiv.13615421.v2](https://doi.org/10.26434/chemrxiv.13615421.v2
-)
+- V. Fung, J. Zhang, E. Juarez, B. Sumpter, "Benchmarking Graph Neural Networks for Materials Chemistry", *ChemRxiv* (2021). DOI: [10.26434/chemrxiv.13615421.v2](https://doi.org/10.26434/chemrxiv.13615421.v2
+).
 
 ## Contact
 If you have any questions, feel free to send me an email at rosen@u.northwestern.edu.
