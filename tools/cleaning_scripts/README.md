@@ -1,4 +1,4 @@
-These tools can be used to clean up a set of CIFs obtained from the [MOF subset of the Cambridge Structural Database](https://sites.google.com/view/csdmofsubset/home). A brief description of each file is shown below:
+These tools can be used to filter a set of CIFs obtained from the [MOF subset of the Cambridge Structural Database](https://sites.google.com/view/csdmofsubset/home). A brief description of each file is shown below:
 
 `ase_formatter.py`: This script reads in a list of CIFs with ASE and writes them back out again. This seems a bit silly, but it's because the default formatting of the CIFs obtained from the CSD with ConQuest are not immediately suitable for use with a variety of Python packages like Pymatgen. I recommend running this script first.
 
