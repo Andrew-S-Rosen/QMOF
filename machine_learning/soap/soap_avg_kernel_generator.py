@@ -13,7 +13,7 @@ comparison_refcodes_path = refcodes_path  # IDs corresponding to M structures
 soaps_path = os.path.join(basepath, 'soap_matrices') # Path where SOAP matrices are stored
 
 #---------------------------------------
-# Read in refcoeds
+# Read in refcodes
 refcodes = np.genfromtxt(refcodes_path, delimiter=',', dtype=str).tolist()
 
 if refcodes_path == comparison_refcodes_path:
