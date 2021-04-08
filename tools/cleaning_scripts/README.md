@@ -10,6 +10,8 @@ These tools can be used to filter a set of CIFs obtained from the [MOF subset of
 
 `deduplicate.py`: This script will de-duplicate a list of CIFs by using Pymatgen's `StructureMatcher` utility. 
 
+`false_terminal_oxo_checker.py`: This script will check for missing H atosm on "terminal" metal-oxo species that should be terminal OH groups or terminal H2O groups.
+
 `cifs_to_xyz.py`: This script converts a folder of CIFs to an ASE-formatted appended XYZ file and refcodes `.csv` file.
 
 `xyz_to_cifs.py`: This script converts an ASE-formatted appended XYZ file to a folder of CIFs.
