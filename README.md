@@ -45,7 +45,7 @@ Supplementary QMOF database files are made available on a [Box server](https://n
 
 1. [`charge_densities`](https://northwestern.box.com/s/ajhz1gse6hmfrjjcvyxj3nrfu2d12vfa): Charge densities for the MOFs in the QMOF database. If you'd like to download all the charge densities, please contact me directly since Box currently has a 15 GB limit on downloads.
 
-2. [`ml_reproducibility`](https://northwestern.box.com/s/s61g5xsbpos3smj93a8i4tk50c0so08m): SOAP similarity kernels and CGCNN encodings for the (unrelaxed) QMOF database structures, which can be used with the machine learning scripts described below. This is included solely for reproducibility purposes.
+2. [`ml_reproducibility`](https://northwestern.box.com/s/s61g5xsbpos3smj93a8i4tk50c0so08m): SOAP similarity kernels and CGCNN encodings for the (unrelaxed) QMOF database structures, which can be used with the machine learning scripts. This is included solely for reproducibility purposes.
 
 ## Fidelity Tracker
 See [here](https://github.com/arosen93/QMOF/blob/main/fidelity_tracker) for an up-to-date list of any refcodes with flagged structural fidelity issues not captured via the automated filtering steps. User contributions are highly encouraged!
