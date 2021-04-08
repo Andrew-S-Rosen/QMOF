@@ -26,7 +26,6 @@ cifs = [cif for cif in cifs if '.cif' in cif]
 cifs.sort()
 
 # Check every CIF
-bad_list = []
 for cif in cifs:
 
     bad = False
@@ -75,7 +74,6 @@ for cif in cifs:
                     if cn == 1:
                         bad = True
                         print('Missing H on terminal oxo:' + cif+'\n')
-                        bad_list.append(cif)
 
                 if bad:
                     break
