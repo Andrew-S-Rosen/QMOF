@@ -23,7 +23,7 @@ The files made publicly available with the QMOF database are described below:
 
 2. `vasp_files_A.zip`: Raw VASP input and output files at the PBE-D3(BJ) level of theory for the structurally relaxed MOFs in the QMOF database. It contains additional properties that may be of interest to some users.
 
-## Purpose of this GitHub Page
+## GitHub Features
 The data underlying the QMOF database is hosted on Figshare and linked in the "Accessing the QMOF Database" subsection above. Nonetheless, this GitHub page serves several additional purposes:
 
 1. As detailed in the "Additional Scripts and Tools" subsection below, this GitHub page includes supplementary files that can be used to carry out the machine learning analyses in the corresponding [QMOF database paper](https://www.cell.com/matter/fulltext/S2590-2385(21)00070-9).
@@ -32,8 +32,6 @@ The data underlying the QMOF database is hosted on Figshare and linked in the "A
 
 3. I will use the [Projects](https://github.com/arosen93/QMOF/projects) tab to share any planned updates to the database.
 
-4. If you have developed direct extensions, modifications, or subsets related to the QMOF database, I am more than happy to include a link to your work on this GitHub page so that all QMOF database resources can be linked to one another in a single place.
-
 ## Additional Scripts, Tools, and Data
 Beyond the data that makes up the QMOF database, we host several supplementary resources directly in this GitHub repository that may be of interest:
 
@@ -41,7 +39,7 @@ Beyond the data that makes up the QMOF database, we host several supplementary r
 
 2. [`dft_workflow`](dft_workflow): An example input file to run [PyMOFScreen](https://github.com/arosen93/mof_screen), which was used to orchestrate the high-throughput DFT calculations and construct the QMOF database. A copy of PyMOFScreen is also provided in the folder for convenience.
 
-3. [`tools`](tools): Miscellaneous Python scripts that you may find helpful, such as scripts to filter out clearly erroneous MOF structures.
+3. [`tools`](tools): Miscellaneous Python scripts that you may find helpful, such as scripts to filter out problematic MOF structures.
 
 4. [`example_dos`](example_dos): HSE06-D3(BJ) density of states (data and plotting scripts) for the highlighted structures in the [QMOF database paper](https://www.cell.com/matter/fulltext/S2590-2385(21)00070-9).
 
