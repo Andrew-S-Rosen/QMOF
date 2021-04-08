@@ -1,2 +1,3 @@
 refcode, reason
 FUMHOM, missing H
+PENNUT, missing H
