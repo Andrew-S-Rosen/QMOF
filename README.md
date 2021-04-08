@@ -26,22 +26,20 @@ The files made publicly available with the QMOF database are described below:
 ## GitHub Features
 The data underlying the QMOF database is hosted on Figshare and linked in the "Accessing the QMOF Database" subsection above. Nonetheless, this GitHub page serves several additional purposes:
 
-1. As detailed in the "Additional Scripts and Tools" subsection below, this GitHub page includes supplementary files that can be used to carry out the machine learning analyses in the corresponding [QMOF database paper](https://www.cell.com/matter/fulltext/S2590-2385(21)00070-9).
-
-2. It allows for open, public discussions via the GitHub [Discussions](https://github.com/arosen93/QMOF/discussions) tab, where I welcome comments, suggestions, or other forms of open dialogue. Any issues can also be raised in the GitHub [Issues](https://github.com/arosen93/QMOF/issues) tracker.
-
+1. Open, public discussions about the QMOF Database are supported via the GitHub [Discussions](https://github.com/arosen93/QMOF/discussions) tab.
+2. Any issues can be raised in the GitHub [Issues](https://github.com/arosen93/QMOF/issues) tracker.
 3. I will use the [Projects](https://github.com/arosen93/QMOF/projects) tab to share any planned updates to the database.
 
 ## Additional Scripts, Tools, and Data
 Beyond the data that makes up the QMOF database, we host several supplementary resources directly in this GitHub repository that may be of interest:
 
-1. [`machine_learning`](machine_learning): Scripts used to train the machine learning models and carry out the dimensionality reduction tasks in the corresponding [QMOF database paper](https://www.cell.com/matter/fulltext/S2590-2385(21)00070-9).
+1. [`machine_learning`](machine_learning): Scripts used to train the machine learning models and carry out the dimensionality reduction tasks in the corresponding QMOF database paper.
 
-2. [`dft_workflow`](dft_workflow): An example input file to run [PyMOFScreen](https://github.com/arosen93/mof_screen), which was used to orchestrate the high-throughput DFT calculations and construct the QMOF database. A copy of PyMOFScreen is also provided in the folder for convenience.
+3. [`dft_workflow`](dft_workflow): An example input file to run [PyMOFScreen](https://github.com/arosen93/mof_screen), which was used to orchestrate the high-throughput DFT calculations and construct the QMOF database. A copy of PyMOFScreen is also provided in the folder for convenience.
 
 3. [`tools`](tools): Miscellaneous Python scripts that you may find helpful, such as scripts to filter out problematic MOF structures.
 
-4. [`example_dos`](example_dos): HSE06-D3(BJ) density of states (data and plotting scripts) for the highlighted structures in the [QMOF database paper](https://www.cell.com/matter/fulltext/S2590-2385(21)00070-9).
+4. [`example_dos`](example_dos): HSE06-D3(BJ) density of states (data and plotting scripts) for the highlighted structures in the QMOF database paper.
 
 Supplementary QMOF database files are made available on a [Box server](https://northwestern.box.com/s/uasi8jpov51icueu3s3wvcftkgjcwil7), as described below:
 
