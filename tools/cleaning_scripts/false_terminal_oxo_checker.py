@@ -48,7 +48,7 @@ for cif in cifs:
     if not in_metal_list:
         continue
 
-    # Generate connectivity matrix
+    # Generate neighbor list
     cutoff = neighborlist.natural_cutoffs(structure)
     nl = neighborlist.NeighborList(
         cutoff, self_interaction=False, bothways=True)
