@@ -80,6 +80,6 @@ for cif in cifs:
 		if bad:
 			break
 
-with open('bad_cifs_oxo_check.gcd','w') as w:
+with open('bad_cifs_oxo_check.txt','w') as w:
 	for bad_cif in bad_list:
 		w.write(bad_cif + '\n')
