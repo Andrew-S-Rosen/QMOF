@@ -18,6 +18,6 @@ for cif in cifs:
 			bad_list.append(cif)
 			break
 
-with open('bad_cifs_lone_atom_check.gcd','w') as w:
+with open('bad_cifs_lone_atom_check.txt','w') as w:
 	for bad_cif in bad_list:
 		w.write(bad_cif+'\n')
