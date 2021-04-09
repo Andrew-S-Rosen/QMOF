@@ -15,6 +15,6 @@ for cif in os.listdir(folder):
 			bad_list.append(cif)
 			break
 
-with open('bad_cifs_distance_check.gcd','w') as w:
+with open('bad_cifs_distance_check.txt','w') as w:
 	for bad_cif in bad_list:
 		w.write(bad_cif+'\n')
