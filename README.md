@@ -28,9 +28,9 @@ If you'd like to download the charge densities, they are available on an [extern
 ## GitHub Features
 The data underlying the QMOF Database is hosted on Figshare and linked in the "Accessing the QMOF Database" subsection above. Nonetheless, this GitHub page serves several additional purposes:
 
-1. Open, public discussions about the QMOF Database are supported via the GitHub [Discussions](https://github.com/arosen93/QMOF/discussions) tab.
-2. Any issues can be raised in the GitHub [Issues](https://github.com/arosen93/QMOF/issues) tracker.
-3. I will use the [Projects](https://github.com/arosen93/QMOF/projects) tab to share any planned additions to the database.
+1. I will use the [Projects](https://github.com/arosen93/QMOF/projects) tab to share any planned additions to the database.
+2. Open, public discussions about the QMOF Database are supported via the GitHub [Discussions](https://github.com/arosen93/QMOF/discussions) tab.
+3. Any issues can be raised in the GitHub [Issues](https://github.com/arosen93/QMOF/issues) tracker.
 
 ## Updates
 All updates to the QMOF Database are made on the corresponding [Figshare repository](https://doi.org/10.6084/m9.figshare.13147324) with new version-specific DOIs. All changes are documented in [updates.md](updates.md). It is always best-practice to specify the version of the QMOF Database you used in your work to ensure that your results can be accurately reproduced.
@@ -48,8 +48,6 @@ Beyond the data that makes up the QMOF Database, we host several supplementary r
 3. [`tools`](tools): Miscellaneous Python scripts that you may find helpful, such as scripts to filter out problematic MOF structures.
 
 4. [`example_dos`](example_dos): HSE06-D3(BJ) density of states (data and plotting scripts) for the highlighted structures in the QMOF Database paper.
-
-On an [external Box server](https://northwestern.box.com/s/s61g5xsbpos3smj93a8i4tk50c0so08m), you can find SOAP similarity kernels and CGCNN encodings for the (unrelaxed) QMOF Database structures, which can be used with the machine learning scripts to reproduce the figures in the QMOF Database paper.
 
 ## Licensing
 The data underlying the QMOF Database is made publicly available under a [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/). This means you can copy it, share it, adapt it, and do whatever you like with it provided that you give [appropriate credit](https://wiki.creativecommons.org/wiki/License_Versions#Detailed_attribution_comparison_chart) and [indicate any changes](https://wiki.creativecommons.org/wiki/License_Versions#Modifications_and_adaptations_must_be_marked_as_such).
