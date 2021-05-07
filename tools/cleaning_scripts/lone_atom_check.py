@@ -1,6 +1,6 @@
 from pymatgen.analysis.graphs import StructureGraph
 from pymatgen.analysis import local_env
-from pymatgen import Structure
+from pymatgen.core import Structure
 import os
 
 folder = 'path/to/CIFs'
