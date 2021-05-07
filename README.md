@@ -9,7 +9,7 @@ If you use or wish to cite the QMOF Database, please refer to the following publ
 
 - A.S. Rosen, S.M. Iyer, D. Ray, Z. Yao, A. Aspuru-Guzik, L. Gagliardi, J.M. Notestein, R.Q. Snurr. "Machine Learning the Quantum-Chemical Properties of Metal–Organic Frameworks for Accelerated Materials Discovery", *Matter*, **4**, 1578-1597 (2021). DOI: [10.1016/j.matt.2021.02.015](https://www.cell.com/matter/fulltext/S2590-2385(21)00070-9).
 
- *Several thousand new, unique MOF structures (all 3D and porous) are planned for a QMOF update in May, so check back soon!* Follow the QMOF Database on Twitter ([@QMOF_Database](https://twitter.com/QMOF_Database)) if you want to be the first to know about the latest news and updates.
+Follow the QMOF Database on Twitter ([@QMOF_Database](https://twitter.com/QMOF_Database)) if you want to be the first to know about the latest news and updates.
 
 ## Accessing the QMOF Database
 All versions of the QMOF Database can be accessed on Figshare at the following link:
