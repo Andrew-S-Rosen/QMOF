@@ -1,4 +1,5 @@
-import pymatgen as pm
+from pymatgen.core import Structure
+from pymatgen.analysis import structure_matcher
 import os
 
 folder = 'folder/of/cifs' #folder of CIFs to de-duplicate
@@ -15,14 +16,14 @@ for entry in entries:
 		continue
 	
 	#read CIF
-	mof_temp = pm.Structure.from_file(os.path.join(folder,entry),primitive=False)
+	mof_temp = Structure.from_file(os.path.join(folder,entry),primitive=False)
 
 	#tag Pymatgen structure with its name
 	mof_temp.name = entry
 	mofs.append(mof_temp)
 
 #Initialize StructureMatcher
-sm = pm.analysis.structure_matcher.StructureMatcher(primitive_cell=True)
+sm = structure_matcher.StructureMatcher(primitive_cell=True)
 
 #Group structures
 groups = sm.group_structures(mofs)
