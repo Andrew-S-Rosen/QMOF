@@ -23,7 +23,7 @@ The files made publicly available with the QMOF Database are described below:
 
 2. `vasp_files_A.zip`: Raw VASP input and output files at the PBE-D3(BJ) level of theory for the structurally relaxed MOFs in the QMOF Database. It contains additional properties that may be of interest to some users.
 
-If you'd like to download the charge densities, they are available on an [external Box server](https://northwestern.box.com/s/ajhz1gse6hmfrjjcvyxj3nrfu2d12vfa). Since Box has a 15 GB limit on downloads, contact me directly if you require all the charge density files.
+If you'd like to download the charge densities, they are available on an [external SharePoint site](https://nuwildcat.sharepoint.com/:f:/s/TGS-QMOF/EqSKtJZ4lmBArOh6_mhml18BqDuIHcyu99GoUw_ILONYiQ?e=TKzXyh).
 
 ## GitHub Features
 The data underlying the QMOF Database is hosted on Figshare and linked in the "Accessing the QMOF Database" subsection above. Nonetheless, this GitHub page serves several additional purposes:
