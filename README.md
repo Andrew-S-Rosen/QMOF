@@ -29,8 +29,8 @@ If you'd like to download the charge densities, they are available on an [extern
 The data underlying the QMOF Database is hosted on Figshare and linked in the "Accessing the QMOF Database" subsection above. Nonetheless, this GitHub page serves several additional purposes:
 
 1. I will use the [Projects](https://github.com/arosen93/QMOF/projects) tab to share any planned additions to the database.
-2. Open, public discussions about the QMOF Database are supported via the GitHub [Discussions](https://github.com/arosen93/QMOF/discussions) tab.
-3. Any issues can be raised in the GitHub [Issues](https://github.com/arosen93/QMOF/issues) tracker.
+2. Any issues can be raised in the GitHub [Issues](https://github.com/arosen93/QMOF/issues) tracker.
+3. Open, public discussions about the QMOF Database are supported via the GitHub [Discussions](https://github.com/arosen93/QMOF/discussions) tab.
 
 ## Updates
 All updates to the QMOF Database are made on the corresponding [Figshare repository](https://doi.org/10.6084/m9.figshare.13147324) with new version-specific DOIs. All changes are documented in [updates.md](updates.md). It is always best-practice to specify the version of the QMOF Database you used in your work to ensure that your results can be accurately reproduced.
