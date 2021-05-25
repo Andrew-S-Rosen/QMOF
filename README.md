@@ -23,6 +23,8 @@ The files made publicly available with the QMOF Database are described below:
 
 2. `vasp_files_A.zip`: Raw VASP input and output files at the PBE-D3(BJ) level of theory for the structurally relaxed MOFs in the QMOF Database. It contains additional properties that may be of interest to some users.
 
+In the above data files, you can find DFT-optimized geometries (lattice constants, atomic positions), energies, partial charges (DDEC6, CM5, Bader), bond orders (DDEC6), spin densities (DDEC6, Bader) and magnetic moments, density of states, band gaps, and more.
+
 If you'd like to download the charge densities, they are available on an [external SharePoint site](https://nuwildcat.sharepoint.com/:f:/s/TGS-QMOF/EqSKtJZ4lmBArOh6_mhml18BqDuIHcyu99GoUw_ILONYiQ?e=qFjVtc).
 
 ## GitHub Features
