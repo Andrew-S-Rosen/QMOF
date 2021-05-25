@@ -12,20 +12,23 @@ If you use or wish to cite the QMOF Database, please refer to the following publ
 Follow the QMOF Database on Twitter ([@QMOF_Database](https://twitter.com/QMOF_Database)) if you want to be the first to know about the latest news and updates.
 
 ## Accessing the QMOF Database
-All versions of the QMOF Database can be accessed on Figshare at the following link:
+The QMOF Database is permanently archived on Figshare at the following link:
 <p align="center">
   <a href="https://doi.org/10.6084/m9.figshare.13147324"><b><i>Access the QMOF Database</i></b></a>
 </p>
 
-The files made publicly available with the QMOF Database are described below:
+The files made publicly available on Figshare are described below:
 
 1. `qmof_database.zip`: Structures and tabulated properties of all materials in the QMOF Database. This is likely the data that you're looking for.
 
-2. `vasp_files_A.zip`: Raw VASP input and output files at the PBE-D3(BJ) level of theory for the structurally relaxed MOFs in the QMOF Database. It contains additional properties that may be of interest to some users.
+2. `vasp_files_A.zip`: VASP input and output files at the PBE-D3(BJ) level of theory for the structurally relaxed MOFs in the QMOF Database. It contains additional properties that may be of interest to some users.
 
-In the above data files, you can find DFT-optimized geometries (lattice constants, atomic positions), energies, partial charges (DDEC6, CM5, Bader), bond orders (DDEC6), spin densities (DDEC6, Bader) and magnetic moments, density of states, band gaps, and more.
+In the above data files, you can find DFT-optimized geometries (lattice constants, atomic positions), energies, partial charges (DDEC6, CM5, Bader), bond orders (DDEC6), spin densities (DDEC6, Bader) and magnetic moments, density of states, band gaps, and more. The charge densities, which are too large for Figshare, are made available [here](https://nuwildcat.sharepoint.com/:f:/s/TGS-QMOF/EqSKtJZ4lmBArOh6_mhml18BqDuIHcyu99GoUw_ILONYiQ?e=qFjVtc).
 
-If you'd like to download the charge densities, they are available on an [external SharePoint site](https://nuwildcat.sharepoint.com/:f:/s/TGS-QMOF/EqSKtJZ4lmBArOh6_mhml18BqDuIHcyu99GoUw_ILONYiQ?e=qFjVtc).
+If you only want to access select structures or properties, you can alternatively browse the SharePoint folders below:
+1. [Structures and tabulated properties](https://nuwildcat.sharepoint.com/:f:/s/TGS-QMOF/EouB3Z6Sn9tGtjARlrIgdh8BJooeIUu6EMBgJ-GFgtSqOw?e=sxSgn4)
+2. [VASP files](https://nuwildcat.sharepoint.com/:f:/s/TGS-QMOF/EmiZPpv2kjhFno1j2G7p6hoBhbg8Anb8pRxYhRe6PbfYTw?e=JtSEam)
+3. [Charge densities](https://nuwildcat.sharepoint.com/:f:/s/TGS-QMOF/EqSKtJZ4lmBArOh6_mhml18BqDuIHcyu99GoUw_ILONYiQ?e=qFjVtc)
 
 ## GitHub Features
 The data underlying the QMOF Database is hosted on Figshare and linked in the "Accessing the QMOF Database" subsection above. Nonetheless, this GitHub page serves several additional purposes:
