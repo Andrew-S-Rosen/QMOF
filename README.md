@@ -33,10 +33,10 @@ The data underlying the QMOF Database is hosted on Figshare and linked in the "A
 3. Open, public discussions about the QMOF Database are supported via the GitHub [Discussions](https://github.com/arosen93/QMOF/discussions) tab.
 
 ## Updates
-All updates to the QMOF Database are made on the corresponding [Figshare repository](https://doi.org/10.6084/m9.figshare.13147324) with new version-specific DOIs. All changes are documented in [updates.md](updates.md). It is always best-practice to specify the version of the QMOF Database you used in your work to ensure that your results can be accurately reproduced.
+All updates to the QMOF Database are made on the corresponding Figshare repository with new version-specific DOIs. All changes are documented in [updates.md](updates.md). It is best-practice to specify the version of the QMOF Database you used in your work to ensure that your results can be accurately reproduced.
 
 ## Fidelity Tracker
-See [here](https://github.com/arosen93/QMOF/blob/main/fidelity_tracker) for an up-to-date list of any refcodes with flagged structural fidelity issues not captured via the automated filtering steps. User contributions are highly encouraged!
+See [here](https://github.com/arosen93/QMOF/blob/main/fidelity_tracker) for a list of any refcodes with flagged structural fidelity issues not captured via the automated filtering steps. User contributions are highly encouraged!
 
 ## Data for Reproducibility 
 Beyond the data that makes up the QMOF Database, we host several supplementary resources on this GitHub page to allow others to reproduce results in the QMOF Database paper.
