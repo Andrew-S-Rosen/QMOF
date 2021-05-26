@@ -25,11 +25,6 @@ The files made publicly available on Figshare are described below:
 
 In the above data files, you can find DFT-optimized geometries (lattice constants, atomic positions), energies, partial charges (DDEC6, CM5, Bader), bond orders (DDEC6), spin densities (DDEC6, Bader) and magnetic moments, density of states, band gaps, and more. The charge densities, which are too large for Figshare, are made available [here](https://nuwildcat.sharepoint.com/:f:/s/TGS-QMOF/EqSKtJZ4lmBArOh6_mhml18BqDuIHcyu99GoUw_ILONYiQ?e=qFjVtc).
 
-If you only want to access select structures or properties, you can alternatively browse the SharePoint folders below:
-1. [Structures and tabulated properties](https://nuwildcat.sharepoint.com/:f:/s/TGS-QMOF/EouB3Z6Sn9tGtjARlrIgdh8BJooeIUu6EMBgJ-GFgtSqOw?e=sxSgn4)
-2. [VASP files](https://nuwildcat.sharepoint.com/:f:/s/TGS-QMOF/EmiZPpv2kjhFno1j2G7p6hoBhbg8Anb8pRxYhRe6PbfYTw?e=JtSEam)
-3. [Charge densities](https://nuwildcat.sharepoint.com/:f:/s/TGS-QMOF/EqSKtJZ4lmBArOh6_mhml18BqDuIHcyu99GoUw_ILONYiQ?e=qFjVtc)
-
 ## GitHub Features
 The data underlying the QMOF Database is hosted on Figshare and linked in the "Accessing the QMOF Database" subsection above. Nonetheless, this GitHub page serves several additional purposes:
 
