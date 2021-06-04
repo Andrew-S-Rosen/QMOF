@@ -58,7 +58,7 @@ If you have any questions, feel free to send me an email at rosen@u.northwestern
 ## QMOF Database in the Wild
 Below is a list of papers that have directly used the QMOF Database:
 
-- V. Fung, J. Zhang, E. Juarez, B. Sumpter, "Benchmarking Graph Neural Networks for Materials Chemistry", *ChemRxiv* (2021). DOI: [10.26434/chemrxiv.13615421](https://doi.org/10.26434/chemrxiv.13615421
+- V. Fung, J. Zhang, E. Juarez, B. Sumpter, "Benchmarking Graph Neural Networks for Materials Chemistry", *npj Computational Materials* (2021). DOI: [10.1038/s41524-021-00554-0](https://doi.org/10.1038/s41524-021-00554-0
 ).
 
 ## Acknowledgments
