@@ -3,7 +3,7 @@
 <img src=logo.png>
 
 ## Overview
-This GitHub repository is the landing page for the Quantum MOF (QMOF) Database – a publicly available dataset of quantum-chemical properties for metal–organic frameworks (MOFs) derived from high-throughput periodic density functional theory calculations. Currently, the QMOF Database contains computed properties for 17,000+ structures!
+This GitHub repository is the landing page for the Quantum MOF (QMOF) Database – a publicly available dataset of quantum-chemical properties for metal–organic frameworks (MOFs) and coordination polymers derived from high-throughput periodic density functional theory calculations. Currently, the QMOF Database contains computed properties for 17,000+ unique structures!
 
 If you use or wish to cite the QMOF Database, please refer to the following publication:
 
@@ -23,7 +23,7 @@ The files made publicly available on Figshare are described below:
 
 2. `vasp_files_A.zip`: VASP input and output files at the PBE-D3(BJ) level of theory for the structurally relaxed MOFs in the QMOF Database. It contains additional properties that may be of interest to some users.
 
-In the above data files, you can find DFT-optimized geometries (lattice constants, atomic positions), energies, partial charges (DDEC6, CM5, Bader), bond orders (DDEC6), spin densities (DDEC6, Bader) and magnetic moments, density of states, band gaps, and more. The charge densities, which are too large for Figshare, are made available [here](https://nuwildcat.sharepoint.com/:f:/s/TGS-QMOF/EqSKtJZ4lmBArOh6_mhml18BqDuIHcyu99GoUw_ILONYiQ?e=qFjVtc).
+In the above data files, you can find DFT-optimized geometries (lattice constants, atomic positions), energies, partial atomic charges (DDEC6, CM5, Bader), bond orders (DDEC6), atomic spin densities (DDEC6, Bader), magnetic moments, density of states, band gaps, and more. The charge densities, which are too large for Figshare, are made available [here](https://nuwildcat.sharepoint.com/:f:/s/TGS-QMOF/EqSKtJZ4lmBArOh6_mhml18BqDuIHcyu99GoUw_ILONYiQ?e=qFjVtc).
 
 ## GitHub Features
 The data underlying the QMOF Database is hosted on Figshare and linked in the "Accessing the QMOF Database" subsection above. Nonetheless, this GitHub page serves several additional purposes:
@@ -39,15 +39,13 @@ All updates to the QMOF Database are made on the corresponding Figshare reposito
 See [here](https://github.com/arosen93/QMOF/blob/main/fidelity_tracker) for a list of any refcodes with flagged structural fidelity issues not captured via the automated filtering steps. User contributions are highly encouraged!
 
 ## Data for Reproducibility 
-Beyond the data that makes up the QMOF Database, we host several supplementary resources on this GitHub page to allow others to reproduce results in the QMOF Database paper.
+Beyond the data that makes up the QMOF Database, we host several supplementary resources on this GitHub page, namely:
 
-1. [`machine_learning`](machine_learning): Scripts used to train the machine learning models and carry out the dimensionality reduction tasks in the corresponding QMOF Database paper.
+1. [`tools`](tools): Miscellaneous Python scripts that you may find helpful, such as scripts to filter out problematic MOF structures.
 
-2. [`dft_workflow`](dft_workflow): An example input file to run [PyMOFScreen](https://github.com/arosen93/mof_screen), which was used to orchestrate the high-throughput DFT calculations and construct the QMOF Database. A copy of PyMOFScreen is also provided in the folder for convenience.
+2. [`machine_learning`](machine_learning): Scripts used to train the machine learning models and carry out the dimensionality reduction tasks in the QMOF Database paper.
 
-3. [`tools`](tools): Miscellaneous Python scripts that you may find helpful, such as scripts to filter out problematic MOF structures.
-
-4. [`example_dos`](example_dos): HSE06-D3(BJ) density of states (data and plotting scripts) for the highlighted structures in the QMOF Database paper.
+3. [`dft_workflow`](dft_workflow): An example input file to run [PyMOFScreen](https://github.com/arosen93/mof_screen), which was used to orchestrate the high-throughput DFT calculations and construct the QMOF Database.
 
 ## Licensing
 The data underlying the QMOF Database is made publicly available under a [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/). This means you can copy it, share it, adapt it, and do whatever you like with it provided that you give [appropriate credit](https://wiki.creativecommons.org/wiki/License_Versions#Detailed_attribution_comparison_chart) and [indicate any changes](https://wiki.creativecommons.org/wiki/License_Versions#Modifications_and_adaptations_must_be_marked_as_such).
