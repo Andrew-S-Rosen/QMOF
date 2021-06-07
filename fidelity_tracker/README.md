@@ -1,7 +1,7 @@
 # Overview
 As noted in the [QMOF database paper](https://doi.org/10.1016/j.matt.2021.02.015), several automated filtering steps were carried out to remove clearly problematic stuctures before carrying out the DFT calculations. However, it is impossible to automatically detect all issues, especially those pertaining to limitations from the X-ray diffraction and crystal refinment process itself. The fidelity tracker is a place to publicly mark any existing issues.
 
-Please refer to the [`issue_tracker.txt`](https://github.com/arosen93/QMOF/blob/main/fidelity_tracker/issue_tracker.txt) for a running list of structural fidelity issues.
+Please refer to the [`issue_tracker.txt`](https://github.com/arosen93/QMOF/blob/main/fidelity_tracker/issue_tracker.txt) for a running list of structural fidelity issues found since v5. Note that the erroneous structures may already be removed in the current version of the database.
 
 ## Structural Fidelity Updates
 If you spot a material with an error related to its crystal structure and would like to contribute, please do the following:
