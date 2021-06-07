@@ -1,3 +1,3 @@
 refcode, reason
-FUMHOM, missing H
-PENNUT, missing H
+FUMHOM_FSR, missing H
+PENNUT_FSR, missing H
