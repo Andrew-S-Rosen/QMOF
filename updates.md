@@ -1,9 +1,10 @@
 This file documents all updates to the QMOF database on Figshare.
 
 # Current version
-[v6](https://figshare.com/articles/dataset/QMOF_Database/13147324). Total size: 18,333 structures (17,026 de-duplicated).
+[v7](https://figshare.com/articles/dataset/QMOF_Database/13147324). Total size: 18,321 structures (17,015 de-duplicated).
 
 # Changelog
+- [v7](https://figshare.com/articles/dataset/QMOF_Database/13147324): Deprecated 12 MOFs. Added more properties to JSON file and made it easier to parse. 06/08/21.
 - [v6](https://figshare.com/articles/dataset/QMOF_Database/13147324/6): Added 2620 DFT-optimized MOFs. 1217 were taken from the CSD using the usual protocol. 1188 were hypothetical MOFs obtained from the [Boyd & Woo dataset](https://doi.org/10.24435/materialscloud:2018.0016/v3).  148 were hypothetical MOF-74 and MOF-5 analogues obtained from Haranczyk's [nanoporousmaterials.org](http://nanoporousmaterials.org/databases/). 48 were hypothetical Zr MOFs made with [ToBaCCo](https://github.com/tobacco-mofs/tobacco_3.0) and obtained from [Anderson and coworkers](https://osf.io/7dgvy/). 19 were experimental pyrene MOFs from [Smit and coworkers](https://doi.org/10.24435/materialscloud:z5-ct). The maximum number of atoms per unit cell was raised to 500. 5/7/2021.
 - [v5](https://figshare.com/articles/dataset/QMOF_Database/13147324/5): Release corresponding to the published [*Matter* paper](https://www.cell.com/matter/fulltext/S2590-2385(21)00070-9). No changes to the database compared to v3. Fixes a bug in `get_subset_data.py` that did not correctly write out the updated `.json` file. 2/12/21.
 - [v4](https://figshare.com/articles/dataset/QMOF_Database/13147324/4): No changes to the database compared to v3. Includes a few minor typo fixes and better `.xlsx` reader. 1/12/21.
