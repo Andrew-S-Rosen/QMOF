@@ -1,2 +1,2 @@
 -e git+https://github.com/arosen93/rASE#egg=rASE
-Pymatgen>=2018.5.22
+Pymatgen>=2018.11.30,<2022.0.0
