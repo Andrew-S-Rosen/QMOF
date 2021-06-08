@@ -9,7 +9,7 @@ If you use or wish to cite the QMOF Database, please refer to the following publ
 
 - A.S. Rosen, S.M. Iyer, D. Ray, Z. Yao, A. Aspuru-Guzik, L. Gagliardi, J.M. Notestein, R.Q. Snurr. "Machine Learning the Quantum-Chemical Properties of Metal–Organic Frameworks for Accelerated Materials Discovery", *Matter*, **4**, 1578-1597 (2021). DOI: [10.1016/j.matt.2021.02.015](https://www.cell.com/matter/fulltext/S2590-2385(21)00070-9).
 
-Follow the QMOF Database on Twitter ([@QMOF_Database](https://twitter.com/QMOF_Database)) if you want to be the first to know about the latest news and updates.
+Follow the QMOF Database on Twitter ([@QMOF_Database](https://twitter.com/QMOF_Database)) if you want to be the first to know about the latest news and updates. Check the [Projects](https://github.com/arosen93/QMOF/projects) tab to see what additions are planned for the database.
 
 ## Accessing the QMOF Database
 The QMOF Database is permanently archived on Figshare at the following link:
@@ -25,20 +25,13 @@ The files made publicly available on Figshare are described below:
 
 In the above data files, you can find DFT-optimized geometries (lattice constants, atomic positions), energies, partial atomic charges (DDEC6, CM5, Bader), bond orders (DDEC6), atomic spin densities (DDEC6, Bader), magnetic moments, density of states, band gaps, and more. The charge densities, which are too large for Figshare, are made available [here](https://nuwildcat.sharepoint.com/:f:/s/TGS-QMOF/EqSKtJZ4lmBArOh6_mhml18BqDuIHcyu99GoUw_ILONYiQ?e=qFjVtc).
 
-## GitHub Features
-The data underlying the QMOF Database is hosted on Figshare and linked in the "Accessing the QMOF Database" subsection above. Nonetheless, this GitHub page serves several additional purposes:
-
-1. I will use the [Projects](https://github.com/arosen93/QMOF/projects) tab to share any planned additions to the database.
-2. Any issues can be raised in the GitHub [Issues](https://github.com/arosen93/QMOF/issues) tracker.
-3. Open, public discussions about the QMOF Database are supported via the GitHub [Discussions](https://github.com/arosen93/QMOF/discussions) tab.
-
 ## Updates
-All updates to the QMOF Database are made on the corresponding Figshare repository with new version-specific DOIs. All changes are documented in [updates.md](updates.md). It is best-practice to specify the version of the QMOF Database you used in your work to ensure that your results can be accurately reproduced.
+All updates to the QMOF Database are made on the corresponding Figshare repository with new version-specific DOIs. Changes are documented in [updates.md](updates.md). It is best-practice to specify the version of the QMOF Database you used in your work to ensure that your results can be accurately reproduced.
 
-## Fidelity Tracker
-See [here](https://github.com/arosen93/QMOF/blob/main/fidelity_tracker) for a list of any refcodes with flagged structural fidelity issues not captured via the automated filtering steps. User contributions are highly encouraged!
+## Issue Tracking
+If you spot an issue with using or accessing the QMOF Database, please describe it in detail on the [Issues](https://github.com/arosen93/QMOF/issues) tracker. See [here](https://github.com/arosen93/QMOF/blob/main/fidelity_tracker) for a list of any refcodes with flagged structural fidelity issues not captured via the automated filtering steps. User contributions are highly encouraged via a [pull request](https://github.com/arosen93/QMOF/blob/main/fidelity_tracker/README.md#structural-fidelity-updates)!
 
-## Data for Reproducibility 
+## Miscellaneous Scripts
 Beyond the data that makes up the QMOF Database, we host several supplementary resources on this GitHub page, namely:
 
 1. [`tools`](tools): Miscellaneous Python scripts that you may find helpful, such as scripts to filter out problematic MOF structures.
