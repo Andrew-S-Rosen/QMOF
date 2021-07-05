@@ -15,3 +15,5 @@ These tools can be used to filter a set of CIFs obtained from the [MOF subset of
 `cifs_to_xyz.py`: This script converts a folder of CIFs to an ASE-formatted appended XYZ file and refcodes `.csv` file.
 
 `xyz_to_cifs.py`: This script converts an ASE-formatted appended XYZ file to a folder of CIFs.
+
+`add_charges_to_cif.py`: This script will add partial charges to CIFs from data on the QMOF Database.
