@@ -4,7 +4,7 @@ This file documents all updates to the QMOF database on Figshare.
 [v8](https://figshare.com/articles/dataset/QMOF_Database/13147324). Total size: 19,566 structures (18,203 de-duplicated).
 
 # Changelog
-- [v8](https://figshare.com/articles/dataset/QMOF_Database/13147324/8): Added 1246 new MOFs. X were taken directly from the [2019 CoRE MOF FSR Database](https://doi.org/10.5281/zenodo.3677685
+- [v8](https://figshare.com/articles/dataset/QMOF_Database/13147324/8): Added 1246 new DFT-optimized MOFs. X were taken directly from the [2019 CoRE MOF FSR Database](https://doi.org/10.5281/zenodo.3677685
 ), Y were Hf MOFs obtained by exchanging the Zr metals of ToBaCCo MOFs by [Anderson and coworkers](https://osf.io/7dgvy/), and Z were taken from the [Boyd & Woo dataset](https://doi.org/10.24435/materialscloud:2018.0016/v3). For the CoRE MOFs, only those found in [this pre-curated list](https://doi.org/10.1021/acs.jctc.0c01229
 ) were included to maximize structural fidelity. For the hypothetical MOFs, some new ones were introduced using the Boyd & Woo structures as a starting point (e.g. by exchanging metal cations). Added MOFids, DOIs, spin-dependent CBM/VBM, and initial CIFs for the hypothetical MOFs. 07/10/21.
 - [v7](https://figshare.com/articles/dataset/QMOF_Database/13147324/7): Deprecated 12 MOFs. Added more properties to JSON file and made it easier to parse. 06/08/21.
