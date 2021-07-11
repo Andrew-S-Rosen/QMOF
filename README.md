@@ -17,7 +17,7 @@ The QMOF Database is permanently archived on Figshare at the following link:
   <a href="https://doi.org/10.6084/m9.figshare.13147324"><b><i>Access the QMOF Database</i></b></a>
 </p>
 
-The files made publicly available on Figshare are described below:
+If for some reason the Figshare link is down, a mirror can be found on [SharePoint](https://nuwildcat.sharepoint.com/:f:/s/TGS-QMOF/EouB3Z6Sn9tGtjARlrIgdh8BJooeIUu6EMBgJ-GFgtSqOw?e=jvWWbm). The files within the QMOF Database are described below:
 
 1. `qmof_database.zip`: Structures and tabulated properties of all materials in the QMOF Database. This is likely the data that you're looking for.
 
