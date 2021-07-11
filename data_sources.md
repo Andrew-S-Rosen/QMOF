@@ -38,7 +38,7 @@ All materials taken from this dataset have `tobacco_` in their names. The `sourc
 ### Boyd and Woo
 Several of the MOFs in the database were constructed using the [TOBASCCO code](https://github.com/peteboyd/tobascco) as described in prior work by [Boyd and Woo](https://pubs.rsc.org/en/content/articlehtml/2016/ce/c6ce00407e). These were obtained from [prior work](https://www.nature.com/articles/s41586-019-1798-7) by Boyd et al. using the Materials Cloud dataset [here](https://doi.org/10.24435/materialscloud:2018.0016/v3). We  made modifications to several of these MOFs prior to structure relaxation to diversify our dataset. For instance, we occasionally exchanged the metals in the inorganic node, and we constructed Al rod MOFs by exchanging the metals in the pre-existing V rod MOFs and protonating the bridging oxo ligands.
 
-All materials taken from this dataset have `boydwoo` in their names. The `source` flag is set to `'BoydWoo'`.
+All materials taken from this dataset have `boydwoo_` in their names. The `source` flag is set to `'BoydWoo'`.
 
 ### Haranczyk Datasets
 Several of the MOFs in the database were obtained from prior work by Maciej Haranczyk and coworkers.
