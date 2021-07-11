@@ -17,7 +17,7 @@ All materials taken directly from the CoRE MOF Database have `core_` at the star
 ### Pyrene MOFs
 A few pyrene-containing MOFs were taken from [prior work](https://pubs.rsc.org/en/content/articlehtml/2021/cs/d0cs00424c) using the data uploaded to the [Materials Cloud](https://doi.org/10.24435/materialscloud:z5-ct).
 
-All materials taken from this dataset have `pyrene_` in their name. The `source` flag is set to `'Pyrene'`.
+All materials taken from this dataset have `pyrene` in their name. The `source` flag is set to `'Pyrene'`.
 
 ## Hypothetical MOFs
 Since v6 of the QMOF Database, we have now included hypothetical MOFs from various sources.
@@ -28,17 +28,17 @@ Several of the MOFs in the database were constructed using the [ToBaCCo code](ht
 #### Anderson and Gómez-Gualdrón
 A database of ToBaCCo-constructed Zr-MOFs was adopted from [prior work](https://aip.scitation.org/doi/full/10.1063/5.0048736) by Andereson and Gómez-Gualdrón. See [here](https://osf.io/7dgvy/) for the dataset. We also exchanged the Zr species for Hf to include hypothetical Hf-MOFs as well.
 
-All materials taken from this dataset have `tobacco_` and `_SR_` in their names. The `source` flag is set to `'Anderson'`.
+All materials taken from this dataset have `tobacco` and `_SR_` in their names. The `source` flag is set to `'Anderson'`.
 
 #### Colón, Gómez-Gualdrón, and Snurr
 A database of Cu triangle MOFs was adopted from [prior work](https://pubs.acs.org/doi/abs/10.1021/acs.cgd.7b00848) by Colón, Gómez-Gualdrón, and Snurr. These structures had H atoms in the center of the Cu triangles, which were removed before relaxing their structures with DFT.
 
-All materials taken from this dataset have `tobacco_` in their names. The `source` flag is set to `'ToBaCCo'`.
+All materials taken from this dataset have `tobacco` in their names. The `source` flag is set to `'ToBaCCo'`.
 
 ### Boyd and Woo
 Several of the MOFs in the database were constructed using the [TOBASCCO code](https://github.com/peteboyd/tobascco) as described in prior work by [Boyd and Woo](https://pubs.rsc.org/en/content/articlehtml/2016/ce/c6ce00407e). These were obtained from [prior work](https://www.nature.com/articles/s41586-019-1798-7) by Boyd et al. using the Materials Cloud dataset [here](https://doi.org/10.24435/materialscloud:2018.0016/v3). We  made modifications to several of these MOFs prior to structure relaxation to diversify our dataset. For instance, we occasionally exchanged the metals in the inorganic node, and we constructed Al rod MOFs by exchanging the metals in the pre-existing V rod MOFs and protonating the bridging oxo ligands.
 
-All materials taken from this dataset have `boydwoo_` in their names. The `source` flag is set to `'BoydWoo'`.
+All materials taken from this dataset have `boydwoo` in their names. The `source` flag is set to `'BoydWoo'`.
 
 ### Haranczyk Datasets
 Several of the MOFs in the database were obtained from prior work by Maciej Haranczyk and coworkers.
