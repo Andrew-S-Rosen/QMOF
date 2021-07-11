@@ -3,7 +3,7 @@
 <img src=logo.png>
 
 ## Overview
-This GitHub repository is the landing page for the Quantum MOF (QMOF) Database – a publicly available dataset of quantum-chemical properties for metal–organic frameworks (MOFs) and coordination polymers derived from high-throughput periodic density functional theory calculations. Currently, the QMOF Database contains computed properties for 18,000+ unique structures!
+This GitHub repository is the landing page for the Quantum MOF (QMOF) Database – a publicly available dataset of quantum-chemical properties for metal–organic frameworks (MOFs) and coordination polymers derived from high-throughput periodic density functional theory calculations. Currently, the QMOF Database contains computed properties for 18,000+ unique structures, including both experimentally synthesized and hypothetical materials.
 
 If you use or wish to cite the QMOF Database, please refer to the following publication:
 
