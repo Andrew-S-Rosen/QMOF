@@ -1,3 +1,0 @@
-refcode, reason, removed?
-FUMHOM_FSR, missing H, Y
-PENNUT_FSR, missing H, Y
