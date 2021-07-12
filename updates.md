@@ -1,7 +1,7 @@
 This file documents all updates to the QMOF database on Figshare.
 
 # Current version
-[v8](https://figshare.com/articles/dataset/QMOF_Database/13147324). Total size: 19,566 structures (18,203 de-duplicated).
+[v8](https://figshare.com/articles/dataset/QMOF_Database/13147324). Total size: 19,561 structures (18,198 de-duplicated).
 
 # Changelog
 - [v8](https://figshare.com/articles/dataset/QMOF_Database/13147324/8): Added 1243 new DFT-optimized MOFs. 623 were taken from the [Boyd & Woo dataset](https://doi.org/10.24435/materialscloud:2018.0016/v3), 485 were taken directly from the [2019 CoRE MOF FSR Database](https://doi.org/10.5281/zenodo.3677685
