@@ -29,7 +29,7 @@ In the above data files, you can find DFT-optimized geometries (lattice constant
 All updates to the QMOF Database are made on the corresponding Figshare repository with new version-specific DOIs. Changes are documented in [updates.md](updates.md). It is best-practice to specify the version of the QMOF Database you used in your work to ensure that your results can be accurately reproduced.
 
 ## Issue Tracking
-If you spot an issue with using or accessing the QMOF Database, please describe it in detail on the [Issues](https://github.com/arosen93/QMOF/issues) tracker. See [here](https://github.com/arosen93/QMOF/blob/main/fidelity_tracker) for a list of any refcodes with flagged structural fidelity issues not captured via the automated filtering steps. User contributions are highly encouraged via a [pull request](https://github.com/arosen93/QMOF/blob/main/fidelity_tracker/README.md#structural-fidelity-updates)!
+If you spot an issue with using or accessing the QMOF Database, please describe it in detail on the [Issues](https://github.com/arosen93/QMOF/issues) tracker. Similarly, if you identify any materials with structural fidelity issues not captured via the automated filtering steps, please share them so that they can be removed in future versions.
 
 ## Structure Sources
 For a description of where the initial structures were sourced from, please refer to [data_sources.md](https://github.com/arosen93/QMOF/blob/main/data_sources.md).
