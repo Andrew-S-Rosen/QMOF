@@ -37,11 +37,9 @@ If you spot an issue with using or accessing the QMOF Database, please describe 
 ## Miscellaneous Scripts
 Beyond the data that makes up the QMOF Database, we host several supplementary resources on this GitHub page, namely:
 
-1. [`tools`](tools): Miscellaneous Python scripts that you may find helpful, such as scripts to filter out problematic MOF structures.
+1. [`database_tools`](database_tools): Miscellaneous Python scripts that you may find helpful, such as scripts to filter out problematic MOF structures.
 
-2. [`machine_learning`](machine_learning): Scripts used to train the machine learning models and carry out the dimensionality reduction tasks in the QMOF Database paper.
-
-3. [`dft_workflow`](dft_workflow): An example input file to run [PyMOFScreen](https://github.com/arosen93/mof_screen), which was used to orchestrate the high-throughput DFT calculations and construct the QMOF Database.
+2. [`other`](other): Scripts used to train machine learning models and carry out the high-throughput DFT workflow.
 
 ## Licensing
 The data underlying the QMOF Database is made publicly available under a [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/). This means you can copy it, share it, adapt it, and do whatever you like with it provided that you give [appropriate credit](https://wiki.creativecommons.org/wiki/License_Versions#Detailed_attribution_comparison_chart) and [indicate any changes](https://wiki.creativecommons.org/wiki/License_Versions#Modifications_and_adaptations_must_be_marked_as_such).
