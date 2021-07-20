@@ -8,7 +8,6 @@ Most materials in the QMOF Database are taken from the [Cambridge Structural Dat
 All materials taken from the CSD have `_FSR` at the end of their name. The `source` flag is set to `'CSD'`.
 
 ### CoRE 2019
-
 Since v8 of the QMOF Database, some MOFs were taken directly from the 2019 CoRE MOF Database uploaded on [Zenodo](https://doi.org/10.5281/zenodo.3677685
 ). In these cases, only the free solvent removed structures were adopted. A curated list of CoRE MOFs was taken from [Kancharlapalli et al.](https://pubs.acs.org/doi/abs/10.1021/acs.jctc.0c01229) to reduce the likelihood of obtaining erroneous crystal structures.
 
