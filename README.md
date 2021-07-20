@@ -31,6 +31,9 @@ All updates to the QMOF Database are made on the corresponding Figshare reposito
 ## Structure Sources
 For a description of where the initial structures were sourced from, please refer to [data_sources.md](https://github.com/arosen93/QMOF/blob/main/data_sources.md).
 
+## Finding a Given MOF
+If you are looking for a specific MOF in the QMOF Database but don't know its identifier, please follow the suggestions [here](mofid_search.md).
+
 ## Issue Tracking
 If you spot an issue with using or accessing the QMOF Database, please describe it in detail on the [Issues](https://github.com/arosen93/QMOF/issues) tracker. Similarly, if you identify any materials with structural fidelity issues not captured via the automated filtering steps, please share them so that they can be removed in future versions.
 
