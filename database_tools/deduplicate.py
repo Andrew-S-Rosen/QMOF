@@ -2,8 +2,8 @@ from pymatgen.core import Structure
 from pymatgen.analysis import structure_matcher
 import os
 
-folder = 'folder/of/cifs' #folder of CIFs to de-duplicate
-new_folder = 'new/folder/to/save/cifs' #folder to save only unique CIFs
+folder = r'/folder/of/cifs' #folder of CIFs to de-duplicate
+new_folder = r'/new/folder/to/save/cifs' #folder to save only unique CIFs
 
 mofs = [] #initialize list to store Pymatgen structures
 entries = os.listdir(folder) #get all CIFs
