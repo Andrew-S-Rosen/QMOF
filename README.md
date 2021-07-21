@@ -40,7 +40,7 @@ If you spot an issue with using or accessing the QMOF Database, please describe 
 ## Miscellaneous Scripts
 Beyond the data that makes up the QMOF Database, we host several supplementary resources on this GitHub page, namely:
 
-1. [`database_tools`](database_tools): Miscellaneous Python scripts that you may find helpful, such as scripts to filter out problematic MOF structures.
+1. [`database_tools`](database_tools): Miscellaneous Python scripts that you may find helpful, such as scripts to filter out problematic MOF structures and add partial charges to a set of MOF CIFs.
 
 2. [`other`](other): Scripts used to train machine learning models and carry out the high-throughput DFT workflow.
 
