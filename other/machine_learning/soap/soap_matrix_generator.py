@@ -1,7 +1,7 @@
 from dscribe.descriptors import SOAP
 from ase.io import read
 import numpy as np
-from scipy.sparse import save_npz
+from sparse import save_npz
 import os
 
 # Settings

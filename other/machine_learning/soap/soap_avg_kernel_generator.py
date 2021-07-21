@@ -1,6 +1,6 @@
 import os
 import numpy as np
-from scipy.sparse import load_npz
+from sparse import load_npz
 
 # This will make an average kernel matrix of (M x N) dimensions.
 # If refcodes_path == comparison_refcodes_path, then M = N.
