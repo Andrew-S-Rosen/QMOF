@@ -2,10 +2,10 @@ import os
 import pandas as pd
 
 # Settings
-cif_folder_path = '/path/to/cifs'  # path to folder of CIFs
-new_cif_folder_path = '/path/to/cifs_with_charges'  # path to folder to store new CIFs
-charge_xlsx_path = '/path/to/ddec.xlsx'  # path to .xlsx file of (e.g. DDEC) charges
-sheet_name = 'partial_charges_PBE' # sheet name in .xlsx with charge data
+cif_folder_path = '/path/to/qmof-cifs'  # path to folder of CIFs
+new_cif_folder_path = '/path/to/qmof_cifs_with_charges'  # path to folder to store new CIFs
+charge_xlsx_path = '/path/to/qmof-ddec-charges.xlsx'  # path to .xlsx file of (e.g. DDEC) charges
+sheet_name = 'DDEC_charge_PBE' # sheet name in .xlsx with charge data
 last_loop_flag = '_atom_site_type_symbol' # last flag in loop_ above atom symbols in CIF
 
 # Make new folder to store new CIFs
