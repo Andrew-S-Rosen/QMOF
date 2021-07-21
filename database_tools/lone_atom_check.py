@@ -3,7 +3,7 @@ from pymatgen.analysis import local_env
 from pymatgen.core import Structure
 import os
 
-folder = r'path/to/CIFs'
+folder = r'/path/to/CIFs'
 cifs = os.listdir(folder)
 cifs.sort()
 bad_list = []
