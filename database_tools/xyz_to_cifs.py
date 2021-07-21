@@ -5,8 +5,8 @@ import os
 # Converts an appended .xyz to a folder of CIFs
 
 # Relevant filenames
-refcode_path = '/path/to/refcodes.csv' # path to refcodes
-xyz_path = '/path/to/geometries.xyz' # path to XYZ of all structures
+refcode_path = r'/path/to/refcodes.csv' # path to refcodes
+xyz_path = r'/path/to/geometries.xyz' # path to XYZ of all structures
 new_folder = 'cifs' # path to store CIFs
 
 # ----------------------
