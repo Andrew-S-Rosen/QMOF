@@ -1,7 +1,7 @@
 from ase.io import read, write
 import os
 
-cif_path = 'path/to/CIFs'
+cif_path = r'/path/to/CIFs'
 cifs = os.listdir(cif_path)
 cifs.sort()
 
