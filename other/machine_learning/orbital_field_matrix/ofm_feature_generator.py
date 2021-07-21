@@ -5,8 +5,8 @@ import numpy as np
 import pandas as pd
 
 # Settings
-xyz_path = 'geometries.xyz' # appended list of XYZs (length N)
-refcodes_path = 'refcodes.csv' # refcode for each structure (length N)
+xyz_path = 'qmof-geometries.xyz' # appended list of XYZs (length N)
+refcodes_path = 'qmof-refcodes.csv' # refcode for each structure (length N)
 
 #---------------------------------------
 # Read in structures

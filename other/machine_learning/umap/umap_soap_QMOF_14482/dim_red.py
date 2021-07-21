@@ -10,7 +10,7 @@ seed = 42  # random seed
 xi = 2  # from SOAP hyperparameter optimization
 kernel_path = 'SP-avg_kernel_14482_14482.csv' # SOAP similarity kernel
 bandgaps_path = os.path.join(
-	'..', 'opt-bandgaps.csv') # .csv of y properties
+	'..', 'qmof-bandgaps.csv') # .csv of y properties
 
 #---------------------------------------
 # Band gaps and refcodes

@@ -11,8 +11,8 @@ alpha = 1E-3
 test_size = 0.2  # fraction held-out for testing
 seed = 42  # random seed
 kernel_path = 'kernel.csv' # path to NxN kernel
-refcodes_path = 'refcodes.csv' # path to refcodes (length N)
-y_path = 'opt-bandgaps.csv' # path to band gaps (length N)
+refcodes_path = 'qmof-refcodes.csv' # path to refcodes (length N)
+y_path = 'qmof-bandgaps.csv' # path to band gaps (length N)
 
 #---------------------------------------
 # Read in data

@@ -9,7 +9,7 @@ seed = 42  # random seed
 x = os.path.join(
 	'..', '..', 'stoichiometric_120', 'QMOF-14482', 'meredig_fingerprints.csv')  # .csv of X encodings
 bandgaps_path = os.path.join(
-	'..', 'opt-bandgaps.csv')  # .csv of y properties
+	'..', 'qmof-bandgaps.csv')  # .csv of y properties
 
 # ---------------------------------------
 # Band gaps and refcodes

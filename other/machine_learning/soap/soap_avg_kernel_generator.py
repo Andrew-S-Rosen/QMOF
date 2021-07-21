@@ -8,7 +8,7 @@ from scipy.sparse import load_npz
 
 # Settings
 basepath = os.getcwd()  # Base path where results will be stored
-refcodes_path = 'refcodes.csv'  # IDs corresponding to N structures
+refcodes_path = 'qmof-refcodes.csv'  # IDs corresponding to N structures
 comparison_refcodes_path = refcodes_path  # IDs corresponding to M structures
 soaps_path = os.path.join(basepath, 'soap_matrices') # Path where SOAP matrices are stored
 

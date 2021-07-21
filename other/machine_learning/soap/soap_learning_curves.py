@@ -13,8 +13,8 @@ test_size = 0.2  # fraction held-out for testing
 seeds = [42, 125, 267, 541, 582]  # random seeds
 train_sizes = [2**7, 2**8, 2**9, 2**10, 2**11, 2**12, 2**13, -1]  # train sizes
 kernel_path = 'kernel.csv' # path to NxN kernel
-y_path = 'opt-bandgaps.csv'  # path to band gaps (length N)
-refcodes_path = 'refcodes.csv' # path to refcoeds (length N)
+y_path = 'qmof-bandgaps.csv'  # path to band gaps (length N)
+refcodes_path = 'qmof-refcodes.csv' # path to refcoeds (length N)
 
 #---------------------------------------
 # Read in data

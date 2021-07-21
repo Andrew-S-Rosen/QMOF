@@ -9,7 +9,7 @@ from matplotlib.patches import Patch
 seed = 42  # random seed
 x = 'meredig_fingerprints_42349.csv' # X encodings of QMOF-42362
 csd_14482 = os.path.join(
-	'..', 'opt-bandgaps.csv') # .csv of QMOF-14482 data
+	'..', 'qmof-bandgaps.csv') # .csv of QMOF-14482 data
 
 #---------------------------------------
 # Encoding

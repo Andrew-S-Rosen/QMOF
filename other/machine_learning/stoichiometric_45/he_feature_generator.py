@@ -5,8 +5,8 @@ import os
 from scipy.stats.mstats import gmean
 
 tabulated_data_path = 'tabulated_data'
-xyz_path = 'geometries.xyz'
-refcodes_path = 'refcodes.csv'
+xyz_path = 'qmof-geometries.xyz'
+refcodes_path = 'qmof-refcodes.csv'
 
 def get_stats(atomic_nums, tabulated_data):
 	vals = np.empty(len(atomic_nums))*np.nan
