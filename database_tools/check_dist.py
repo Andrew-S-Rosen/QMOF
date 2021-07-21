@@ -3,7 +3,7 @@ import os
 import numpy as np
 
 cutoff = 0.75  # interatomic distance threshold
-folder = 'path/to/CIFs'
+folder = r'/path/to/CIFs'
 bad_list = []
 for cif in os.listdir(folder):
 	mof = read(os.path.join(folder, cif))
