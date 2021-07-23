@@ -7,7 +7,7 @@ import os
 # Relevant filenames
 refcode_path = r'/path/to/refcodes.csv' # path to refcodes
 xyz_path = r'/path/to/geometries.xyz' # path to XYZ of all structures
-new_folder = 'cifs' # path to store CIFs
+new_folder = r'cifs' # path to new folder store CIFs
 
 # ----------------------
 refs = np.genfromtxt(refcode_path,delimiter=',',dtype=str)
