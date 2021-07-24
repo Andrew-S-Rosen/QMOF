@@ -77,4 +77,4 @@ colnames = ['atomic_num_mean', 'atomic_num_geometric_mean', 'atomic_num_standard
 
 df.columns = colnames
 df.index.name = 'MOF'
-df.to_csv('he_fingerprints.csv', index=True)
+df.to_csv('stoich45_fingerprints.csv', index=True)

@@ -29,4 +29,4 @@ for i, pm_mof in enumerate(pm_mofs):
 
 # Export features
 df.index.name = 'MOF'
-df.to_csv('meredig_fingerprints.csv', index=True)
+df.to_csv('stoich120_fingerprints.csv', index=True)
