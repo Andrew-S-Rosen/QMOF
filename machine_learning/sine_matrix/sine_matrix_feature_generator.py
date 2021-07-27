@@ -1,22 +1,25 @@
-from matminer.featurizers.structure import OrbitalFieldMatrix
+from matminer.featurizers.structure import SineCoulombMatrix
 from ase.io import read
 from pymatgen.io import ase as pm_ase
 import numpy as np
 import pandas as pd
+import os
 
 # Settings
-xyz_path = 'qmof-geometries.xyz' # appended list of XYZs (length N)
-refcodes_path = 'qmof-refcodes.csv' # refcode for each structure (length N)
+xyz_path = os.path.join('..','qmof-geometries.xyz') # appended list of XYZs (length N)
+refcodes_path = os.path.join('..','qmof-refcodes.csv') # refcode for each structure (length N)
+max_atoms = np.inf # specify if you want an upper max on the # of atoms to consider
 
 #---------------------------------------
 # Read in structures
 ase_mofs = read(xyz_path, index=':')
 refcodes = np.genfromtxt(refcodes_path, delimiter=',', dtype=str)
 adaptor = pm_ase.AseAtomsAdaptor()
-pm_mofs = [adaptor.get_structure(ase_mof) for ase_mof in ase_mofs]
+pm_mofs = [adaptor.get_structure(ase_mof) for ase_mof in ase_mofs if len(ase_mof) <= max_atoms]
 
 # Initialize feature object
-featurizer = OrbitalFieldMatrix(period_tag=True)
+featurizer = SineCoulombMatrix()
+featurizer.fit(pm_mofs)
 features = featurizer.feature_labels()
 df = pd.DataFrame(columns=features)
 
@@ -29,4 +32,4 @@ for i, pm_mof in enumerate(pm_mofs):
 
 # Export features
 df.index.name = 'MOF'
-df.to_csv('ofm_fingerprints.csv', index=True)
+df.to_csv('sine_matrix_fingerprints.csv', index=True)

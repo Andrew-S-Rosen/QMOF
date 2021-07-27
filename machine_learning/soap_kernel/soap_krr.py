@@ -4,15 +4,16 @@ from sklearn.kernel_ridge import KernelRidge
 from sklearn.model_selection import ShuffleSplit
 from sklearn.metrics import mean_absolute_error, r2_score
 from scipy.stats import spearmanr
+import os
 
 # Settings
 xi = 2
 alpha = 1E-3
 test_size = 0.2  # fraction held-out for testing
 seed = 42  # random seed
-kernel_path = 'kernel.csv' # path to NxN kernel
-refcodes_path = 'qmof-refcodes.csv' # path to refcodes (length N)
-y_path = 'qmof-bandgaps.csv' # path to band gaps (length N)
+kernel_path = 'avg_soap_kernel.csv' # path to NxN kernel
+refcodes_path = os.path.join('..','qmof-refcodes.csv') # path to refcodes (length N)
+y_path = os.path.join('..','opt-bandgaps.csv') # path to band gaps (length N)
 
 #---------------------------------------
 # Read in data

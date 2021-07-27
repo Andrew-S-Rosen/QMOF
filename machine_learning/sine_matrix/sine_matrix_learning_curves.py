@@ -5,16 +5,17 @@ from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics import mean_absolute_error, r2_score
 from scipy.stats import spearmanr
 import numpy as np
+import os
 
 # Settings
-alpha = 0.1
+alpha = 0.01
 gamma = 0.1
 kernel = 'laplacian'  # kernel function
 test_size = 0.2  # fraction held-out for testing
 seeds = [42, 125, 267, 541, 582]  # random seeds
 train_sizes = [2**7, 2**8, 2**9, 2**10, 2**11, 2**12, 2**13, -1]  # train sizes
-fingerprint_path = 'stoich45_fingerprints.csv' # fingerprints (length N)
-y_path = 'qmof-bandgaps.csv' # band gaps (length N)
+fingerprint_path = 'sine_matrix_fingerprints.csv' # path to fingerprints (length N)
+y_path = os.path.join('..','qmof-bandgaps.csv') # path to band gap data (length N)
 
 #---------------------------------------
 #Read in data
@@ -24,13 +25,6 @@ df = pd.concat([df_features, df_BG], axis=1, sort=True)
 df = df.dropna()
 refcodes = df.index
 
-# Normalize df_features
-scaler = MinMaxScaler()
-scaler.fit(df.loc[:, (df.columns != 'BG_PBE')])
-df.loc[:, (df.columns != 'BG_PBE')] = scaler.transform(
-	df.loc[:, (df.columns != 'BG_PBE')])
-
-# Make a training and testing set
 mae = []
 r2 = []
 rho = []
@@ -42,18 +36,23 @@ for train_size in train_sizes:
 	r2_test_seeds = []
 	rho_test_seeds = []
 	for seed in seeds:
+
+		# Make a training and testing set
 		train_set, test_set = train_test_split(
 			df, test_size=test_size, shuffle=True, random_state=seed)
 		if train_size != -1:
-			train_set = train_set[0:train_size]
+			train_set = train_set[0:int(round(train_size*0.8))]
 		X_train = train_set.loc[:, (df.columns != 'BG_PBE')]
-		refcodes_train = X_train.index
-		X_train = X_train.to_numpy()
-		y_train = train_set.loc[:, df.columns == 'BG_PBE'].to_numpy()
-
 		X_test = test_set.loc[:, (df.columns != 'BG_PBE')]
+		refcodes_train = X_train.index
 		refcodes_test = X_test.index
-		X_test = X_test.to_numpy()
+
+		scaler = MinMaxScaler()
+		scaler.fit(X_train)
+		X_train = scaler.transform(X_train)
+		X_test = scaler.transform(X_test)
+
+		y_train = train_set.loc[:, df.columns == 'BG_PBE'].to_numpy()
 		y_test = test_set.loc[:, df.columns == 'BG_PBE'].to_numpy()
 
 		# Train and evaluate KRR model

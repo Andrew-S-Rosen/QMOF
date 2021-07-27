@@ -8,7 +8,7 @@ from sparse import load_npz
 
 # Settings
 basepath = os.getcwd()  # Base path where results will be stored
-refcodes_path = 'qmof-refcodes.csv'  # IDs corresponding to N structures
+refcodes_path = os.path.join('..','qmof-refcodes.csv')  # IDs corresponding to N structures
 comparison_refcodes_path = refcodes_path  # IDs corresponding to M structures
 soaps_path = os.path.join(basepath, 'soap_matrices') # Path where SOAP matrices are stored
 
@@ -34,7 +34,7 @@ print('Initializing M matrix')
 avg_soaps_M = np.zeros((M, N_features), dtype=np.float32)
 for i in range(M):
 	p = os.path.join(soaps_path, 'soap_'+str(refcodes[i])+'.npz')
-	soap_temp = load_npz(p).toarray()
+	soap_temp = load_npz(p).todense()
 	avg_soaps_M[i, :] = soap_temp.mean(axis=0)
 
 # Prepare N average SOAPs
@@ -46,7 +46,7 @@ else:
 	for i in range(N):
 		p = os.path.join(soaps_path, 'soap_' +
 						 str(comparison_refcodes[i])+'.npz')
-		soap_temp = load_npz(p).toarray()
+		soap_temp = load_npz(p).todense()
 		avg_soaps_N[i, :] = soap_temp.mean(axis=0)
 
 # Compute average kernel matrix

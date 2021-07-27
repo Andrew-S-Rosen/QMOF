@@ -3,10 +3,11 @@ from ase.io import read
 from pymatgen.io import ase as pm_ase
 import numpy as np
 import pandas as pd
+import os
 
 # Settings
-xyz_path = 'qmof-geometries.xyz' # list of appended XYZs (length N)
-refcodes_path = 'qmof-refcodes.csv' # list of refcodes (length N)
+xyz_path = os.path.join('..','qmof-geometries.xyz') # list of appended XYZs (length N)
+refcodes_path = os.path.join('..','qmof-refcodes.csv') # list of refcodes (length N)
 
 #---------------------------------------
 # Read in structures

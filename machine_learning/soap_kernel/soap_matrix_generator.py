@@ -8,8 +8,8 @@ import os
 basepath = os.getcwd()  # base path where avg SOAP matrices will be stored
 soap_params = {'rcut': 4.0, 'sigma': 0.1, 'nmax': 9, 'lmax': 9,
 			   'rbf': 'gto', 'average': 'off', 'crossover': True}
-xyz_path = 'qmof-geometries.xyz' # appended XYZ of structures (length N)
-refcodes_path = 'qmof-refcodes.csv' # refcode for each structure (length N)
+xyz_path = os.path.join('..','qmof-geometries.xyz') # appended XYZ of structures (length N)
+refcodes_path = os.path.join('..','qmof-refcodes.csv') # refcode for each structure (length N)
 
 #---------------------------------------
 # Make folder if not present

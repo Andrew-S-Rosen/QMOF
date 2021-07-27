@@ -3,7 +3,7 @@ Here, we describe the data sources for the MOF crystal structures in the QMOF Da
 
 ## Experimetnal MOFs
 ### CSD
-Most materials in the QMOF Database are taken from the [Cambridge Structural Database](https://www.ccdc.cam.ac.uk/structures/) (CSD) with their free solvents removed. To determine which materials in the CSD are sufficiently MOF-like, we used the list of materials in the [CSD MOF Subset](https://pubs.acs.org/doi/abs/10.1021/acs.chemmater.7b00441) and the [2019 CoRE MOF Database](https://pubs.acs.org/doi/abs/10.1021/acs.jced.9b00835). Unless otherwise stated, these structures were taken directly from the CSD so that we could use the valuable CSD meta-data to choose which materials to discard in our pre-screening process.
+Most materials in the QMOF Database are taken from the [Cambridge Structural Database](https://www.ccdc.cam.ac.uk/structures/) (CSD) with their free solvents removed. To determine which materials in the CSD are sufficiently MOF-like, we used the list of materials in the [CSD MOF Subset](https://pubs.acs.org/doi/abs/10.1021/acs.chemmater.7b00441) and the [2019 CoRE MOF Database](https://pubs.acs.org/doi/abs/10.1021/acs.jced.9b00835). Unless otherwise stated, these structures were taken directly from the CSD so that we could use the valuable CSD meta-data to choose which materials to discard in our pre-screening process. Note that given the loose definition of a MOF in the CSD MOF Subset, some of these materials may be better classified as coordination polymers.
 
 All materials taken from the CSD have `_FSR` at the end of their name. The `source` flag is set to `'CSD'`.
 
@@ -30,7 +30,7 @@ A database of ToBaCCo-constructed Zr-MOFs was adopted from [prior work](https://
 All materials taken from this dataset have `tobacco` and `_SR_` in their names. The `source` flag is set to `'Anderson'`.
 
 #### Colón, Gómez-Gualdrón, and Snurr
-A database of Cu triangle MOFs was adopted from [prior work](https://pubs.acs.org/doi/abs/10.1021/acs.cgd.7b00848) by Colón, Gómez-Gualdrón, and Snurr. These structures had H atoms in the center of the Cu triangles, which were removed before relaxing their structures with DFT.
+A database of Cu triangle MOFs was adopted from [prior work](https://pubs.acs.org/doi/abs/10.1021/acs.cgd.7b00848) by Colón, Gómez-Gualdrón, and Snurr. These structures had H atoms in the center of the Cu triangles, which were removed before relaxing their structures with DFT. See [here](https://github.com/snurr-group/tobacco_mofs_mc_0_node) for the dataset.
 
 All materials taken from this dataset have `tobacco` in their names. The `source` flag is set to `'ToBaCCo'`.
 
