@@ -1,7 +1,7 @@
 # ML Model Results
 
 ## Overview
-When trained on 80% of [QMOF Database v8](https://figshare.com/articles/dataset/QMOF_Database/13147324/8), the testing set ML results are as follows:
+When trained on 80% of [QMOF Database v8](https://figshare.com/articles/dataset/QMOF_Database/13147324/8), the testing set ML results for band gap prediction are as follows:
  
 | Method | MAE (eV) | R^2 | ρ |
 | ----------- | ----------- | ----------- | ----------- |
