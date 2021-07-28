@@ -13,7 +13,7 @@ gamma = 0.1
 kernel = 'laplacian' # kernel function
 test_size = 0.2  # fraction held-out for testing
 seed = 42  # random seed
-fingerprint_path = 'meredig_fingerprints.csv' # fingerprints (length N)
+fingerprint_path = 'stoich120_fingerprints.csv' # fingerprints (length N)
 y_path = os.path.join('..','qmof-bandgaps.csv') # band gaps (lenght N)
 
 #---------------------------------------
