@@ -5,6 +5,7 @@ from sparse import load_npz
 # This will make an average kernel matrix of (M x N) dimensions.
 # If refcodes_path == comparison_refcodes_path, then M = N.
 # This code must be run after `soap_matrix_generator.py`
+# Note: This can be memory-intensive.
 
 # Settings
 basepath = os.getcwd()  # Base path where results will be stored
@@ -33,17 +34,17 @@ N_features = np.shape(example_soap)[1]
 print('Initializing M matrix')
 avg_soaps_M = np.zeros((M, N_features), dtype=np.float32)
 for i in range(M):
+	print(refcodes[i])
 	p = os.path.join(soaps_path, 'soap_'+str(refcodes[i])+'.npz')
 	soap_temp = load_npz(p).todense()
 	avg_soaps_M[i, :] = soap_temp.mean(axis=0)
 
 # Prepare N average SOAPs
-if M == N and refcodes_path == comparison_refcodes_path:
-	avg_soaps_N = avg_soaps_M
-else:
+if M != N or refcodes_path != comparison_refcodes_path:
 	print('Initializing N matrix')
 	avg_soaps_N = np.zeros((N, N_features), dtype=np.float32)
 	for i in range(N):
+		print(comparison_refcodes[i])
 		p = os.path.join(soaps_path, 'soap_' +
 						 str(comparison_refcodes[i])+'.npz')
 		soap_temp = load_npz(p).todense()
@@ -52,7 +53,7 @@ else:
 # Compute average kernel matrix
 print('Computing K')
 if M == N and refcodes_path == comparison_refcodes_path:
-	K = avg_soaps_M.dot(avg_soaps_N.T)
+	K = avg_soaps_M.dot(avg_soaps_M.T)
 	norm = np.sqrt(np.einsum('ii,jj->ij', K, K))
 else:
 	K = avg_soaps_M.dot(avg_soaps_N.T)
