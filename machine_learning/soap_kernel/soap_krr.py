@@ -13,7 +13,7 @@ test_size = 0.2  # fraction held-out for testing
 seed = 42  # random seed
 kernel_path = 'avg_soap_kernel.csv' # path to NxN kernel
 refcodes_path = os.path.join('..','qmof-refcodes.csv') # path to refcodes (length N)
-y_path = os.path.join('..','opt-bandgaps.csv') # path to band gaps (length N)
+y_path = os.path.join('..','qmof-bandgaps.csv') # path to band gaps (length N)
 
 #---------------------------------------
 # Read in data

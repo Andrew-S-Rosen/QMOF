@@ -15,7 +15,7 @@ seeds = [42, 125, 267, 541, 582]  # random seeds
 train_sizes = [2**7, 2**8, 2**9, 2**10, 2**11, 2**12, 2**13, -1]  # train sizes
 kernel_path = 'avg_soap_kernel.csv' # path to NxN kernel
 refcodes_path = os.path.join('..','qmof-refcodes.csv') # path to refcodes (length N)
-y_path = os.path.join('..','opt-bandgaps.csv') # path to band gaps (length N)
+y_path = os.path.join('..','qmof-bandgaps.csv') # path to band gaps (length N)
 
 #---------------------------------------
 # Read in data
