@@ -11,7 +11,7 @@ All materials taken from the CSD have `_FSR` at the end of their name. The `sour
 Since v8 of the QMOF Database, some MOFs were taken directly from the 2019 CoRE MOF Database uploaded on [Zenodo](https://doi.org/10.5281/zenodo.3677685
 ). In these cases, only the free solvent removed structures were adopted. A curated list of CoRE MOFs was taken from [Kancharlapalli et al.](https://pubs.acs.org/doi/abs/10.1021/acs.jctc.0c01229) to reduce the likelihood of obtaining erroneous crystal structures.
 
-All materials taken directly from the CoRE MOF Database have `core_` at the start of their name. The `source` flag is set to `'CoRE'`. Note that there are many materials in the CoRE MOF Database that were instead downloaded directly from the CSD (as described above).
+All materials taken directly from the CoRE MOF Database have `core_` at the start of their name. The `source` flag is set to `'CoRE'`. Note that there are many materials in the CoRE MOF Database that were instead downloaded directly from the CSD (as described above) and therefore may have the `source` flag set to `'CSD'`.
 
 ### Pyrene MOFs
 A few pyrene-containing MOFs were taken from [prior work](https://pubs.rsc.org/en/content/articlehtml/2021/cs/d0cs00424c) using the data uploaded to the [Materials Cloud](https://doi.org/10.24435/materialscloud:z5-ct).
