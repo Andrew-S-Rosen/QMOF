@@ -1,7 +1,7 @@
 This file documents all updates to the QMOF database on Figshare. See [here](https://github.com/arosen93/QMOF/blob/main/data_sources.md) for a description of the structure repositories we have taken MOFs from.
 
 # Current version
-[v9](https://figshare.com/articles/dataset/QMOF_Database/13147324). Total size: 21,056 structures.
+[v10](https://figshare.com/articles/dataset/QMOF_Database/13147324). Total size: 21,056 structures.
 
 # Changelog
 - [v10](https://figshare.com/articles/dataset/QMOF_Database/13147324/10): File upload fix. 09/01/21.
