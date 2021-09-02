@@ -34,7 +34,7 @@ All updates to the QMOF Database are made on the corresponding Figshare reposito
 For a description of where the initial structures were sourced from, please refer to [data_sources.md](https://github.com/arosen93/QMOF/blob/main/data_sources.md).
 
 ## Database Handling Tips
-Miscellaneous Python scripts that you may find helpful can be found at [database_tools](database_tools), such as scripts to filter out problematic MOF structures and add partial charges to a set of MOF CIFs. If you are looking for a specific MOF in the QMOF Database but don't know its identifier, please follow the suggestions at [mofid_search.md](mofid_search.md). 
+Miscellaneous Python scripts that you may find helpful can be found at [database_tools](database_tools), such as scripts to filter out problematic MOF structures. If you are looking for a specific MOF in the QMOF Database but don't know its identifier, please follow the suggestions at [mofid_search.md](mofid_search.md). 
 
 ## Machine Learning
 For scripts to generate features and train ML models, refer to [machine_learning](machine_learning). For ML model performance on QMOF Database, please refer to [benchmarks.md](benchmarks.md).
