@@ -3,7 +3,7 @@
 <img src=logo.png>
 
 ## Overview
-This GitHub repository is the landing page for the Quantum MOF (QMOF) Database – a publicly available dataset of quantum-chemical properties for metal–organic frameworks (MOFs) and coordination polymers derived from high-throughput periodic density functional theory calculations. Currently, the QMOF Database contains computed properties for 18,000+ unique structures, including both experimentally synthesized and hypothetical materials.
+This GitHub repository is the landing page for the Quantum MOF (QMOF) Database – a publicly available dataset of quantum-chemical properties for metal–organic frameworks (MOFs) and coordination polymers derived from high-throughput periodic density functional theory calculations. Currently, the QMOF Database contains computed properties for 20,000+ structures, including both experimentally synthesized and hypothetical materials.
 
 If you use or wish to cite the QMOF Database, please refer to the following publication:
 
@@ -37,7 +37,7 @@ For a description of where the initial structures were sourced from, please refe
 Miscellaneous Python scripts that you may find helpful can be found at [database_tools](database_tools), such as scripts to filter out problematic MOF structures and add partial charges to a set of MOF CIFs. If you are looking for a specific MOF in the QMOF Database but don't know its identifier, please follow the suggestions at [mofid_search.md](mofid_search.md). 
 
 ## Machine Learning
-For scripts to generate features and train ML models, refer to [machine_learning](machine_learning). For ML model performance on QMOF Database v8, please refer to [benchmarks.md](benchmarks.md).
+For scripts to generate features and train ML models, refer to [machine_learning](machine_learning). For ML model performance on QMOF Database, please refer to [benchmarks.md](benchmarks.md).
 
 ## Issue Tracking
 If you spot an issue with using or accessing the QMOF Database, please describe it in detail on the [Issues](https://github.com/arosen93/QMOF/issues) tracker. Similarly, if you identify any materials with structural fidelity issues not captured via the automated filtering steps, please share them so that they can be removed in future versions.

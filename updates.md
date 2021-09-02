@@ -1,9 +1,10 @@
 This file documents all updates to the QMOF database on Figshare. See [here](https://github.com/arosen93/QMOF/blob/main/data_sources.md) for a description of the structure repositories we have taken MOFs from.
 
 # Current version
-[v8](https://figshare.com/articles/dataset/QMOF_Database/13147324). Total size: 19,561 structures (18,198 de-duplicated with Pymatgen's `StructureMatcher`).
+[v9](https://figshare.com/articles/dataset/QMOF_Database/13147324). Total size: 21,056 structures.
 
 # Changelog
+- [v9](https://figshare.com/articles/dataset/QMOF_Database/13147324/9): Brought the total number of structures to 21,056 by adding ~3000 new DFT-optimized MOFs from the CoRE MOF Database (based on the clean subset identified by [Chen and Manz](https://doi.org/10.1039/D0RA02498H)), the [Genomic MOF Database](https://figshare.com/s/ec378d7315581e48f1e4), and the [CSD MOF Subset](10.1021/acs.chemmater.7b00441). Deprecated 13 structures. Added spacegroup info. Added "synthesized?" flag. Added missing PLDs and LCDs. Fixed 186 structures that had EDIFF = 1e-4 instead of EDIFF = 1e-6. Removed structures that were duplicates according to Pymatgen's StructureMatcher to avoid confusion. The user no longer needs to run the StructureMatcher as a result.
 - [v8](https://figshare.com/articles/dataset/QMOF_Database/13147324/8): Added 1243 new DFT-optimized MOFs. 623 were taken from the [Boyd & Woo dataset](https://doi.org/10.24435/materialscloud:2018.0016/v3), 485 were taken directly from the [2019 CoRE MOF FSR Database](https://doi.org/10.5281/zenodo.3677685
 ), 92 were Cu triangle MOFs taken from [ToBaCCo](https://pubs.acs.org/doi/abs/10.1021/acs.cgd.7b00848), and 44 were Hf MOFs obtained by exchanging the Zr metals of ToBaCCo MOFs by [Anderson and coworkers](https://osf.io/7dgvy/). For the CoRE MOFs, only those found in [this pre-curated list](https://doi.org/10.1021/acs.jctc.0c01229
 ) were included to maximize structural fidelity. For the hypothetical MOFs, some new ones were introduced using the Boyd & Woo structures as a starting point (e.g. by exchanging metal cations). 3 MOFs were deprecated. Added MOFids, DOIs, spin-dependent CBM/VBM, and initial CIFs for the hypothetical MOFs. 07/12/21.
