@@ -46,7 +46,7 @@ If you spot an issue with using or accessing the QMOF Database, please describe 
 The data underlying the QMOF Database is made publicly available under a [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/). This means you can copy it, share it, adapt it, and do whatever you like with it provided that you give [appropriate credit](https://wiki.creativecommons.org/wiki/License_Versions#Detailed_attribution_comparison_chart) and [indicate any changes](https://wiki.creativecommons.org/wiki/License_Versions#Modifications_and_adaptations_must_be_marked_as_such).
 
 ## Contact
-If you have any questions, you can reach the corresponding author at the following e-mail: rosen[at]u.northwestern.edu.
+If you have any questions, you can reach the corresponding author at the e-mail listed [here](https://asrosen.com/contact).
 
 ## QMOF Database in the Wild
 Below is a list of papers that have directly used the QMOF Database:
