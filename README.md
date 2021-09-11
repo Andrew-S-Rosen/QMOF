@@ -14,8 +14,10 @@ Follow the QMOF Database on Twitter ([@QMOF_Database](https://twitter.com/QMOF_D
 ## Accessing the QMOF Database
 The QMOF Database is permanently archived on Figshare at the following link:
 <p align="center">
-  <a href="https://doi.org/10.6084/m9.figshare.13147324"><b><i>Access the QMOF Database</i></b></a>
+  <a href="https://doi.org/10.6084/m9.figshare.13147324"><b><i>Access the QMOF Database [v10]</i></b></a>
 </p>
+
+**NOTE**: Please read [this GitHub issue](https://github.com/arosen93/QMOF/issues/29) if you are using v10.
 
 The files within the QMOF Database are described below:
 
