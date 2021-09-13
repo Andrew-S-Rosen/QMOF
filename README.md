@@ -19,7 +19,7 @@ Tabulated data within the QMOF Database is permanently archived on Figshare at t
 
 The data on Figshare includes:
 
-- [`qmof_database.zip`](https://doi.org/10.6084/m9.figshare.13147324): Structures and tabulated properties of all materials in the QMOF Database. This is likely the data that you're looking for.
+- qmof_database.zip: Structures and tabulated properties of all materials in the QMOF Database. This is likely the data that you're looking for.
 
 Other files of interest that are hosted elsewhere include:
 
