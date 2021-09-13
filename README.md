@@ -9,28 +9,28 @@ If you use or wish to cite the QMOF Database, please refer to the following publ
 
 - A.S. Rosen, S.M. Iyer, D. Ray, Z. Yao, A. Aspuru-Guzik, L. Gagliardi, J.M. Notestein, R.Q. Snurr. "Machine Learning the Quantum-Chemical Properties of Metal–Organic Frameworks for Accelerated Materials Discovery", *Matter*, **4**, 1578-1597 (2021). DOI: [10.1016/j.matt.2021.02.015](https://doi.org/10.1016/j.matt.2021.02.015).
 
-Follow the QMOF Database on Twitter ([@QMOF_Database](https://twitter.com/QMOF_Database)) if you want to be the first to know about the latest news and updates. Check the [Projects](https://github.com/arosen93/QMOF/projects) tab to see what additions are planned for the database.
+Follow the QMOF Database on Twitter ([@QMOF_Database](https://twitter.com/QMOF_Database)) if you want to be the first to know about the latest news and updates.
 
 ## Accessing the QMOF Database
-The QMOF Database is permanently archived on Figshare at the following link:
+Tabulated data within the QMOF Database is permanently archived on Figshare at the following link:
 <p align="center">
   <a href="https://doi.org/10.6084/m9.figshare.13147324"><b><i>Access the QMOF Database [v10]</i></b></a>
 </p>
 
-**NOTE**: Please read [this GitHub issue](https://github.com/arosen93/QMOF/issues/29) if you are using v10.
+The data on Figshare includes:
 
-The files within the QMOF Database are described below:
+1. [`qmof_database.zip`](https://doi.org/10.6084/m9.figshare.13147324): Structures and tabulated properties of all materials in the QMOF Database. This is likely the data that you're looking for.
 
-1. `qmof_database.zip`: Structures and tabulated properties of all materials in the QMOF Database. This is likely the data that you're looking for.
+Other files of interest that are hosted elsewhere include:
 
-2. `vasp_files_A.zip`: VASP input and output files at the PBE-D3(BJ) level of theory for the structurally relaxed MOFs in the QMOF Database. It contains additional properties that may be of interest to some users.
+2. Raw VASP input and output files are available on NOMAD (soon).
 
-3. `vasp_files_B.zip`: Coming soon. 😉
+3. Charge densities are made available on a [SharePoint server](https://nuwildcat.sharepoint.com/:f:/s/TGS-QMOF/EqSKtJZ4lmBArOh6_mhml18BqDuIHcyu99GoUw_ILONYiQ?e=qFjVtc).
 
-In the above data files, you can find DFT-optimized geometries (lattice constants, atomic positions), energies, partial atomic charges (DDEC6, CM5, Bader), bond orders (DDEC6), atomic spin densities (DDEC6, Bader), magnetic moments, density of states, band gaps, and more. The charge densities, which are too large for Figshare, are made available [here](https://nuwildcat.sharepoint.com/:f:/s/TGS-QMOF/EqSKtJZ4lmBArOh6_mhml18BqDuIHcyu99GoUw_ILONYiQ?e=0jQfa4).
+In the above data files, you can find DFT-optimized geometries (lattice constants, atomic positions), energies, partial atomic charges (DDEC6, CM5, Bader), bond orders (DDEC6), atomic spin densities (DDEC6, Bader), magnetic moments, density of states, band gaps, and more.
 
 ## Updates
-All updates to the QMOF Database are made on the corresponding Figshare repository with new version-specific DOIs. Changes are documented in [updates.md](updates.md). It is best-practice to specify the version of the QMOF Database you used in your work to ensure that your results can be accurately reproduced.
+Updates to the QMOF Database are made on the corresponding Figshare repository with new version-specific DOIs. Changes are documented in [updates.md](updates.md). It is best-practice to specify the version of the QMOF Database you used in your work to ensure that your results can be accurately reproduced.
 
 ## Structure Sources
 For a description of where the initial structures were sourced from, please refer to [data_sources.md](https://github.com/arosen93/QMOF/blob/main/data_sources.md).
