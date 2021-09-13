@@ -19,13 +19,13 @@ Tabulated data within the QMOF Database is permanently archived on Figshare at t
 
 The data on Figshare includes:
 
-1. [`qmof_database.zip`](https://doi.org/10.6084/m9.figshare.13147324): Structures and tabulated properties of all materials in the QMOF Database. This is likely the data that you're looking for.
+- [`qmof_database.zip`](https://doi.org/10.6084/m9.figshare.13147324): Structures and tabulated properties of all materials in the QMOF Database. This is likely the data that you're looking for.
 
 Other files of interest that are hosted elsewhere include:
 
-2. Raw VASP input and output files are available on NOMAD (soon).
+- Raw VASP input and output files are available on NOMAD (soon).
 
-3. Charge densities are made available on a [SharePoint server](https://nuwildcat.sharepoint.com/:f:/s/TGS-QMOF/EqSKtJZ4lmBArOh6_mhml18BqDuIHcyu99GoUw_ILONYiQ?e=qFjVtc).
+- Charge densities are made available on a [SharePoint server](https://nuwildcat.sharepoint.com/:f:/s/TGS-QMOF/EqSKtJZ4lmBArOh6_mhml18BqDuIHcyu99GoUw_ILONYiQ?e=qFjVtc).
 
 In the above data files, you can find DFT-optimized geometries (lattice constants, atomic positions), energies, partial atomic charges (DDEC6, CM5, Bader), bond orders (DDEC6), atomic spin densities (DDEC6, Bader), magnetic moments, density of states, band gaps, and more.
 
