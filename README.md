@@ -21,7 +21,7 @@ The data on Figshare includes:
 
 - `qmof_database.zip`: Structures and tabulated properties of all materials in the QMOF Database. This is likely the data that you're looking for.
 
-Other files of interest that are hosted elsewhere include:
+Other files that are hosted elsewhere include:
 
 - Raw VASP input and output files are available on NOMAD (soon).
 
