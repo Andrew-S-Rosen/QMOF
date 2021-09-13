@@ -23,7 +23,7 @@ The data on Figshare includes:
 
 Other files that are hosted elsewhere include:
 
-- Raw VASP input and output files are available on NOMAD (soon).
+- VASP input and output files are available on NOMAD (soon).
 
 - Charge densities are made available on a [SharePoint server](https://nuwildcat.sharepoint.com/:f:/s/TGS-QMOF/EqSKtJZ4lmBArOh6_mhml18BqDuIHcyu99GoUw_ILONYiQ?e=qFjVtc).
 
