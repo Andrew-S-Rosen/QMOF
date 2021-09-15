@@ -7,25 +7,27 @@ This GitHub repository is the landing page for the Quantum MOF (QMOF) Database �
 
 If you use or wish to cite the QMOF Database, please refer to the following publication:
 
-- A.S. Rosen, S.M. Iyer, D. Ray, Z. Yao, A. Aspuru-Guzik, L. Gagliardi, J.M. Notestein, R.Q. Snurr. "Machine Learning the Quantum-Chemical Properties of Metal–Organic Frameworks for Accelerated Materials Discovery", *Matter*, **4**, 1578-1597 (2021). DOI: [10.1016/j.matt.2021.02.015](https://doi.org/10.1016/j.matt.2021.02.015).
+* A.S. Rosen, S.M. Iyer, D. Ray, Z. Yao, A. Aspuru-Guzik, L. Gagliardi, J.M. Notestein, R.Q. Snurr. "Machine Learning the Quantum-Chemical Properties of Metal–Organic Frameworks for Accelerated Materials Discovery", *Matter*, **4**, 1578-1597 (2021). DOI: [10.1016/j.matt.2021.02.015](https://doi.org/10.1016/j.matt.2021.02.015).
 
 Follow the QMOF Database on Twitter ([@QMOF_Database](https://twitter.com/QMOF_Database)) if you want to be the first to know about the latest news and updates.
 
 ## Accessing the QMOF Database
 Tabulated data within the QMOF Database is permanently archived on Figshare at the following link:
 <p align="center">
-  <a href="https://doi.org/10.6084/m9.figshare.13147324"><b><i>Access the QMOF Database [v10]</i></b></a>
+  <a href="https://doi.org/10.6084/m9.figshare.13147324"><b><i>Access the QMOF Database [v12]</i></b></a>
 </p>
 
 The data on Figshare includes:
 
-1. [`qmof_database.zip`](https://doi.org/10.6084/m9.figshare.13147324): Structures and tabulated properties of all materials in the QMOF Database. This is likely the data that you're looking for.
+* `qmof_database.zip`: Structures and tabulated properties of all materials in the QMOF Database.
 
-Other files of interest that are hosted elsewhere include:
+Other files that are hosted elsewhere include:
 
-2. Raw VASP input and output files are available on NOMAD (soon).
+* VASP input and output files are available via NOMAD in the following curated datasets, which you can search by specific filename (e.g. `comment=DOTSOV01_FSR`) or QMOF ID (`external_id=qmof-8b5bb88`):
+  - [`QMOF_A_SCF`](https://nomad-lab.eu/prod/rae/gui/dataset/id/O-FUAo0mThSUeXg70cMN3Q?results=entries): Static, self-consistent calculations associated with the optimized geometries, energeies, partial atomic charges (DDEC6, CM5, Bader), bond orders (DDEC6), atomic spin densities (DDEC6, Bader), and magnetic moments.
+  - `QMOF_A_NSCF` (coming soon): Static, non-self-consistent calculations using the structures and charge densities in `QMOF_A_SCF` to calculate band gaps and density of states.
 
-3. Charge densities are made available on a [SharePoint server](https://nuwildcat.sharepoint.com/:f:/s/TGS-QMOF/EqSKtJZ4lmBArOh6_mhml18BqDuIHcyu99GoUw_ILONYiQ?e=qFjVtc).
+* Charge densities are made available on a [SharePoint server](https://nuwildcat.sharepoint.com/:f:/s/TGS-QMOF/EqSKtJZ4lmBArOh6_mhml18BqDuIHcyu99GoUw_ILONYiQ?e=qFjVtc).
 
 In the above data files, you can find DFT-optimized geometries (lattice constants, atomic positions), energies, partial atomic charges (DDEC6, CM5, Bader), bond orders (DDEC6), atomic spin densities (DDEC6, Bader), magnetic moments, density of states, band gaps, and more.
 
