@@ -25,7 +25,7 @@ Other files that are hosted elsewhere include:
 
 * VASP input and output files are available via NOMAD in the following curated datasets, which you can query by specific filename (e.g. `comment=DOTSOV01_FSR`) or QMOF ID (`external_id=qmof-8b5bb88`):
   - [`QMOF_A_SCF`](https://nomad-lab.eu/prod/rae/gui/dataset/id/O-FUAo0mThSUeXg70cMN3Q?results=entries): Static, self-consistent calculations associated with the optimized geometries, energeies, partial atomic charges (DDEC6, CM5, Bader), bond orders (DDEC6), atomic spin densities (DDEC6, Bader), and magnetic moments.
-  - `QMOF_A_NSCF` (coming soon): Static, non-self-consistent calculations using the structures and charge densities in `QMOF_A_SCF` to calculate band gaps and density of states with a denser k-point grid.
+  - `QMOF_A_NSCF` (coming soon): Static, non-self-consistent calculations using the structures and charge densities in `QMOF_A_SCF` to calculate band gaps and density of states with a denser k-point grid. These are unpublished results and should be used with caution at the moment.
 
 * Charge densities are made available on a [SharePoint server](https://nuwildcat.sharepoint.com/:f:/s/TGS-QMOF/EqSKtJZ4lmBArOh6_mhml18BqDuIHcyu99GoUw_ILONYiQ?e=qFjVtc).
 
