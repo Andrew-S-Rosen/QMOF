@@ -17,16 +17,13 @@ Tabulated data within the QMOF Database is permanently archived on Figshare at t
   <a href="https://doi.org/10.6084/m9.figshare.13147324"><b><i>Access the QMOF Database [v13]</i></b></a>
 </p>
 
-The data on Figshare includes:
+The data on Figshare includes DFT-optimized geometries (lattice constants, atomic positions), energies, partial atomic charges (DDEC6, CM5, Bader), bond orders (DDEC6), atomic spin densities (DDEC6, Bader), magnetic moments, band gaps, and more.
 
-* `qmof_database.zip`: Structures and tabulated properties of all materials in the QMOF Database. This is likely the data you are looking for.
+To access the VASP input and output files, refer to the following NOMAD repository:
 
-Other files that are hosted elsewhere include:
-
-* VASP input and output files are available via NOMAD in the following curated datasets, which you can query by specific filename (e.g. `comment=DOTSOV01_FSR`) or QMOF ID (`external_id=qmof-8b5bb88`):
   - [`QMOF_A_SCF`](https://nomad-lab.eu/prod/rae/gui/dataset/id/O-FUAo0mThSUeXg70cMN3Q?results=entries): Computed properties at the PBE-D3(BJ) level of theory.
 
-* Charge densities are made available on a [SharePoint server](https://nuwildcat.sharepoint.com/:f:/s/TGS-QMOF/EqSKtJZ4lmBArOh6_mhml18BqDuIHcyu99GoUw_ILONYiQ?e=qFjVtc).
+Due to their large filesizes, charge densities are made available on a separate [SharePoint server](https://nuwildcat.sharepoint.com/:f:/s/TGS-QMOF/EqSKtJZ4lmBArOh6_mhml18BqDuIHcyu99GoUw_ILONYiQ?e=qFjVtc).
 
 ## Updates
 Updates to the QMOF Database are made on the corresponding Figshare repository with new version-specific DOIs. Changes are documented in [updates.md](updates.md). It is best-practice to specify the version of the QMOF Database you used in your work to ensure that your results can be accurately reproduced.
