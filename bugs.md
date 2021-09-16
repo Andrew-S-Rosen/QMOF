@@ -1,1 +1,0 @@
-- In v11 of the QMOF Database, band gaps were updated to reflect NSCF calculations at higher k-point densities. However, because LMAXMIX was not raised when saving the CHGCAR files, there can sometimes be a +/- 0.1 eV uncertainty in the computed band gaps. In v12, these NSCF calculations were provided as an optional supplemental dataset. In v13, they were deprecated entirely.
