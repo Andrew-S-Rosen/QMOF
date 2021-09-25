@@ -14,8 +14,8 @@ For reproducibility purposes, we also recommend mentioning the version of the QM
 Follow the QMOF Database on Twitter ([@QMOF_Database](https://twitter.com/QMOF_Database)) if you want to be the first to know about the latest news and updates.
 
 ## Accessing the QMOF Database
-### Tabulated Data (Figshare)
-Tabulated data within the QMOF Database is permanently archived on Figshare at the following link:
+### Curated Data (Figshare)
+The data underlying the QMOF Database is permanently archived on Figshare at the following link:
 <p align="center">
   <a href="https://doi.org/10.6084/m9.figshare.13147324"><b><i>Access the QMOF Database [v13]</i></b></a>
 </p>
