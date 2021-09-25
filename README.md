@@ -27,7 +27,7 @@ To access the input and output files, refer to the following NOMAD repository:
 
   - [`QMOF Database - PBE`](https://nomad-lab.eu/prod/rae/gui/dataset/id/O-FUAo0mThSUeXg70cMN3Q): VASP input and output files for computed properties at the PBE-D3(BJ) level of theory.
 
-You can query the NOMAD entries via `comment` or `external_id`, which refer to the name and qmof-id for each material, respectively. 
+You can query the NOMAD entries via `comment` or `external_id`, which refer to the name and qmof-id for each material, respectively. You can also bulk download the entire dataset on NOMAD [here](https://nomad-lab.eu/prod/rae/gui/dataset/id/O-FUAo0mThSUeXg70cMN3Q?results=datasets).
 
 ### Other
 Due to their large filesizes, charge densities are made available on a separate [SharePoint server](https://nuwildcat.sharepoint.com/:f:/s/TGS-QMOF/EqSKtJZ4lmBArOh6_mhml18BqDuIHcyu99GoUw_ILONYiQ?e=qFjVtc).
