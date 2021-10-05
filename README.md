@@ -33,7 +33,7 @@ To access the input and output files, refer to the following NOMAD repository:
 You can query the NOMAD entries via `comment` or `external_id`, which refer to the name and qmof-id for each material, respectively. You can also bulk download the entire dataset on NOMAD [here](https://nomad-lab.eu/prod/rae/gui/dataset/id/O-FUAo0mThSUeXg70cMN3Q?results=datasets).
 
 ### Other
-Due to their large filesizes, charge densities are made available on a separate [SharePoint server](https://nuwildcat.sharepoint.com/:f:/s/TGS-QMOF/EqSKtJZ4lmBArOh6_mhml18BqDuIHcyu99GoUw_ILONYiQ?e=qFjVtc). To bulk-download the files, contact me directly to gain access to a Globus endpoint that will enable efficient data transfer.
+Due to their large filesizes, charge densities are made available on a separate [SharePoint server](https://nuwildcat.sharepoint.com/:f:/s/TGS-QMOF/EqSKtJZ4lmBArOh6_mhml18BqDuIHcyu99GoUw_ILONYiQ?e=qFjVtc). To bulk-download the files, [contact me](https://github.com/arosen93/QMOF#contact) directly to gain access to a Globus endpoint that will enable efficient data transfer.
 
 ## Structure Sources
 For a description of where the initial structures were sourced from, please refer to [data_sources.md](https://github.com/arosen93/QMOF/blob/main/data_sources.md).
