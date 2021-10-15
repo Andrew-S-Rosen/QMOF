@@ -3,7 +3,7 @@ BUBJUF_FSR
 core_ATOWIQ_freeONLY
 core_CUWROC_freeONLY
 core_DACFAR_freeONLY
-core_DELGEI_freeONLY
+core_DELGEI_manual
 core_DOKHIV_freeONLY
 core_ELELEN_freeONLY
 core_EQEREY_freeONLY
