@@ -32,7 +32,7 @@ To access the input and output files, refer to the following NOMAD repository:
 
 You can query the NOMAD entries via `comment` or `external_id`, which refer to the name and qmof-id for each material, respectively. You can also bulk download the entire dataset on NOMAD [here](https://nomad-lab.eu/prod/rae/gui/dataset/id/O-FUAo0mThSUeXg70cMN3Q?results=datasets).
 
-### Other
+### Other Files
 Due to their large filesizes, charge densities are made available on a separate [SharePoint server](https://nuwildcat.sharepoint.com/:f:/s/TGS-QMOF/EqSKtJZ4lmBArOh6_mhml18BqDuIHcyu99GoUw_ILONYiQ?e=qFjVtc). To bulk-download the files, contact me directly to gain access to a Globus endpoint that will enable efficient data transfer.
 
 ## Structure Sources
@@ -40,6 +40,9 @@ For a description of where the initial structures were sourced from, please refe
 
 ## Updates
 Updates to the QMOF Database are made on the corresponding Figshare repository with new version-specific DOIs. Changes are documented in [updates.md](updates.md). It is best-practice to specify the version of the QMOF Database you used in your work to ensure that your results can be accurately reproduced.
+
+## Structures to Remove
+Please see [poor_fidelity.md](poor_fidelity.md) for a list of structures that will be removed from the QMOF Database in the next release due to poor structural fidelity.
 
 ## Database Handling Tips
 Miscellaneous Python scripts that you may find helpful can be found at [database_tools](database_tools), such as scripts to filter out problematic MOF structures. If you are looking for a specific MOF in the QMOF Database but don't know its identifier, please follow the suggestions at [mofid_search.md](mofid_search.md). 
