@@ -42,7 +42,7 @@ For a description of where the initial structures were sourced from, please refe
 Updates to the QMOF Database are made on the corresponding Figshare repository with new version-specific DOIs. Changes are documented in [updates.md](updates.md). It is best-practice to specify the version of the QMOF Database you used in your work to ensure that your results can be accurately reproduced.
 
 ## Structures to Remove
-Please see [poor_fidelity.md](poor_fidelity.md) for a list of structures that will be removed from the QMOF Database in the next release due to poor structural fidelity.
+Please see [poor_fidelity.md](poor_fidelity.txt) for a list of structures that will be removed from the QMOF Database in the next release due to poor structural fidelity.
 
 ## Database Handling Tips
 Miscellaneous Python scripts that you may find helpful can be found at [database_tools](database_tools), such as scripts to filter out problematic MOF structures. If you are looking for a specific MOF in the QMOF Database but don't know its identifier, please follow the suggestions at [mofid_search.md](mofid_search.md). 
