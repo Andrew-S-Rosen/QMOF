@@ -14,20 +14,12 @@ Explore the dataset and more at the following link:
 Follow the QMOF Database on Twitter ([@QMOF_Database](https://twitter.com/QMOF_Database)) if you want to be the first to know about the latest news and updates.
 
 ## Downloading the QMOF Database
-The data underlying the QMOF Database is permanently archived on Figshare at the following link:
+The data underlying the QMOF Database is permanently archived on Figshare and NOMAD, as described in the link below:
 <p align="center">
-  <a href="https://doi.org/10.6084/m9.figshare.13147324"><b><i>Download the QMOF Database</i></b></a>
+  <a href="https://materialsproject.gitbook.io/materials-project-public-docs/methodology/mof-explorer/downloading-the-data"><b><i>Download the QMOF Database</i></b></a>
 </p>
 
-The data on Figshare includes DFT-optimized geometries (lattice constants, atomic positions), energies, partial atomic charges (DDEC6, CM5, Bader), bond orders (DDEC6), atomic spin densities (DDEC6, Bader), magnetic moments, band gaps, and more.
-
-To access the VASP input and output files, refer to the following NOMAD repository:
-
-  - [`QMOF Database - PBE`](http://dx.doi.org/10.17172/NOMAD/2021.10.10-1): VASP input and output files for computed properties at the PBE-D3(BJ) level of theory.
-
-You can query the NOMAD entries via `comment` or `external_id`, which refer to the name and QMOF ID for each material, respectively. You can also bulk download the entire dataset on NOMAD [here](https://nomad-lab.eu/prod/rae/gui/dataset/id/O-FUAo0mThSUeXg70cMN3Q?results=datasets).
-
-Due to their large filesizes, charge densities are made available on a separate [Globus Endpoint](https://app.globus.org/file-manager?origin_id=13a0834e-226a-11ec-a0a4-6b21ca6daf73&origin_path=%2F).
+The available data includes DFT-optimized geometries (lattice constants, atomic positions), energies, partial atomic charges (DDEC6, CM5, Bader), bond orders (DDEC6), atomic spin densities (DDEC6, Bader), magnetic moments, band gaps, charge densities, density of states, and more.
 
 ## Structures to Remove
 Please see [poor_fidelity.txt](poor_fidelity.txt) for a list of structures that will be removed from the QMOF Database in the next release due to poor structural fidelity (e.g. missing H atoms or counterions).
