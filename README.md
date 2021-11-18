@@ -5,7 +5,8 @@
 ## Overview
 The Quantum MOF (QMOF) Database is a publicly available dataset of quantum-chemical properties for metal–organic frameworks (MOFs) and coordination polymers derived from high-throughput periodic density functional theory calculations.
 
-**The QMOF Database is now hosted on the Materials Project!** Explore the dataset and more at the following link:
+## The QMOF Database is now hosted on the Materials Project!
+Explore the dataset and more at the following link:
 <p align="center">
   <a href="https://materialsproject.org/mofs"><b><i>https://materialsproject.org/mofs</i></b></a>
 </p>
