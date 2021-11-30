@@ -5,21 +5,18 @@
 ## Overview
 The Quantum MOF (QMOF) Database is a publicly available dataset of quantum-chemical properties for metal–organic frameworks (MOFs) and coordination polymers derived from high-throughput periodic density functional theory calculations.
 
-## The QMOF Database is now hosted on the Materials Project!
+## Explore and Download the QMOF Database
 Explore the dataset and more at the following link:
 <p align="center">
   <a href="https://materialsproject.org/mofs"><b><i>https://materialsproject.org/mofs</i></b></a>
 </p>
 
-Follow the QMOF Database on Twitter ([@QMOF_Database](https://twitter.com/QMOF_Database)) if you want to be the first to know about the latest news and updates.
-
-## Downloading the QMOF Database
-The data underlying the QMOF Database is permanently archived on Figshare and NOMAD, as described in the documentation link below:
+To download the data underlying the QMOF Database (i.e. DFT-optimized geometries, energies, partial atomic charges, bond orders, atomic spin densities, magnetic moments, band gaps, charge densities, density of states, and more), see the documentation below:
 <p align="center">
   <a href="https://materialsproject.gitbook.io/materials-project-public-docs/methodology/mof-explorer/downloading-the-data"><b><i>Download the QMOF Database</i></b></a>
 </p>
 
-The available data includes DFT-optimized geometries (lattice constants, atomic positions), energies, partial atomic charges (DDEC6, CM5, Bader), bond orders (DDEC6), atomic spin densities (DDEC6, Bader), magnetic moments, band gaps, charge densities, density of states, and more.
+Follow the QMOF Database on Twitter ([@QMOF_Database](https://twitter.com/QMOF_Database)) if you want to be the first to know about the latest news and updates.
 
 ## Structures to Remove
 Please see [poor_fidelity.txt](poor_fidelity.txt) for a list of structures that will be removed from the QMOF Database in the next release due to poor structural fidelity (e.g. missing H atoms or counterions).
