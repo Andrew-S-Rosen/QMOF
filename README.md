@@ -13,7 +13,7 @@ Explore the dataset and more at the following link:
 
 To download the data underlying the QMOF Database (i.e. DFT-optimized geometries, energies, partial atomic charges, bond orders, atomic spin densities, magnetic moments, band gaps, charge densities, density of states, etc. as well as the raw VASP files), see the documentation below:
 <p align="center">
-  <a href="https://materialsproject.gitbook.io/materials-project-public-docs/methodology/mof-explorer/downloading-the-data"><b><i>Download the QMOF Database</i></b></a>
+  <a href="https://materialsproject.gitbook.io/materials-project-public-docs/methodology/mof-explorer/downloading-the-data"><b><i>Documentation: Downloading the QMOF Database</i></b></a>
 </p>
 
 Follow the QMOF Database on Twitter ([@QMOF_Database](https://twitter.com/QMOF_Database)) if you want to be the first to know about the latest news and updates.
