@@ -18,9 +18,6 @@ To download the data underlying the QMOF Database (i.e. DFT-optimized geometries
 
 Follow the QMOF Database on Twitter ([@QMOF_Database](https://twitter.com/QMOF_Database)) if you want to be the first to know about the latest news and updates.
 
-## Structures to Remove
-Please see [poor_fidelity.txt](poor_fidelity.txt) for a list of structures that will be removed from the QMOF Database in the next release due to poor structural fidelity (e.g. missing H atoms or counterions).
-
 ## Citation
 If you use or wish to cite the QMOF Database, please refer to the following publication:
 
