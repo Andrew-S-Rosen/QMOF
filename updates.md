@@ -1,9 +1,10 @@
 This file documents all updates to the QMOF database on Figshare. See [here](https://github.com/arosen93/QMOF/blob/main/data_sources.md) for a description of the structure repositories we have taken MOFs from.
 
 # Current version
-[v13](https://figshare.com/articles/dataset/QMOF_Database/13147324). Total size: 20,425 structures.
+[v14](https://figshare.com/articles/dataset/QMOF_Database/13147324). Total size: 20,375 structures.
 
 # Changelog
+- [v14](https://figshare.com/articles/dataset/QMOF_Database/13147324/14): New single-point calculations at the HLE17, HSE06* (i.e. 10% HF ex.), and HSE06 (25% HF ex.) levels of theory.
 - [v13](https://figshare.com/articles/dataset/QMOF_Database/13147324/13): Locked-in version to permanently match the files [uploaded to NOMAD](https://nomad-lab.eu/prod/rae/gui/dataset/id/O-FUAo0mThSUeXg70cMN3Q?results=entries). 09/15/21.
 - [v12](https://figshare.com/articles/dataset/QMOF_Database/13147324/12): Several MOFs taken from the [Genomic MOF Database](https://figshare.com/s/ec378d7315581e48f1e4) with over/underbonded atoms were removed, as the original authors of the Genomic MOF Database uploaded a fairly large fraction of structures with missing H atoms. Supplemental results from new non-self-consistent (NSCF) calculations with a higher k-point density are now provided (note: this was reverted in v13, as it was discovered that LMAXMIX was [not set high enough](https://github.com/materialsproject/pymatgen/commit/932d9da8c19d30040990bd273550e996c7d7519d), effecting the NSCF results for a subset of structures). Removed raw VASP files from Figshare to instead host them on [NOMAD](https://nomad-lab.eu/prod/rae/gui/dataset/id/O-FUAo0mThSUeXg70cMN3Q). Gave each MOF a unique hash-based identifier, which will match the identifiers on the forthcoming Materials Project MOF Explorer app. 09/14/21.
 - [v11](https://figshare.com/articles/dataset/QMOF_Database/13147324/11): Same changes as in v12, but the bandgaps.csv file was not made backwards-compatible here. 09/13/21.
