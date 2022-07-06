@@ -18,6 +18,9 @@ To download the data underlying the QMOF Database (i.e. DFT-optimized geometries
 
 Follow the QMOF Database on Twitter ([@QMOF_Database](https://twitter.com/QMOF_Database)) if you want to be the first to know about the latest news and updates.
 
+## Updates
+For a list of version-specific updates, see [updates.md](https://github.com/arosen93/QMOF/blob/main/updates.md).
+
 ## Citation
 If you use or wish to cite the QMOF Database, please refer to the following publications:
 
