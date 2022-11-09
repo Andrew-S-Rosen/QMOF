@@ -35,7 +35,7 @@ If you have any questions, you can reach the corresponding author at the e-mail 
 
 ## Papers Using the QMOF Database
 - V. Fung, J. Zhang, E. Juarez, B.G. Sumpter, *npj Comput. Mater.* (2021). https://doi.org/10.1038/s41524-021-00554-0
-- S.M. Moosa, B.A. Novotny, D. Ongari, E. Moubarak, M. Asgari, O. Kadioglu, C. Charalambous, A. Ortega-Guerrero, A.H. Farmahini, L. Sarkisov, S. Garcia, G. Noe, B. Smit, *Nat. Mater* (2022). https://doi.org/10.1038/s41563-022-01374-3
+- S.M. Moosa, B.A. Novotny, D. Ongari, E. Moubarak, M. Asgari, O. Kadioglu, C. Charalambous, A. Ortega-Guerrero, A.H. Farmahini, L. Sarkisov, S. Garcia, G. Noé, B. Smit, *Nat. Mater.* (2022). https://doi.org/10.1038/s41563-022-01374-3
 - H.U. Escobar- Hernandez, L.M. Perez, P. Hu, F.A. Soto, M.I. Papadaki, H.-C. Zhou, Q. Wang, *Ind. Eng. Chem. Res.* (2022). https://doi.org/10.1021/acs.iecr.2c00561
 - S.S. Omee, S.-Y. Louis, N. Fu, L. Wei, S. Dey, R. Dong, Q. Li, J. Hu, *Patterns* (2022). https://doi.org/10.1016/j.patter.2022.100491
 - X. Wu, Y. Che, L. Chen, E.J. Amigues, R. Wang, J. He, H. Dong, L. Ding, *ACS Appl. Mater. Interfaces* (2022). https://pubs.acs.org/doi/10.1021/acsami.2c10861.
