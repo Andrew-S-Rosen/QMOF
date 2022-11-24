@@ -49,3 +49,4 @@ https://doi.org/10.48550/arXiv.2201.11932
 - K.M. Jablonka, A.S. Rosen, A.S. Krishnapriyan, B. Smit, *ChemRxiv* (2022). https://doi.org/10.26434/chemrxiv-2022-4g7rx
 - Y. Kang, H. Park, B. Smit, J. Kim, *ChemRxiv* (2022). https://doi.org/10.26434/chemrxiv-2022-hcjzc
 - Y. Liu, X. Liu, B. Cao, *Research Square* (2022). https://doi.org/10.21203/rs.3.rs-1064739/v1
+- J. I. Gómez-Peralta, X. Bokhimi, N. G. García-Peña, P. Quintana-Owen, G. Rodríguez-Gattorno, *J. Appl. Cryst.* (2022). https://doi.org/10.1107/S1600576722009797
