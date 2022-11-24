@@ -22,7 +22,7 @@ Follow the QMOF Database on Twitter ([@QMOF_Database](https://twitter.com/QMOF_D
 For a list of version-specific updates, see [updates.md](https://github.com/arosen93/QMOF/blob/main/updates.md).
 
 ## Citation
-If you use or wish to cite the QMOF Database, please refer to the following publications:
+If you use the QMOF Database, please refer to the following publications. Both should be cited if you are using the dataset with 20k+ structures.
 
 * A.S. Rosen, S.M. Iyer, D. Ray, Z. Yao, A. Aspuru-Guzik, L. Gagliardi, J.M. Notestein, R.Q. Snurr. "Machine Learning the Quantum-Chemical Properties of Metal–Organic Frameworks for Accelerated Materials Discovery", *Matter*, **4**, 1578-1597 (2021). DOI: [10.1016/j.matt.2021.02.015](https://doi.org/10.1016/j.matt.2021.02.015).
 * A.S. Rosen, V. Fung, P. Huck, C.T. O'Donnell, M.K. Horton, D.G. Truhlar, K.A. Persson, J.M. Notestein, R.Q. Snurr. "High-Throughput Predictions of Metal–Organic Framework Electronic Properties: Theoretical Challenges, Graph Neural Networks, and Data Exploration," *npj Comput. Mat.,* **8**, 112 (2022). DOI: [10.1038/s41524-022-00796-6](https://doi.org/10.1038/s41524-022-00796-6).
