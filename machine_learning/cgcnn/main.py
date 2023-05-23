@@ -88,10 +88,7 @@ args = parser.parse_args(sys.argv[1:])
 
 args.cuda = not args.disable_cuda and torch.cuda.is_available()
 
-if args.task == 'regression':
-    best_mae_error = 1e10
-else:
-    best_mae_error = 0.
+best_mae_error = 1e10 if args.task == 'regression' else 0.
 
 
 def main():
@@ -120,30 +117,30 @@ def main():
         total_train = 0
         total_val = 0
         total_test = 0
-        for i, (_, target, _) in enumerate(train_loader):
+        for _, target, _ in train_loader:
             for target_i in target.squeeze():
                 total_train += target_i
-        if bool(total_train == 0):
+        if total_train == 0:
             raise ValueError('All 0s in train')
-        elif bool(total_train == 1):
+        elif total_train == 1:
             raise ValueError('All 1s in train')
         for i, (_, target, _) in enumerate(val_loader):
             if len(target) == 1:
                 raise ValueError('Only single entry in val')
             for target_i in target.squeeze():
                 total_val += target_i
-        if bool(total_val == 0):
+        if total_val == 0:
             raise ValueError('All 0s in val')
-        elif bool(total_val == 1):
+        elif total_val == 1:
             raise ValueError('All 1s in val')
         for i, (_, target, _) in enumerate(test_loader):
             if len(target) == 1:
                 raise ValueError('Only single entry in test')
             for target_i in target.squeeze():
                 total_test += target_i
-        if bool(total_test == 0):
+        if total_test == 0:
             raise ValueError('All 0s in test')
-        elif bool(total_test == 1):
+        elif total_test == 1:
             raise ValueError('All 1s in test')
 
     # make output folder if needed
@@ -156,8 +153,9 @@ def main():
         shutil.rmtree(torch_data_path)
     if os.path.exists(torch_data_path):
         if not args.clean_torch:
-            warnings.warn('Found cifdata folder at ' +
-                          torch_data_path+'. Will read in .pkls as-available')
+            warnings.warn(
+                f'Found cifdata folder at {torch_data_path}. Will read in .pkls as-available'
+            )
     else:
         os.mkdir(torch_data_path)
 
@@ -178,23 +176,22 @@ def main():
 
     # build model
     structures, _, _ = dataset[0]
-    orig_atom_fea_len = structures[0].shape[-1]
     nbr_fea_len = structures[1].shape[-1]
-    model = CrystalGraphConvNet(orig_atom_fea_len, nbr_fea_len,
-                                atom_fea_len=args.atom_fea_len,
-                                n_conv=args.n_conv,
-                                h_fea_len=args.h_fea_len,
-                                n_h=args.n_h,
-                                classification=True if args.task ==
-                                'classification' else False)
+    orig_atom_fea_len = structures[0].shape[-1]
+    model = CrystalGraphConvNet(
+        orig_atom_fea_len,
+        nbr_fea_len,
+        atom_fea_len=args.atom_fea_len,
+        n_conv=args.n_conv,
+        h_fea_len=args.h_fea_len,
+        n_h=args.n_h,
+        classification=args.task == 'classification',
+    )
     if args.cuda:
         model.cuda()
 
     # define loss func and optimizer
-    if args.task == 'classification':
-        criterion = nn.NLLLoss()
-    else:
-        criterion = nn.MSELoss()
+    criterion = nn.NLLLoss() if args.task == 'classification' else nn.MSELoss()
     if args.optim == 'SGD':
         optimizer = optim.SGD(model.parameters(), args.lr,
                               momentum=args.momentum,
@@ -208,17 +205,16 @@ def main():
     # optionally resume from a checkpoint
     if args.resume:
         if os.path.isfile(args.resume):
-            print("=> loading checkpoint '{}'".format(args.resume))
+            print(f"=> loading checkpoint '{args.resume}'")
             checkpoint = torch.load(args.resume)
             args.start_epoch = checkpoint['epoch']
             best_mae_error = checkpoint['best_mae_error']
             model.load_state_dict(checkpoint['state_dict'])
             optimizer.load_state_dict(checkpoint['optimizer'])
             normalizer.load_state_dict(checkpoint['normalizer'])
-            print("=> loaded checkpoint '{}' (epoch {})"
-                  .format(args.resume, checkpoint['epoch']))
+            print(f"=> loaded checkpoint '{args.resume}' (epoch {checkpoint['epoch']})")
         else:
-            print("=> no checkpoint found at '{}'".format(args.resume))
+            print(f"=> no checkpoint found at '{args.resume}'")
 
     scheduler = MultiStepLR(optimizer, milestones=args.lr_milestones,
                             gamma=0.1)
@@ -437,11 +433,7 @@ def validate(val_loader, model, criterion, normalizer, test=False, csv_name='tes
         batch_time.update(time.time() - end)
         end = time.time()
 
-        if test:
-            print_name = 'Test'
-        else:
-            print_name = 'Validation'
-
+        print_name = 'Test' if test else 'Validation'
         if i % args.print_freq == 0:
             if args.task == 'regression':
                 print(print_name+': [{0}/{1}]\t'
@@ -525,13 +517,12 @@ def class_eval(prediction, target):
     target_label = np.squeeze(target)
     if not target_label.shape:
         target_label = np.asarray([target_label])
-    if prediction.shape[1] == 2:
-        precision, recall, fscore, _ = metrics.precision_recall_fscore_support(
-            target_label, pred_label, average='binary')
-        auc_score = metrics.roc_auc_score(target_label, prediction[:, 1])
-        accuracy = metrics.accuracy_score(target_label, pred_label)
-    else:
+    if prediction.shape[1] != 2:
         raise NotImplementedError
+    precision, recall, fscore, _ = metrics.precision_recall_fscore_support(
+        target_label, pred_label, average='binary')
+    auc_score = metrics.roc_auc_score(target_label, prediction[:, 1])
+    accuracy = metrics.accuracy_score(target_label, pred_label)
     return accuracy, precision, recall, fscore, auc_score
 
 

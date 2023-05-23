@@ -48,8 +48,7 @@ soap = SOAP(
 # Make SOAP fingerprints
 for i, structure in enumerate(structures):
 	refcode = refcodes[i]
-	soap_filename = os.path.join(
-		basepath, 'soap_matrices', 'soap_'+refcode+'.npz')
+	soap_filename = os.path.join(basepath, 'soap_matrices', f'soap_{refcode}.npz')
 	if os.path.exists(soap_filename):
 		continue
 	soap_matrix = soap.create(structure)

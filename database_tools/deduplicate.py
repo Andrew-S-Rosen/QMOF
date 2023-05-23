@@ -14,7 +14,7 @@ for entry in entries:
 
 	if '.cif' not in entry:
 		continue
-	
+
 	#read CIF
 	mof_temp = Structure.from_file(os.path.join(folder,entry),primitive=False)
 
@@ -27,7 +27,7 @@ sm = structure_matcher.StructureMatcher(primitive_cell=True)
 
 #Group structures
 groups = sm.group_structures(mofs)
-print(str(len(groups))+' unique out of '+str(len(entries))+' total')
+print(f'{len(groups)} unique out of {len(entries)} total')
 
 #Write out set of only unique CIFs
 if not os.path.exists(new_folder):

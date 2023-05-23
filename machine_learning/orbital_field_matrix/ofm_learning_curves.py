@@ -41,7 +41,7 @@ for train_size in train_sizes:
 		train_set, test_set = train_test_split(
 			df, test_size=test_size, shuffle=True, random_state=seed)
 		if train_size != -1:
-			train_set = train_set[0:train_size]
+			train_set = train_set[:train_size]
 		X_train = train_set.loc[:, (df.columns != 'BG_PBE')]
 		X_test = test_set.loc[:, (df.columns != 'BG_PBE')]
 		refcodes_train = X_train.index

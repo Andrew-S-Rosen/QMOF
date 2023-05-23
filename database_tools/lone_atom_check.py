@@ -14,7 +14,7 @@ for cif in cifs:
 	for j in range(len(mof)):
 		nbr = graph.get_connected_sites(j)
 		if not nbr:
-			print('Lone atom issue:' + cif+'\n')
+			print(f'Lone atom issue:{cif}' + '\n')
 			bad_list.append(cif)
 			break
 

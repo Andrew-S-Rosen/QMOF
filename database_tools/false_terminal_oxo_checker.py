@@ -40,7 +40,7 @@ for cif in cifs:
 	syms = np.array(structure.get_chemical_symbols())
 
 	# Is one of the specified metals in this MOF
-	if not any(item in syms for item in metals):
+	if all(item not in syms for item in metals):
 		continue
 
 	# Initialize neighbor list
@@ -72,7 +72,7 @@ for cif in cifs:
 			cn = len(nl.get_neighbors(bonded_atom_indices[j])[0])
 			if cn == 1:
 				bad = True
-				print('Missing H on terminal oxo: ' + cif)
+				print(f'Missing H on terminal oxo: {cif}')
 				bad_list.append(cif)
 
 			if bad:

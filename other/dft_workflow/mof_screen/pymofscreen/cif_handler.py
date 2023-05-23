@@ -27,18 +27,17 @@ def get_cif_files(mofpath,skip_mofs=None):
 	for filename in os.listdir(mofpath):
 		filename = filename.strip()
 		if '.cif' in filename or 'POSCAR_' in filename:
-			if '.cif' in filename:
-				refcode = filename.split('.cif')[0]
-			elif 'POSCAR_' in filename:
-				refcode = filename.split('POSCAR_')[1]
+			refcode = (
+				filename.split('.cif')[0]
+				if '.cif' in filename
+				else filename.split('POSCAR_')[1]
+			)
 			if refcode not in skip_mofs:
 				cif_files.append(filename)
 			else:
-				pprint('Skipping '+refcode)
-	
-	sorted_cifs = sorted(cif_files)
+				pprint(f'Skipping {refcode}')
 
-	return sorted_cifs
+	return sorted(cif_files)
 
 def cif_to_mof(filepath,niggli):
 	"""
@@ -62,7 +61,7 @@ def cif_to_mof(filepath,niggli):
 		pm_mof.to(filename='POSCAR')
 		mof = read('POSCAR')
 		write('POSCAR',mof)
-	elif niggli and not has_pm:
+	elif niggli:
 		warnings.warn('Pymatgen not installed. Niggli set to False',Warning)
 	else:
 		mof = read(filepath)
@@ -72,6 +71,6 @@ def cif_to_mof(filepath,niggli):
 	d = mof.get_all_distances()
 	min_val = np.min(d[d>0])
 	if min_val < tol:
-		pprint('WARNING: Atoms overlap by '+str(min_val))
+		pprint(f'WARNING: Atoms overlap by {str(min_val)}')
 
 	return mof

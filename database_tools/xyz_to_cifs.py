@@ -16,4 +16,4 @@ mofs = read(xyz_path,index=':')
 if not os.path.exists(new_folder):
 	os.mkdir(new_folder)
 for i, mof in enumerate(mofs):
-	write(os.path.join(new_folder,refs[i]+'.cif'),mof)
+	write(os.path.join(new_folder, f'{refs[i]}.cif'), mof)

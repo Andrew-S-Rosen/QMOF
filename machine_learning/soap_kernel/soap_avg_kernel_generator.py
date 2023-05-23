@@ -25,8 +25,6 @@ else:
 M = len(refcodes)
 N = len(comparison_refcodes)
 
-# Get number of features
-kernel_name = 'avg_soap_kernel.csv'
 example_soap = load_npz(os.path.join(soaps_path, os.listdir(soaps_path)[0]))
 N_features = np.shape(example_soap)[1]
 
@@ -35,7 +33,7 @@ print('Initializing M matrix')
 avg_soaps_M = np.zeros((M, N_features), dtype=np.float32)
 for i in range(M):
 	print(refcodes[i])
-	p = os.path.join(soaps_path, 'soap_'+str(refcodes[i])+'.npz')
+	p = os.path.join(soaps_path, f'soap_{str(refcodes[i])}.npz')
 	soap_temp = load_npz(p).todense()
 	avg_soaps_M[i, :] = soap_temp.mean(axis=0)
 
@@ -45,8 +43,7 @@ if M != N or refcodes_path != comparison_refcodes_path:
 	avg_soaps_N = np.zeros((N, N_features), dtype=np.float32)
 	for i in range(N):
 		print(comparison_refcodes[i])
-		p = os.path.join(soaps_path, 'soap_' +
-						 str(comparison_refcodes[i])+'.npz')
+		p = os.path.join(soaps_path, f'soap_{str(comparison_refcodes[i])}.npz')
 		soap_temp = load_npz(p).todense()
 		avg_soaps_N[i, :] = soap_temp.mean(axis=0)
 
@@ -61,4 +58,5 @@ else:
 		'ii,jj->ij', avg_soaps_M.dot(avg_soaps_M.T), avg_soaps_N.dot(avg_soaps_N.T)))
 K = K/norm
 
+kernel_name = 'avg_soap_kernel.csv'
 np.savetxt(os.path.join(basepath, kernel_name), K.T, delimiter=',')

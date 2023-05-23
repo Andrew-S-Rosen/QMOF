@@ -17,4 +17,4 @@ with open('refcodes.csv','w') as w:
 		if refcode == refcodes[-1]:
 			w.write(refcode)
 		else:
-			w.write(refcode+',')
+			w.write(f'{refcode},')

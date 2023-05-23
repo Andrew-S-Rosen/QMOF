@@ -19,14 +19,13 @@ def write_success(workflow,neb=False):
 	"""
 	spin_label = workflow.spin_label
 	acc_level = workflow.acc_levels[workflow.run_i]
-	pprint('SUCCESS: '+spin_label+', '+acc_level)
+	pprint(f'SUCCESS: {spin_label}, {acc_level}')
 	refcode = workflow.refcode
 	basepath = workflow.basepath
 	vasp_files = workflow.vasp_files
-	gzip_list = ['AECCAR0','AECCAR2','CHGCAR','DOSCAR','WAVECAR','PROCAR']
 	if not neb:
 		success_path = os.path.join(basepath,'results',refcode,acc_level,spin_label)
-	elif neb:
+	else:
 		success_path = os.path.join(basepath,'results',refcode,acc_level)
 	if not os.path.exists(success_path):
 		os.makedirs(success_path)
@@ -37,17 +36,18 @@ def write_success(workflow,neb=False):
 			files_to_copy = vasp_files+['DIMCAR','MODECAR','NEWMODECAR','CENTCAR']
 		else:
 			files_to_copy = vasp_files
+		gzip_list = ['AECCAR0','AECCAR2','CHGCAR','DOSCAR','WAVECAR','PROCAR']
 		for file in files_to_copy:
 			if os.path.isfile(file) and os.stat(file).st_size > 0:
 				write_to_path = os.path.join(success_path,file)
 				if file in gzip_list:
-					os.system('gzip < '+file+' > '+file+'.gz')
-					move(file+'.gz',write_to_path+'.gz')
+					os.system(f'gzip < {file} > {file}.gz')
+					move(f'{file}.gz', f'{write_to_path}.gz')
 				else:
 					copyfile(file,write_to_path)
-	elif neb:
+	else:
 		tar_file = 'neb.tar.gz'
-		os.system('tar -zcvf '+tar_file+' neb')
+		os.system(f'tar -zcvf {tar_file} neb')
 		if os.path.isfile(tar_file) and os.stat(tar_file).st_size > 0:
 			write_to_path = os.path.join(success_path,tar_file)
 			copyfile(tar_file,write_to_path)
@@ -63,8 +63,7 @@ def write_errors(workflow,mof,neb=False):
 	"""
 	spin_label = workflow.spin_label
 	acc_level = workflow.acc_levels[workflow.run_i]
-	pprint('ERROR: '+spin_label+', '+acc_level+' failed')
-	gzip_list = ['AECCAR0','AECCAR2','CHGCAR','DOSCAR','WAVECAR']
+	pprint(f'ERROR: {spin_label}, {acc_level} failed')
 	if acc_level != 'scf_test' and 'neb' not in acc_level:
 		if mof is None:
 			pprint('^ VASP crashed')
@@ -73,10 +72,7 @@ def write_errors(workflow,mof,neb=False):
 	refcode = workflow.refcode
 	basepath = workflow.basepath
 	vasp_files = workflow.vasp_files
-	if not neb:
-		error_path = os.path.join(basepath,'errors',refcode,acc_level,spin_label)
-	elif neb:
-		error_path = os.path.join(basepath,'errors',refcode,acc_level,spin_label)
+	error_path = os.path.join(basepath,'errors',refcode,acc_level,spin_label)
 	if not os.path.exists(error_path):
 		os.makedirs(error_path)
 	if not neb:
@@ -84,17 +80,18 @@ def write_errors(workflow,mof,neb=False):
 			files_to_copy = vasp_files+['DIMCAR','MODECAR','NEWMODECAR','CENTCAR']
 		else:
 			files_to_copy = vasp_files
+		gzip_list = ['AECCAR0','AECCAR2','CHGCAR','DOSCAR','WAVECAR']
 		for file in files_to_copy:
 			if os.path.isfile(file) and os.stat(file).st_size > 0:
 				write_to_path = os.path.join(error_path,file)
 				if file in gzip_list:
-					os.system('gzip < '+file+' > '+file+'.gz')
-					move(file+'.gz',write_to_path+'.gz')
+					os.system(f'gzip < {file} > {file}.gz')
+					move(f'{file}.gz', f'{write_to_path}.gz')
 				else:
 					copyfile(file,write_to_path)
-	elif neb:
+	else:
 		tar_file = 'neb.tar.gz'
-		os.system('tar -zcvf '+tar_file+' neb')
+		os.system(f'tar -zcvf {tar_file} neb')
 		if os.path.isfile(tar_file) and os.stat(tar_file).st_size > 0:
 			write_to_path = os.path.join(error_path,tar_file)
 			copyfile(tar_file,write_to_path)		
