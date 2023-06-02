@@ -129,8 +129,7 @@ def collate_pool(dataset_list):
     crystal_atom_idx, batch_target = [], []
     batch_cif_ids = []
     base_idx = 0
-    for i, ((atom_fea, nbr_fea, nbr_fea_idx), target, cif_id)\
-            in enumerate(dataset_list):
+    for (atom_fea, nbr_fea, nbr_fea_idx), target, cif_id in dataset_list:
         n_i = atom_fea.shape[0]  # number of atoms for this crystal
         batch_atom_fea.append(atom_fea)
         batch_nbr_fea.append(nbr_fea)
@@ -329,15 +328,14 @@ class CIFData(Dataset):
         cif_id = cif_id.replace('ï»¿', '')
         target = torch.Tensor([float(target)])
 
-        if os.path.exists(os.path.join(self.torch_data_path, cif_id+'.pkl')):
-            with open(os.path.join(self.torch_data_path, cif_id+'.pkl'), 'rb') as f:
+        if os.path.exists(os.path.join(self.torch_data_path, f'{cif_id}.pkl')):
+            with open(os.path.join(self.torch_data_path, f'{cif_id}.pkl'), 'rb') as f:
                 pkl_data = pickle.load(f)
                 atom_fea = pkl_data[0]
                 nbr_fea = pkl_data[1]
                 nbr_fea_idx = pkl_data[2]
         else:
-            crystal = Structure.from_file(os.path.join(self.root_dir,
-                                                       cif_id+'.cif'))
+            crystal = Structure.from_file(os.path.join(self.root_dir, f'{cif_id}.cif'))
             atom_fea = np.vstack([self.ari.get_atom_fea(crystal[i].specie.number)
                                   for i in range(len(crystal))])
             atom_fea = torch.Tensor(atom_fea)
@@ -347,9 +345,9 @@ class CIFData(Dataset):
             nbr_fea_idx, nbr_fea = [], []
             for nbr in all_nbrs:
                 if len(nbr) < self.max_num_nbr:
-                    warnings.warn('{} not find enough neighbors to build graph. '
-                                  'If it happens frequently, consider increase '
-                                  'radius.'.format(cif_id))
+                    warnings.warn(
+                        f'{cif_id} not find enough neighbors to build graph. If it happens frequently, consider increase radius.'
+                    )
                     nbr_fea_idx.append(list(map(lambda x: x[2], nbr)) +
                                        [0] * (self.max_num_nbr - len(nbr)))
                     nbr_fea.append(list(map(lambda x: x[1], nbr)) +
@@ -366,7 +364,7 @@ class CIFData(Dataset):
             nbr_fea = torch.Tensor(nbr_fea)
             nbr_fea_idx = torch.LongTensor(nbr_fea_idx)
             if not self.disable_save_torch:
-                with open(os.path.join(self.torch_data_path, cif_id+'.pkl'), 'wb') as f:
+                with open(os.path.join(self.torch_data_path, f'{cif_id}.pkl'), 'wb') as f:
                     pickle.dump(
                         (atom_fea, nbr_fea, nbr_fea_idx), f)
 

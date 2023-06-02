@@ -24,17 +24,13 @@ def nebmake(initial_atoms,final_atoms,n_images):
 	os.chdir(neb_path)
 
 	images = [initial_atoms]
-	for i in range(n_images):
-		images.append(initial_atoms.copy())
+	images.extend(initial_atoms.copy() for _ in range(n_images))
 	images.append(final_atoms)
 
 	neb = NEB(images)
 	neb.interpolate('idpp',mic=True)
 	for i, neb_image in enumerate(neb.images):
-		if i < 10:
-			ii = '0'+str(i)
-		else:
-			ii = str(i)
+		ii = f'0{str(i)}' if i < 10 else str(i)
 		os.mkdir(os.path.join(neb_path,ii))
 		write(os.path.join(neb_path,ii,'POSCAR'),neb_image,format='vasp')
 	write_dummy_outcar(os.path.join(neb_path,'00','OUTCAR'),initial_atoms.get_potential_energy())
@@ -49,7 +45,10 @@ def write_dummy_outcar(name,E):
 		E (float): energy to write out in dummy OUTCAR
 	"""
 	with open(name,'w') as wf:
-		wf.write('  energy  without entropy=                   energy(sigma->0) =     '+str(E)+'\n')
+		wf.write(
+			f'  energy  without entropy=                   energy(sigma->0) =     {str(E)}'
+			+ '\n'
+		)
 
 def neb2dim():
 	"""
@@ -86,10 +85,7 @@ def neb2dim():
 				max_F = max_F_temp
 				high_i = i
 	try:
-		if high_i < 10:
-			str_high_i = '0'+str(high_i)
-		else:
-			str_high_i = str(high_i)
+		str_high_i = f'0{str(high_i)}' if high_i < 10 else str(high_i)
 		move(os.path.join(neb_fin_path,str_high_i,'WAVECAR.gz'),os.path.join(new_dim_path,'WAVECAR.gz'))
 		os.system('gunzip WAVECAR.gz')
 	except:
@@ -105,7 +101,7 @@ def dimmins(dis):
 	"""
 	os.system('vfin.pl dim_fin')
 	rmtree('dim_fin')
-	os.system('dimmins.pl POSCAR MODECAR '+str(dis))
+	os.system(f'dimmins.pl POSCAR MODECAR {str(dis)}')
 
 def nebef(ediffg):
 	"""
@@ -129,11 +125,4 @@ def nebef(ediffg):
 			max_F_temp = np.fromstring(line,dtype=float,sep=' ')[1]
 			if max_F_temp > max_F:
 				max_F = max_F_temp
-	if max_F == 0.0:
-		neb_conv = False
-	elif max_F <= ediffg:
-		neb_conv = True
-	else:
-		neb_conv = False
-
-	return neb_conv
+	return max_F != 0.0 and max_F <= ediffg

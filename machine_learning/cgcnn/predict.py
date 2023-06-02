@@ -35,20 +35,17 @@ parser.add_argument('--train-val-test', action='store_true',
 
 args = parser.parse_args(sys.argv[1:])
 if os.path.isfile(args.modelpath):
-    print("=> loading model params '{}'".format(args.modelpath))
+    print(f"=> loading model params '{args.modelpath}'")
     model_checkpoint = torch.load(args.modelpath,
                                   map_location=lambda storage, loc: storage)
     model_args = argparse.Namespace(**model_checkpoint['args'])
-    print("=> loaded model params '{}'".format(args.modelpath))
+    print(f"=> loaded model params '{args.modelpath}'")
 else:
-    print("=> no model params found at '{}'".format(args.modelpath))
+    print(f"=> no model params found at '{args.modelpath}'")
 
 args.cuda = not args.disable_cuda and torch.cuda.is_available()
 
-if model_args.task == 'regression':
-    best_mae_error = 1e10
-else:
-    best_mae_error = 0.
+best_mae_error = 1e10 if model_args.task == 'regression' else 0.
 
 
 def main():
@@ -87,22 +84,25 @@ def main():
         shutil.rmtree(torch_data_path)
     if os.path.exists(torch_data_path):
         if not args.clean_torch:
-            warnings.warn('Found cifdata folder at ' +
-                          torch_data_path+'. Will read in .pkls as-available')
+            warnings.warn(
+                f'Found cifdata folder at {torch_data_path}. Will read in .pkls as-available'
+            )
     else:
         os.mkdir(torch_data_path)
 
     # build model
     structures, _, _ = dataset[0]
-    orig_atom_fea_len = structures[0].shape[-1]
     nbr_fea_len = structures[1].shape[-1]
-    model = CrystalGraphConvNet(orig_atom_fea_len, nbr_fea_len,
-                                atom_fea_len=model_args.atom_fea_len,
-                                n_conv=model_args.n_conv,
-                                h_fea_len=model_args.h_fea_len,
-                                n_h=model_args.n_h,
-                                classification=True if model_args.task ==
-                                'classification' else False)
+    orig_atom_fea_len = structures[0].shape[-1]
+    model = CrystalGraphConvNet(
+        orig_atom_fea_len,
+        nbr_fea_len,
+        atom_fea_len=model_args.atom_fea_len,
+        n_conv=model_args.n_conv,
+        h_fea_len=model_args.h_fea_len,
+        n_h=model_args.n_h,
+        classification=model_args.task == 'classification',
+    )
     if args.cuda:
         model.cuda()
 
@@ -116,16 +116,16 @@ def main():
 
     # optionally resume from a checkpoint
     if os.path.isfile(args.modelpath):
-        print("=> loading model '{}'".format(args.modelpath))
+        print(f"=> loading model '{args.modelpath}'")
         checkpoint = torch.load(args.modelpath,
                                 map_location=lambda storage, loc: storage)
         model.load_state_dict(checkpoint['state_dict'])
         normalizer.load_state_dict(checkpoint['normalizer'])
-        print("=> loaded model '{}' (epoch {}, validation {})"
-              .format(args.modelpath, checkpoint['epoch'],
-                      checkpoint['best_mae_error']))
+        print(
+            f"=> loaded model '{args.modelpath}' (epoch {checkpoint['epoch']}, validation {checkpoint['best_mae_error']})"
+        )
     else:
-        print("=> no model found at '{}'".format(args.modelpath))
+        print(f"=> no model found at '{args.modelpath}'")
 
     if args.train_val_test:
         print('---------Evaluate Model on Train Set---------------')
@@ -301,13 +301,12 @@ def class_eval(prediction, target):
     target = target.numpy()
     pred_label = np.argmax(prediction, axis=1)
     target_label = np.squeeze(target)
-    if prediction.shape[1] == 2:
-        precision, recall, fscore, _ = metrics.precision_recall_fscore_support(
-            target_label, pred_label, average='binary')
-        auc_score = metrics.roc_auc_score(target_label, prediction[:, 1])
-        accuracy = metrics.accuracy_score(target_label, pred_label)
-    else:
+    if prediction.shape[1] != 2:
         raise NotImplementedError
+    precision, recall, fscore, _ = metrics.precision_recall_fscore_support(
+        target_label, pred_label, average='binary')
+    auc_score = metrics.roc_auc_score(target_label, prediction[:, 1])
+    accuracy = metrics.accuracy_score(target_label, pred_label)
     return accuracy, precision, recall, fscore, auc_score
 
 

@@ -23,7 +23,7 @@ def get_error_msgs(outcarfile,refcode,stdout_file):
 			errormsg = check_line_for_error(line,errormsg)
 	with open(stdout_file,'r') as rf:
 		for line in rf:
-			if 'STARTING '+refcode in line:
+			if f'STARTING {refcode}' in line:
 				start = True
 			if start:
 				errormsg = check_line_for_error(line,errormsg)
@@ -43,12 +43,10 @@ def get_warning_msgs(outcarfile):
 
 	warningmsg = []
 	with open(outcarfile,'r') as rf:
-		for line in rf:
-			if 'You have a (more or less)' in line:
-				warningmsg.append('large_supercell')
-	warningmsg = list(set(warningmsg))
-
-	return warningmsg
+		warningmsg.extend(
+			'large_supercell' for line in rf if 'You have a (more or less)' in line
+		)
+	return list(set(warningmsg))
 
 def check_line_for_error(line,errormsg):
 	"""
@@ -147,7 +145,7 @@ def update_calc_after_errors(calc,calc_swaps,errormsg):
 						except (IndexError, ValueError):
 							pass
 			nbands = int(1.1*nbands)
-			calc_swaps.append('nbands='+nbands)
+			calc_swaps.append(f'nbands={nbands}')
 			calc.int_params['nbands'] = nbands
 			calc_swaps.remove('too_few_bands')
 
@@ -160,7 +158,7 @@ def update_calc_after_errors(calc,calc_swaps,errormsg):
 							break
 						except (IndexError, ValueError):
 							pass
-			calc_swaps.append('potim='+potim)
+			calc_swaps.append(f'potim={potim}')
 			calc.float_params['potim'] = potim
 			calc_swaps.remove('brions')
 

@@ -46,10 +46,7 @@ class screener():
 			stdout_file = os.path.join(pwd,sys.argv[0].split('.py')[0]+'.out')
 		self.stdout_file = stdout_file
 		self.kpts_path = kpts_path
-		if kppas is None:
-			self.kppas = [100,1000]
-		else:
-			self.kppas = kppas
+		self.kppas = [100,1000] if kppas is None else kppas
 		prep_paths(basepath)
 
 	def run_screen(self,cif_file,mode,niggli=True,spin_levels=None,nupdowns=None,acc_levels=None,calculators=None):
@@ -99,7 +96,7 @@ class screener():
 				acc_levels = ['scf_test','dimer_lowacc']			
 		else:
 			raise ValueError('Unsupported DFT screening mode')
-			
+
 		if 'scf_test' not in acc_levels:
 			acc_levels = ['scf_test']+acc_levels
 		self.acc_levels = acc_levels
@@ -107,15 +104,15 @@ class screener():
 		if spin_levels is None:
 			spin_levels = ['high','low']
 		if not isinstance(spin_levels,list):
-			spin_levels = [spin_levels] 
+			spin_levels = [spin_levels]
 		self.spin_levels = spin_levels
 
 		if nupdowns is None:
 			nupdowns = [None]*len(spin_levels)
-		elif nupdowns is not None and len(nupdowns) != len(spin_levels):
+		elif len(nupdowns) != len(spin_levels):
 			raise ValueError('Length of nupdowns must equal spin_levels')
 		self.nupdowns = nupdowns
-		spin_labels = ['spin'+str(i+1) for i,j in enumerate(spin_levels)]
+		spin_labels = [f'spin{str(i + 1)}' for i,j in enumerate(spin_levels)]
 		self.spin_labels = spin_labels
 
 		#Make sure MOF isn't running on other process
@@ -128,18 +125,14 @@ class screener():
 		working_cif_path = os.path.join(basepath,'working',refcode)
 
 		if os.path.isfile(working_cif_path):
-			pprint('SKIPPED '+refcode+': Running on another process')
+			pprint(f'SKIPPED {refcode}: Running on another process')
 			return None
 		open(working_cif_path,'w').close()
 
 		#Get the kpoints
 		kpts_lo, gamma = get_kpts(self,cif_file,'low')
 		kpts_hi, gamma = get_kpts(self,cif_file,'high')
-		kpts_dict = {}
-		kpts_dict['kpts_lo'] = kpts_lo
-		kpts_dict['kpts_hi'] = kpts_hi
-		kpts_dict['gamma'] = gamma
-
+		kpts_dict = {'kpts_lo': kpts_lo, 'kpts_hi': kpts_hi, 'gamma': gamma}
 		#Initialize variables
 		E = np.inf
 		mof = None
@@ -151,14 +144,13 @@ class screener():
 			spin_label = spin_labels[i]
 			self.spin_label = spin_label
 			self.nupdown = nupdowns[i]
-			pprint('***STARTING '+refcode+': '+spin_label+'***')
+			pprint(f'***STARTING {refcode}: {spin_label}***')
 
 			#Check if spin state should be skipped
 			if i > 0:
 				prior_spin = spin_labels[i-1]
 				if spin_levels[i-1] == 'high':
-					skip_low_spin = check_if_skip_low_spin(self,mof,refcode,prior_spin)
-					if skip_low_spin:
+					if skip_low_spin := check_if_skip_low_spin(self, mof, refcode, prior_spin):
 						pprint('Skipping low spin due to low magmoms in prior run')
 						continue
 			same_spin = False
@@ -201,7 +193,7 @@ class screener():
 					if mof is None:
 						os.remove(working_cif_path)
 						return None
-				
+
 				elif acc_level == 'isif3_lowacc':
 					mof = wf.isif3_lowacc()
 					if mof is None:
@@ -230,7 +222,7 @@ class screener():
 						newmodecar = os.path.join(result_path,acc_levels[-2],spin_label,'NEWMODECAR')
 						newmodecar_spe = os.path.join(result_path,acc_level,spin_label,'NEWMODECAR')
 						copyfile(newmodecar,newmodecar_spe)
-						
+
 				else:
 					raise ValueError('Unsupported accuracy level')
 
@@ -282,7 +274,7 @@ class screener():
 		if spin_levels is None:
 			spin_levels = ['high','low']
 		if not isinstance(spin_levels,list):
-			spin_levels = [spin_levels] 
+			spin_levels = [spin_levels]
 		self.spin_levels = spin_levels
 
 		if acc_levels is None:
@@ -296,10 +288,10 @@ class screener():
 
 		if nupdowns is None:
 			nupdowns = [None]*len(spin_levels)
-		elif nupdowns is not None and len(nupdowns) != len(spin_levels):
+		elif len(nupdowns) != len(spin_levels):
 			raise ValueError('Length of nupdowns must equal spin_levels')
 		self.nupdowns = nupdowns
-		spin_labels = ['spin'+str(i+1) for i,j in enumerate(spin_levels)]
+		spin_labels = [f'spin{str(i + 1)}' for i,j in enumerate(spin_levels)]
 		self.spin_labels = spin_labels
 
 		kpts_path = self.kpts_path
@@ -314,7 +306,7 @@ class screener():
 		#Make sure MOF isn't running on other process
 		working_cif_path = os.path.join(basepath,'working',name)
 		if os.path.isfile(working_cif_path):
-			pprint('SKIPPED '+name+': Running on another process')
+			pprint(f'SKIPPED {name}: Running on another process')
 			return None
 		open(working_cif_path,'w').close()
 
@@ -325,11 +317,7 @@ class screener():
 		else:
 			kpts_lo, gamma = get_kpts(self,name.split('_TS')[0],'low')
 			kpts_hi, gamma = get_kpts(self,name.split('_TS')[0],'high')
-		kpts_dict = {}
-		kpts_dict['kpts_lo'] = kpts_lo
-		kpts_dict['kpts_hi'] = kpts_hi
-		kpts_dict['gamma'] = gamma
-
+		kpts_dict = {'kpts_lo': kpts_lo, 'kpts_hi': kpts_hi, 'gamma': gamma}
 		#Initialize variables
 		E = np.inf
 		mof = None
@@ -341,14 +329,13 @@ class screener():
 			spin_label = spin_labels[i]
 			self.spin_label = spin_label
 			self.nupdown = nupdowns[i]
-			pprint('***STARTING '+name+': '+spin_label+'***')
+			pprint(f'***STARTING {name}: {spin_label}***')
 
 			#Check if spin state should be skipped
 			if i > 0:
 				prior_spin = spin_labels[i-1]
 				if spin_levels[i-1] == 'high':
-					skip_low_spin = check_if_skip_low_spin(self,mof,name,prior_spin)
-					if skip_low_spin:
+					if skip_low_spin := check_if_skip_low_spin(self, mof, name, prior_spin):
 						pprint('Skipping low spin due to low magmoms in prior run')
 						continue
 			same_spin = False
