@@ -40,7 +40,7 @@ for train_size in train_sizes:
 		splitter = ShuffleSplit(n_splits=1, test_size=test_size, random_state=seed)
 		train_indices, test_indices = next(splitter.split(y))
 		if train_size != -1:
-			train_indices = train_indices[0:train_size]
+			train_indices = train_indices[:train_size]
 		y_train = y[train_indices]
 		y_test = y[test_indices]
 		K_train = K[train_indices, :][:, train_indices]

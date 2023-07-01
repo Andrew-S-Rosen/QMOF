@@ -47,10 +47,7 @@ def mof_run(workflow,mof,calc,kpts,images=None,force_nupdown=False):
 	elif workflow.nupdown is not None:
 		calc.int_params['nupdown'] = workflow.nupdown
 
-	if sum(kpts) == 3:
-		gpt_version = True
-	else:
-		gpt_version = False
+	gpt_version = sum(kpts) == 3
 	if images is not None:
 		neb = True
 		calc.int_params['images'] = images
@@ -157,11 +154,7 @@ def mof_bfgs_run(workflow,mof,calc,kpts,steps=100,fmax=0.05,force_nupdown=False)
 	elif workflow.nupdown is not None:
 		calc.int_params['nupdown'] = workflow.nupdown
 
-	if sum(kpts) == 3:
-		gpt_version = True
-	else:
-		gpt_version = False
-
+	gpt_version = sum(kpts) == 3
 	nprocs = check_nprocs(len(mof),nprocs,ppn)
 	choose_vasp_version(gpt_version,nprocs)
 	calc.input_params['kpts'] = kpts
@@ -230,10 +223,7 @@ def prep_next_run(workflow):
 	outcarpath = os.path.join(success_path,'OUTCAR')
 	errorpath = os.path.join(basepath,'errors',refcode,acc_level,spin_label)
 
-	if os.path.exists(errorpath):
-		mof = None
-	else:
-		mof = read(outcarpath)
+	mof = None if os.path.exists(errorpath) else read(outcarpath)
 	workflow.run_i += 1
 
 	return mof

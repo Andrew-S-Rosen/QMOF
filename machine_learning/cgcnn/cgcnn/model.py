@@ -69,8 +69,7 @@ class ConvLayer(nn.Module):
         nbr_core = self.softplus1(nbr_core)
         nbr_sumed = torch.sum(nbr_filter * nbr_core, dim=1)
         nbr_sumed = self.bn2(nbr_sumed)
-        out = self.softplus2(atom_in_fea + nbr_sumed)
-        return out
+        return self.softplus2(atom_in_fea + nbr_sumed)
 
 
 class CrystalGraphConvNet(nn.Module):
@@ -180,8 +179,10 @@ class CrystalGraphConvNet(nn.Module):
         crystal_atom_idx: list of torch.LongTensor of length N0
           Mapping from the crystal idx to atom idx
         """
-        assert sum([len(idx_map) for idx_map in crystal_atom_idx]) ==\
-            atom_fea.data.shape[0]
+        assert (
+            sum(len(idx_map) for idx_map in crystal_atom_idx)
+            == atom_fea.data.shape[0]
+        )
         summed_fea = [torch.mean(atom_fea[idx_map], dim=0, keepdim=True)
                       for idx_map in crystal_atom_idx]
         return torch.cat(summed_fea, dim=0)

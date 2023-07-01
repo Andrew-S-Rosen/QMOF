@@ -41,7 +41,7 @@ ionization_data = np.genfromtxt(
 mofs = read(xyz_path, index=':')
 data = np.empty((45, len(mofs)))*np.nan
 for i, mof in enumerate(mofs):
-	print('Generating fingerprint: '+str(i))
+	print(f'Generating fingerprint: {str(i)}')
 
 	atomic_nums = mof.get_atomic_numbers()
 	data_vector = np.empty(45)*np.nan

@@ -29,9 +29,6 @@ def get_incar_magmoms(incarpath,poscarpath):
 					mof_mag_list.extend([mag]*num)
 	if not bool(mof_mag_list):
 		mof_mag_list = np.zeros(len(init_mof))
-	if len(mof_mag_list) != len(mof_mag_list):
-		raise ValueError('Error reading INCAR magnetic moments')
-
 	return mof_mag_list
 
 def get_mag_indices(mof):
@@ -43,9 +40,7 @@ def get_mag_indices(mof):
 	Returns:
 		mag_indices (list of ints): indices of aforementioned metlas
 	"""
-	mag_indices = [atom.index for atom in mof if atom.number in mag_list]
-
-	return mag_indices
+	return [atom.index for atom in mof if atom.number in mag_list]
 
 def set_initial_magmoms(mof,spin_level):
 	"""
@@ -97,10 +92,7 @@ def set_initial_magmoms(mof,spin_level):
 					min_idx = np.argmin(M_distances)
 					Mj = mags[min_idx]
 					d = M_distances[min_idx]
-					if d <= AFM_cutoff:
-						sign = -sign
-					else:
-						sign = 1
+					sign = -sign if d <= AFM_cutoff else 1
 					Mi = Mj
 					mags.remove(Mj)
 					del M_distances[min_idx]
@@ -178,20 +170,17 @@ def continue_failed_magmoms(mof):
 		mof (ASE Atoms object): MOF structure with old magmoms
 	"""
 	self_resort = []
-	file = open('ase-sort.dat', 'r')
-	lines = file.readlines()
-	file.close()
+	with open('ase-sort.dat', 'r') as file:
+		lines = file.readlines()
 	for line in lines:
 	    data = line.split()
 	    self_resort.append(int(data[1]))
 	magnetic_moments = np.zeros(len(mof))
-	n = 0
 	lines = open('OUTCAR', 'r').readlines()
-	for line in lines:
-	    if line.rfind('magnetization (x)') > -1:
-	        for m in range(len(mof)):
-	            magnetic_moments[m] = float(lines[n + m + 4].split()[4])
-	    n += 1
+	for n, line in enumerate(lines):
+		if line.rfind('magnetization (x)') > -1:
+		    for m in range(len(mof)):
+		        magnetic_moments[m] = float(lines[n + m + 4].split()[4])
 	sorted_magmoms = np.array(magnetic_moments)[self_resort]
 	ispin = False
 	with open('INCAR','r') as incarfile:
@@ -245,7 +234,7 @@ def check_if_new_spin(screener,mof,refcode,acc_level,current_spin):
 			old_mof_mag = [0]*len(mag_indices)
 		mag_tol = 0.1
 		if np.sum(np.abs(mof_mag - old_mof_mag) >= mag_tol) == 0:
-			pprint('Skipping rest because '+current_spin+' converged to '+prior_spin)
+			pprint(f'Skipping rest because {current_spin} converged to {prior_spin}')
 			return False
 	return True
 
@@ -274,8 +263,7 @@ def check_if_skip_low_spin(screener,mof,refcode,spin_label):
 	abs_magmoms, mag_indices, ispin = get_abs_magmoms(mof,incarpath)
 	if not mag_indices:
 		skip_low_spin = True
-	else:
-		if np.sum(abs_magmoms < 0.1) == len(abs_magmoms):
-			skip_low_spin = True
+	elif np.sum(abs_magmoms < 0.1) == len(abs_magmoms):
+		skip_low_spin = True
 
 	return skip_low_spin

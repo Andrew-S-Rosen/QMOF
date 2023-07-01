@@ -25,7 +25,7 @@ df = pd.DataFrame(columns=features)
 
 # Get features
 for i, pm_mof in enumerate(pm_mofs):
-	print('Generating fingerprint: '+str(i))
+	print(f'Generating fingerprint: {str(i)}')
 	fingerprint = featurizer.featurize(pm_mof)
 	refcode = refcodes[i]
 	df.loc[refcode, :] = fingerprint

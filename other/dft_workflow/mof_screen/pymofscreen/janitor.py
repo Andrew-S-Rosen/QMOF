@@ -58,10 +58,7 @@ def manage_restart_files(file_path,dimer=False,neb=False,wavechg=True):
 	"""
 
 	gzip_list = ['AECCAR0','AECCAR2','CHGCAR','DOSCAR','WAVECAR']
-	if wavechg:
-		files = ['WAVECAR','CHGCAR']
-	else:
-		files = []
+	files = ['WAVECAR','CHGCAR'] if wavechg else []
 	if dimer and neb:
 		raise ValueError('Cannot be both NEB and dimer')
 	if dimer:
@@ -74,14 +71,13 @@ def manage_restart_files(file_path,dimer=False,neb=False,wavechg=True):
 			if os.path.isfile('MODECAR'):
 				os.remove('MODECAR')
 			copyfile(full_path,'MODECAR')
-		else:
-			if not os.path.isfile(file) or os.stat(file).st_size == 0:
-				if file in gzip_list and not os.path.isfile(full_path):
-					file += '.gz'
-					full_path += '.gz'
-				if os.path.isfile(full_path) and os.stat(full_path).st_size > 0:
-					copyfile(full_path,file)
-					if '.tar.gz' in file:
-						os.system('tar -zxf '+file)
-					elif '.gz' in file:
-						os.system('gunzip '+file)
+		elif not os.path.isfile(file) or os.stat(file).st_size == 0:
+			if file in gzip_list and not os.path.isfile(full_path):
+				file += '.gz'
+				full_path += '.gz'
+			if os.path.isfile(full_path) and os.stat(full_path).st_size > 0:
+				copyfile(full_path,file)
+				if '.tar.gz' in file:
+					os.system(f'tar -zxf {file}')
+				elif '.gz' in file:
+					os.system(f'gunzip {file}')
