@@ -9,7 +9,7 @@ The Quantum MOF (QMOF) Database is a publicly available dataset of quantum-chemi
 
 To download the data underlying the QMOF Database (i.e. DFT-optimized geometries, energies, partial atomic charges, bond orders, atomic spin densities, magnetic moments, band gaps, charge densities, density of states, etc. as well as the raw VASP files), see the documentation below:
 <p align="center">
-  <a href="https://materialsproject.gitbook.io/materials-project-public-docs/methodology/mof-explorer/downloading-the-data"><b><i>Documentation: Downloading the QMOF Database</i></b></a>
+  <a href="https://materialsproject.gitbook.io/materials-project-public-docs/methodology/mof-explorer/downloading-the-data"><b><i>Downloading the QMOF Database</i></b></a>
 </p>
 
 Interactively explore the dataset and more at the following link:
