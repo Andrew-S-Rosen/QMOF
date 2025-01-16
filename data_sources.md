@@ -3,15 +3,17 @@ Here, we describe the data sources for the crystal structures in the QMOF Databa
 
 ## Synthesized MOFs
 ### CSD
-Most materials in the QMOF Database are taken from the [Cambridge Structural Database](https://www.ccdc.cam.ac.uk/structures/) (CSD) with their free solvents removed. To determine which materials in the CSD are sufficiently MOF-like, we used the list of materials in the [CSD MOF Subset](https://pubs.acs.org/doi/abs/10.1021/acs.chemmater.7b00441) and the [2019 CoRE MOF Database](https://pubs.acs.org/doi/abs/10.1021/acs.jced.9b00835). Unless otherwise stated, these structures were taken directly from the CSD so that we could use the valuable CSD meta-data to choose which materials to discard in our pre-screening process. Note that given the loose definition of a MOF in the CSD MOF Subset, some of these materials may be better classified as coordination polymers. You may wish to filter the materials by void fraction or pore size if you are specifically interested in porous materials.
+Most of the properties are obtained for DFT-optimized structures based on initial geometries from the [MOF Subset on the CSD](https://pubs.acs.org/doi/full/10.1021/acs.chemmater.7b00441) with their free solvents removed. Note that given the loose definition of a MOF in the CSD MOF Subset, some of these materials may be better classified as coordination polymers. You may wish to filter the materials by void fraction or pore size if you are specifically interested in porous materials.
 
 All materials taken from the CSD have `_FSR` at the end of their name. The `source` flag is set to `'CSD'`.
 
+Note: Only DFT-optimized structures are made available (no trajectories or initial structures). If you wish to obtain the initial structures, you must have an active CSD license and use the CCDC's ConQuest program.
+
 ### CoRE 2019
-Since v8 of the QMOF Database, some MOFs were taken directly from the 2019 CoRE MOF Database uploaded on [Zenodo](https://doi.org/10.5281/zenodo.3677685
+Since v8 of the QMOF Database, some properties were obtained from DFT-optimized structures based on the 2019 CoRE MOF Database uploaded on [Zenodo](https://doi.org/10.5281/zenodo.3677685
 ). This was done in one of two ways. In the first approach uploaded with v8, a curated subset of CoRE MOFs discussed in [Kancharlapalli et al.](https://pubs.acs.org/doi/abs/10.1021/acs.jctc.0c01229) was adopted to reduce the likelihood of obtaining erroneous crystal structures. In the second approach uploaded with v9, a curated subset of CoRE MOFs presented in [Chen and Manz](https://pubs.rsc.org/en/content/articlehtml/2020/ra/d0ra02498h) was adopted, after removing entries with CSD-identified charge-balancing ions, to reduce the likelihood of obtaining erroneous crystal structures. In both cases, only the FSR (free solvent removed) version of the CoRE MOF Database was used.
 
-All materials taken directly from the CoRE MOF Database have `core` at the start of their name. The `source` flag is set to `'CoRE'`. Note that there are some materials in the CoRE MOF Database that were instead downloaded from the CSD (as described above) rather than taken from the CoRE MOF Database itself. These structures will not have `core` in their filenames. Cross-check the refcodes in the QMOF Database with the list of structures in the parent [CoRE MOF Database](https://doi.org/10.5281/zenodo.3677685) if you are specifically looking for all CoRE MOFs.
+All materials taken directly from the CoRE MOF Database have `core` at the start of their name. The `source` flag is set to `'CoRE'`.
 
 ### Pyrene MOFs
 A few pyrene-containing MOFs were taken from [prior work](https://pubs.rsc.org/en/content/articlehtml/2021/cs/d0cs00424c) using the data uploaded to the [Materials Cloud](https://doi.org/10.24435/materialscloud:z5-ct).
