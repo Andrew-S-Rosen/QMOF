@@ -19,7 +19,7 @@ For a list of version-specific updates, see [updates.md](https://github.com/aros
 
 ## FAQs
 
-- Q: Are trajectories avaialable with the QMOF Dataset? A: No.
+- Q: Are trajectories avaialable with the QMOF Database? A: No.
 
 ## Citation
 
