@@ -18,8 +18,6 @@ Interactively explore the dataset and more at the following link:
   <a href="https://materialsproject.org/mofs"><b><i>https://materialsproject.org/mofs</i></b></a>
 </p>
 
-Follow the QMOF Database on Twitter ([@QMOF_Database](https://twitter.com/QMOF_Database)) if you want to be the first to know about the latest news and updates.
-
 ## Updates
 
 For a list of version-specific updates, see [updates.md](https://github.com/arosen93/QMOF/blob/main/updates.md).
