@@ -13,11 +13,6 @@ Much of the data underlying the QMOF Database (i.e. DFT-optimized geometries, en
   <a href="https://materialsproject.gitbook.io/materials-project-public-docs/methodology/mof-explorer/downloading-the-data"><b><i>Downloading the QMOF Database</i></b></a>
 </p>
 
-Interactively explore the dataset and more at the following link:
-<p align="center">
-  <a href="https://materialsproject.org/mofs"><b><i>https://materialsproject.org/mofs</i></b></a>
-</p>
-
 ## Updates
 
 For a list of version-specific updates, see [updates.md](https://github.com/arosen93/QMOF/blob/main/updates.md).
