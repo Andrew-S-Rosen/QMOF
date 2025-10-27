@@ -1,6 +1,7 @@
 This file documents all updates to the QMOF database on Figshare.
 
 # Changelog
+- [v17](https://figshare.com/articles/dataset/QMOF_Database/13147324/17): Removed qmof-98c279d
 - [v16](https://figshare.com/articles/dataset/QMOF_Database/13147324/16): Removed qmof-42b55bb
 - [v15](https://figshare.com/articles/dataset/QMOF_Database/13147324/15): Removed qmof-7d69ad1
 - [v14](https://figshare.com/articles/dataset/QMOF_Database/13147324/14): New single-point calculations at the HLE17, HSE06* (i.e. 10% HF ex.), and HSE06 (25% HF ex.) levels of theory. 12/09/21.
