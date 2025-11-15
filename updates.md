@@ -1,6 +1,7 @@
 This file documents all updates to the QMOF database on Figshare.
 
 # Changelog
+- [v18](https://figshare.com/articles/dataset/QMOF_Database/13147324/18): Added the preliminary version of the QMOF Thermo Database
 - [v17](https://figshare.com/articles/dataset/QMOF_Database/13147324/17): Removed qmof-98c279d
 - [v16](https://figshare.com/articles/dataset/QMOF_Database/13147324/16): Removed qmof-42b55bb
 - [v15](https://figshare.com/articles/dataset/QMOF_Database/13147324/15): Removed qmof-7d69ad1
